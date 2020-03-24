@@ -5,6 +5,12 @@ have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> o
 [https://twitter.com/vizowl](Twitter)
 
 
+
+If you are impatient - ou probably want the cases
+[excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/cases-regions.xlsx)
+[csv](https://raw.githubusercontent.com/nzherald/nz-covid19-data/master/data/cases.csv)
+
+
 The data is from https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases
 
 The data is downloaded and cleaned up using R - all code is in `_drake.R`
