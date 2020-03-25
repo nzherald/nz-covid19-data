@@ -1,11 +1,4 @@
-
-
-suppressPackageStartupMessages(library(drake))
-suppressPackageStartupMessages(library(tidyverse))
-suppressPackageStartupMessages(library(here))
-suppressPackageStartupMessages(library(r2d3))
-suppressPackageStartupMessages(library(jsonlite))
-suppressPackageStartupMessages(library(rvest))
+source(here::here("packages.R"))
 
 regionSummary <- function(x) {
   x %>%
@@ -129,7 +122,9 @@ plan <- drake_plan(
     mutate(`Total Community Transmission`=na_if(cumsum(coalesce(`Community Transmission`,0)),0)) %>%
     left_join(testDates, by="Date"),
   write_timeseries = covidSeries %>%
-    write_csv(file_out(here("data/days.csv")))
+    write_csv(file_out(here("data/days.csv"))),
+  write_timeseries_xlsx = covidSeries %>%
+      writexl::write_xlsx(file_out(here("data/days.xlsx"))),
 )
 
 drake_config(plan)
