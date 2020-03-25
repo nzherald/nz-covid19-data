@@ -36,8 +36,41 @@ confirmedDates <- c(
   rep("2020-03-22", 14), # https://www.health.govt.nz/news-media/media-releases/covid-19-update-22-march-2020
   rep("2020-03-23", 36), # https://www.health.govt.nz/news-media/media-releases/36-new-cases-covid-19-new-zealand
   rep("2020-03-24", 40), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
-  rep("2020-03-25", 47) # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
+  rep("2020-03-25", 47) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-25-march
 ) %>% as.Date()
+
+
+# recovered numbers are read from main page manually or pulled from livestream
+recoveredDates <- tribble(
+  ~Date, ~Recovered,
+  "2020-03-24", 12,
+  "2020-03-25", 10
+  ) %>% mutate(Date=as.Date(Date))
+
+# hospitalisations data are the total number of people in hospital on a given
+# day - NOT the number admitted that day - making it a different kind of number to the rest
+hospitalisationDates <- tribble(
+  ~Date, ~`In Hospital`, ~`In ICU`,
+  "2020-03-24", 6, 0,
+  "2020-03-25", 6, 0,
+  ) %>% mutate(Date=as.Date(Date))
+
+communityTransmissionDates <- tribble(
+  ~Date, ~`Community Transmission`,
+  "2020-03-23", 2,
+  "2020-03-24", 2, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
+  "2020-03-25", 0
+  ) %>% mutate(Date=as.Date(Date))
+
+testDates <- tribble(
+  ~Date, ~Tests, ~`Total Tests`, ~`Test Count`,
+  "2020-03-23", NA, 9780-1421-900, "Estimate",
+  "2020-03-24", 900, 9780-1421, "Estimate",
+  "2020-03-25", 1421, 9780, "Accurate",
+  ) %>% mutate(Date=as.Date(Date))
+
+
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), Sys.Date(), "days"))
 
 
 
@@ -79,7 +112,24 @@ plan <- drake_plan(
     write_cases = casesTable %>%
       group_nest(Region) %>%
       as_d3_data() %>%
-      write_json(file_out(here("data/cases.json")))
-  )
+      write_json(file_out(here("data/cases.json"))),
+    covidSeries = dateRange %>%
+      left_join(tibble(Date=confirmedDates) %>%
+        count(Date, name="Confirmed") %>%
+        mutate(Confirmed=as.numeric(Confirmed), `Total Confirmed`=cumsum(Confirmed)), by="Date") %>%
+    fill(Confirmed, `Total Confirmed`) %>%
+    left_join(tibble(Date=probableDates) %>%
+      count(Date, name="Probable") %>%
+      mutate(Probable=as.numeric(Probable)), by="Date") %>%
+    mutate(`Total Probable`=na_if(cumsum(coalesce(Probable,0)),0)) %>%
+    left_join(recoveredDates, by="Date") %>%
+    mutate(`Total Recovered`=na_if(cumsum(coalesce(Recovered,0)),0)) %>%
+    left_join(hospitalisationDates, by="Date") %>%
+    left_join(communityTransmissionDates, by="Date") %>%
+    mutate(`Total Community Transmission`=na_if(cumsum(coalesce(`Community Transmission`,0)),0)) %>%
+    left_join(testDates, by="Date"),
+  write_timeseries = covidSeries %>%
+    write_csv(file_out(here("data/days.csv")))
+)
 
 drake_config(plan)
