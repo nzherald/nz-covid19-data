@@ -16,7 +16,8 @@ regionSummary <- function(x) {
 
 
 probableDates <- c(
-  rep("2020-03-24", 13) # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
+  rep("2020-03-24", 13), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
+  rep("2020-03-25", 3) # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
 ) %>% as.Date()
 
 confirmedDates <- c(
@@ -34,7 +35,8 @@ confirmedDates <- c(
   rep("2020-03-21", 13), # https://www.health.govt.nz/news-media/media-releases/covid-19-update-21-march
   rep("2020-03-22", 14), # https://www.health.govt.nz/news-media/media-releases/covid-19-update-22-march-2020
   rep("2020-03-23", 36), # https://www.health.govt.nz/news-media/media-releases/36-new-cases-covid-19-new-zealand
-  rep("2020-03-24", 40) # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
+  rep("2020-03-24", 40), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
+  rep("2020-03-25", 47) # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
 ) %>% as.Date()
 
 
@@ -55,7 +57,7 @@ plan <- drake_plan(
           Location == "Hawkes Bay" ~ "Hawke’s Bay",
           TRUE ~ Location),
         Region=case_when(
-          Location %in% c("Queenstown", "Dunedin", "Waitaki") ~ "Otago",
+          Location %in% c("Queenstown", "Dunedin", "Waitaki", "Wanaka") ~ "Otago",
           Location %in% c("Christchurch") ~ "Canterbury",
           Location %in% c("Hamilton", "Taupo") ~ "Waikato",
           Location %in% c("Wairarapa", "Wellington Region", "Kapiti Coast", "Upper Hutt") ~ "Wellington",
@@ -64,6 +66,7 @@ plan <- drake_plan(
           Location %in% c("New Plymouth") ~ "Taranaki",
           Location %in% c("Manawatu") ~ "Manawatu-Whanganui",
           Location %in% c("Waitemata") ~ "Auckland",
+          Location %in% c("Blenheim") ~ "Marlborough",
           TRUE ~ Location
           )),
     write_cases_tidy_csv = casesTable %>%
@@ -74,7 +77,6 @@ plan <- drake_plan(
     regionSummary() %>%
     writexl::write_xlsx(file_out(here("data/cases-regions.xlsx"))),
     write_cases = casesTable %>%
-      rename(Details=`Travel details`) %>%
       group_nest(Region) %>%
       as_d3_data() %>%
       write_json(file_out(here("data/cases.json")))
