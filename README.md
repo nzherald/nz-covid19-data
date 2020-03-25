@@ -6,7 +6,7 @@ have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> o
 
 
 
-If you are impatient - ou probably want the cases
+If you are impatient - you probably want the cases
 [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/cases-regions.xlsx)
 [csv](https://raw.githubusercontent.com/nzherald/nz-covid19-data/master/data/cases.csv)
 
