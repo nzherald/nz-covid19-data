@@ -4,7 +4,7 @@ This data has been quickly pulled together by the _New Zealand Herald_ data jour
 have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> or via
 [Twitter](https://twitter.com/vizowl)
 
-**Updated to 'As at 9.30 am, 26 March 2020'**
+**Updated to 'Updated 5pm Thursday 26 March 2020'**
 
 - Daily totals from Feb 28 - NA where data wasn't reported [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.xlsx)
 - DHB totals starting March 26 [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.xlsx)
