@@ -8,19 +8,18 @@ have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> o
 
 - Daily totals from Feb 28 - NA where data wasn't reported [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.xlsx)
 - DHB totals starting March 26 [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.xlsx)
-
+- Confirmed cases DHB, Age, Gender, Flight details (no information extracted), and Date [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/cases.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/cases.xlsx)
 
 
 ## March 26 update
 
-The Ministry appears to no longer be reporting indivdual cases and has switched to a cases by DHB
-based reporting.
+The Ministry has changed to only reporting the details for confirmed cases - and to providing
+location data by DHB - which is an improvement on the previous ad-loc locations.
 
 Since the data released previously was not reported by DHB there is no way to link the two.
 Therefore the final versions of the cases data are now in `data/archive` I have also copied the
 could used to produce those files to `data/archive/archive.R`
 
-Hopefully the Ministry continues to publish cases details and I will resurrect this code.
 
 ## A little detail
 

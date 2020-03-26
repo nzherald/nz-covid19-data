@@ -1,11 +1,5 @@
 source(here::here("packages.R"))
 
-regionSummary <- function(x) {
-  x %>%
-    group_by(Region) %>%
-    summarise(Total=n(), Confirmed=length(Case[Classification=="Confirmed"]), Probable=length(Case[Classification=="Probable"])) %>%
-    arrange(desc(Total))
-}
 
 
 probableDates <- c(
@@ -121,6 +115,17 @@ plan <- drake_plan(
   write_timeseries_xlsx = covidSeries %>%
       writexl::write_xlsx(file_out(here("data/days.xlsx"))),
 
+   casedataurl = file_in("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases/covid-19-current-cases-details"),
+
+   casesTable = read_html(casedataurl) %>%
+      html_node("table") %>%
+      html_table() %>%
+      mutate(Date=confirmedDates),
+
+    write_cases_tidy_csv = casesTable %>%
+      write_csv(file_out(here("data/cases.csv"))),
+    write_cases_tidy_xlsx = casesTable %>%
+      writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
 
 
 )

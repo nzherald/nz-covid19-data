@@ -1,3 +1,3 @@
 #!/bin/sh
 
-Rscript -e "drake::clean(c('caseTables')); drake::r_make()"
+Rscript -e "drake::clean(c('caseTables', 'casesTable')); drake::r_make()"
