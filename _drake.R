@@ -120,7 +120,7 @@ plan <- drake_plan(
    casesTable = read_html(casedataurl) %>%
       html_node("table") %>%
       html_table() %>%
-      mutate(Date=confirmedDates),
+      mutate(Date=rev(confirmedDates)),
 
     write_cases_tidy_csv = casesTable %>%
       write_csv(file_out(here("data/cases.csv"))),

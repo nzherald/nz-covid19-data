@@ -1,124 +1,124 @@
 Case,DHB,Age,Gender,Details,Date
-262,Waikato,40s,F,Details to come,2020-02-28
-261,Waikato,20s,M,Details to come,2020-03-04
-260,Waitemata,30s,M,Details to come,2020-03-05
-259,Waikato,20s,M,Details to come,2020-03-06
-258,Waitemata,Child,M,Details to come,2020-03-07
-257,Lakes,20s,F,Doha to Auckland on 25 March – flight QR920,2020-03-14
-256,Taranaki,20s,F,"Doha to Auckland on 18 March – flight QR920, Auckland to New Plymouth on 19 March – flight NZ5035",2020-03-15
-255,Waikato,30s,F,Details to come,2020-03-15
-254,Counties Manukau,Child,M,Details to come,2020-03-17
-253,Waitemata,50s,M,Details to come,2020-03-17
-252,Waitemata,70s,M,Details to come,2020-03-17
-251,Hutt Valley,40s,M,Linked to a confirmed case,2020-03-17
-250,Capital and Coast,50s,M,Linked to international travel,2020-03-18
-249,Capital and Coast,30s,M,"Dubai to Auckland on 20 March – flight EK448, Auckland to Wellington on 21 March – flight NZ433",2020-03-18
-248,Capital and Coast,20s,M,"International travel, flight details to come",2020-03-18
-247,Nelson Marlborough,30s,M,"US to New Zealand, arrived 18 March, flight details to come",2020-03-18
-246,Nelson Marlborough,60s,M,"Los Angeles to Auckland, arrived 16 March – flight NZ1, Auckland to Nelson on 16 March – flight NZ5065",2020-03-18
-245,Lakes,20s,F,Details to come,2020-03-18
-244,Bay of Plenty,70s,M,"San Francisco to Auckland on 20 March – flight NZ7, Auckland to Tauranga, details to come",2020-03-18
-243,Waikato,40s,M,"Dubai to Auckland, arrived on 19 March – flight EK450",2020-03-18
-242,Waikato,30s,M,"Doha to Auckland, arrived on 20 March – flight QR920",2020-03-19
-241,Waikato,60s,M,Details to come,2020-03-19
-240,Waikato,20s,F,Details to come,2020-03-19
-239,Auckland,50s,F,Details to come,2020-03-19
-238,Counties Manukau,60s,M,Details to come,2020-03-19
-237,Counties Manukau,20s,F,"Travel from Spain on 15 March, flight details to come",2020-03-19
-236,Counties Manukau,Teen,F,Details to come,2020-03-19
-235,Auckland,70s,M,Details to come,2020-03-19
-234,Auckland,20s,F,Details to come,2020-03-20
-233,Auckland,20s,F,Details to come,2020-03-20
-232,Auckland,60s,F,Details to come,2020-03-20
-231,Auckland,30s,M,Details to come,2020-03-20
-230,Auckland,20s,F,Details to come,2020-03-20
-229,Waitemata,30s,F,Details to come,2020-03-20
-228,Lakes,60s,M,Details to come,2020-03-20
-227,Waikato,60s,M,Linked to cruise ship travel (Ruby Princess),2020-03-20
-226,Waikato,60s,F,Cruise ship travel (Ruby Princess),2020-03-20
-225,Waikato,40s,F,Details to come,2020-03-20
-224,Waikato,30s,F,Linked to a confirmed case,2020-03-20
-223,Waikato,70s,F,Linked to a confirmed case,2020-03-21
-222,Waikato,50s,M,Linked to a confirmed case,2020-03-21
-221,Waikato,Teen,M,Linked to a confirmed case,2020-03-21
-220,Waikato,60s,F,Linked to a confirmed case,2020-03-21
-219,MidCentral,50s,M,"Los Angeles to Auckland, arrived on 18 March – flight NZ5, Auckland to Palmerston North – flight NZ5107, date to come",2020-03-21
-218,Southern,20s,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-21
-217,Southern,40s,M,"Nadi to Auckland – flight NZ53, dates to be confirmed",2020-03-21
-216,Bay of Plenty,20s,F,"Dubai to Auckland – flight EK0448, Auckland to Rotorua – flight NZ8155, dates to be confirmed",2020-03-21
-215,West Coast,60s,M,Linked to a confirmed case,2020-03-21
-214,West Coast,60s,M,Contact with a confirmed case. Wellington to Christchurch on 17 March – flight JQ287,2020-03-21
-213,Canterbury,40s,F,Linked to a confirmed case,2020-03-21
-212,Hutt Valley,40s,M,"Doha to Sydney on 12 March – flight QR906, Sydney to Wellington on 13 March – flight VA171",2020-03-21
-211,Canterbury,50s,M,Relative of a confirmed case,2020-03-21
-210,Canterbury,Unknown,F,"Dubai to Auckland on 19 March – flight EK448, Auckland to Christchurch arriving on 20 March – flight details to come",2020-03-22
-209,Southern,60s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-22
-208,Southern,30s,F,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-22
-207,Canterbury,20s,F,"London to Dubai on 19 March – flight EK10, Dubai to Sydney to Christchurch arriving on 20 March – flight EK412",2020-03-22
-206,Canterbury,50s,M,"Manchester to Singapore on 18 March – flight SQ051, then Singapore to Christchurch on 20 March – flight SQ297",2020-03-22
-205,Southern,20s,M,"Frankfurt to Abu Dhabi on 19 March – flight EY008, Abu Dhabi to Melbourne on 20 March – flight EY462, Melbourne to Auckland on 21 March – flight EY6328, Auckland to Queenstown on 21 March – flight NZ625",2020-03-22
-204,Southern,60s,M,Linked to confirmed cases,2020-03-22
-203,Hawke’s Bay,50s,F,Cruise ship travel (Ruby Princess),2020-03-22
-202,Hawkes’s Bay,50s,F,Details to come,2020-03-22
-201,Hawke’s Bay,70s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-22
-200,Southern,30s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-22
-199,Southern,20s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-22
-198,Southern,20s,M,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-22
-197,Southern,50s,F,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-22
-196,Southern,40s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-23
-195,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-23
-194,Northland,50s,F,"UK to Dubai on 19 March – flight EK38, Dubai to Auckland, arriving 21 March – flight EK448",2020-03-23
-193,MidCentral,70s,M,"Barcelona to Dubai on 15 March – flight EK188, Dubai to Auckland on 16 March – flight EK448, Auckland to Palmerston North on 17 March – flight NZ5115",2020-03-23
-192,Waikato,50s,M,"Bangkok to Auckland, arriving 22 March, on Thai Airways",2020-03-23
-191,Capital & Coast,50s,M,"LA to Auckland on 17 March, then Auckland to Wellington – flight details to come",2020-03-23
-190,Hutt Valley,20s,F,Details to come,2020-03-23
-189,Auckland,30s,M,Details to come,2020-03-23
-188,Auckland,20s,F,Details to come,2020-03-23
-187,Waitemata,40s,F,Details to come,2020-03-23
-186,Auckland,20s,M,Details to come,2020-03-23
-185,Counties Manukau,20s,M,Details to come,2020-03-23
-184,Waitemata,60s,M,Details to come,2020-03-23
-183,Capital & Coast,30s,M,"South Africa to Dubai on 16 March – flight EK768, Dubai to Auckland on 17 March – flight EK448, Auckland to Wellington on 18 March – flight EK7547",2020-03-23
-182,Capital & Coast,30s,M,Details to come,2020-03-23
-181,Capital & Coast,60s,F,"USA to Auckland on 18 March – flight NZ0029, Auckland to Wellington on NZ0407, date to be confirmed",2020-03-23
-180,Capital & Coast,20s,M,"London to Dubai on 19 March – flight EK010, Dubai to Sydney on 20 March – flight EK0412, Sydney to Wellington on 21 March – flight QF161",2020-03-23
-179,Capital & Coast,60s,M,Details to come,2020-03-23
-178,Capital & Coast,60s,F,Details to come,2020-03-23
-177,Capital & Coast,40s,M,Linked to international travel,2020-03-23
-176,Capital & Coast,50s,F,Linked to international travel,2020-03-23
-175,Capital & Coast,50s,F,Linked to international travel,2020-03-23
-174,Nelson-Marlborough,80s,M,Details to come,2020-03-23
-173,Bay of Plenty,60s,F,"London to Abu Dhabi on 15 March – flight EY26, Abu Dhabi to Sydney on flight EY450, then Sydney to Auckland, arriving 17 March – flight NZ102",2020-03-23
-172,Waitemata,Teens,F,Details to come,2020-03-23
-171,Waitemata,30s,F,Details to come,2020-03-23
-170,Auckland,20s,F,Details to come,2020-03-23
-169,Auckland,30s,M,Details to come,2020-03-23
-168,Auckland,50s,M,Details to come,2020-03-23
-167,Auckland,30s,F,Details to come,2020-03-23
-166,Auckland,20s,M,Details to come,2020-03-23
-165,Auckland,20s,F,Details to come,2020-03-23
-164,Auckland,30s,M,Details to come,2020-03-23
-163,Waitemata,30s,F,Details to come,2020-03-23
-162,Waitemata,50s,F,Details to come,2020-03-23
-161,Waitemata,20s,F,Details to come,2020-03-23
-160,Waitemata,40s,M,Details to come,2020-03-24
-159,Waitemata,20s,M,Details to come,2020-03-24
-158,Southern,20s,F,"Geneva to Dubai on 21 March – flight EK090, Dubai to Auckland on 22 March – flight EK450, Auckland to Dunedin on 23 March – flight NZ671",2020-03-24
-157,Canterbury,50s,F,Details to come,2020-03-24
-156,Southern,20s,M,Details to come,2020-03-24
-155,Southern,30s,F,Details to come,2020-03-24
-154,Waitemata,60s,F,Details to come,2020-03-24
-153,Auckland,Teens,F,Details to come,2020-03-24
-152,Southern,20s,F,"London via Dubai to Auckland on 21 March – Flight EK448, Auckland to Dunedin on 23 March flight NZ677",2020-03-24
-151,Capital & Coast,50s,M,"Linked to a group trip to New York. Houston to Auckland on 20 March – Flight NZ0029, Auckland to Wellington on 20 March – Flight NZ0407",2020-03-24
-150,Waikato,30s,F,"Dubai to Auckland on 22 March – Flight EK448, Auckland to Rotorua on 23 March – Flight NZ8155",2020-03-24
-149,Waikato,40s,F,Under Investigation,2020-03-24
-148,Canterbury,50s,M,Sydney to Christchurch on 13 March – Flight EK412,2020-03-24
-147,Canterbury,50s,M,Linked to confirmed case,2020-03-24
-146,Canterbury,20s,F,"London via Dubai and Sydney, arrived Christchurch 13 March – flight EK006",2020-03-24
-145,Hutt Valley,40s,F,Linked to a confirmed case,2020-03-24
-144,Waikato,50s,F,Under investigation,2020-03-24
-143,Canterbury,20s,F,"San Francisco to Auckland, arrived 21 March – flight NZ7, Auckland to Christchurch on 21 March – NZ527",2020-03-24
+262,Waikato,40s,F,Details to come,2020-03-26
+261,Waikato,20s,M,Details to come,2020-03-26
+260,Waitemata,30s,M,Details to come,2020-03-26
+259,Waikato,20s,M,Details to come,2020-03-26
+258,Waitemata,Child,M,Details to come,2020-03-26
+257,Lakes,20s,F,Doha to Auckland on 25 March – flight QR920,2020-03-26
+256,Taranaki,20s,F,"Doha to Auckland on 18 March – flight QR920, Auckland to New Plymouth on 19 March – flight NZ5035",2020-03-26
+255,Waikato,30s,F,Details to come,2020-03-26
+254,Counties Manukau,Child,M,Details to come,2020-03-26
+253,Waitemata,50s,M,Details to come,2020-03-26
+252,Waitemata,70s,M,Details to come,2020-03-26
+251,Hutt Valley,40s,M,Linked to a confirmed case,2020-03-26
+250,Capital and Coast,50s,M,Linked to international travel,2020-03-26
+249,Capital and Coast,30s,M,"Dubai to Auckland on 20 March – flight EK448, Auckland to Wellington on 21 March – flight NZ433",2020-03-26
+248,Capital and Coast,20s,M,"International travel, flight details to come",2020-03-26
+247,Nelson Marlborough,30s,M,"US to New Zealand, arrived 18 March, flight details to come",2020-03-26
+246,Nelson Marlborough,60s,M,"Los Angeles to Auckland, arrived 16 March – flight NZ1, Auckland to Nelson on 16 March – flight NZ5065",2020-03-26
+245,Lakes,20s,F,Details to come,2020-03-26
+244,Bay of Plenty,70s,M,"San Francisco to Auckland on 20 March – flight NZ7, Auckland to Tauranga, details to come",2020-03-26
+243,Waikato,40s,M,"Dubai to Auckland, arrived on 19 March – flight EK450",2020-03-26
+242,Waikato,30s,M,"Doha to Auckland, arrived on 20 March – flight QR920",2020-03-26
+241,Waikato,60s,M,Details to come,2020-03-26
+240,Waikato,20s,F,Details to come,2020-03-26
+239,Auckland,50s,F,Details to come,2020-03-26
+238,Counties Manukau,60s,M,Details to come,2020-03-26
+237,Counties Manukau,20s,F,"Travel from Spain on 15 March, flight details to come",2020-03-26
+236,Counties Manukau,Teen,F,Details to come,2020-03-26
+235,Auckland,70s,M,Details to come,2020-03-26
+234,Auckland,20s,F,Details to come,2020-03-26
+233,Auckland,20s,F,Details to come,2020-03-26
+232,Auckland,60s,F,Details to come,2020-03-26
+231,Auckland,30s,M,Details to come,2020-03-26
+230,Auckland,20s,F,Details to come,2020-03-26
+229,Waitemata,30s,F,Details to come,2020-03-26
+228,Lakes,60s,M,Details to come,2020-03-26
+227,Waikato,60s,M,Linked to cruise ship travel (Ruby Princess),2020-03-26
+226,Waikato,60s,F,Cruise ship travel (Ruby Princess),2020-03-26
+225,Waikato,40s,F,Details to come,2020-03-26
+224,Waikato,30s,F,Linked to a confirmed case,2020-03-26
+223,Waikato,70s,F,Linked to a confirmed case,2020-03-26
+222,Waikato,50s,M,Linked to a confirmed case,2020-03-26
+221,Waikato,Teen,M,Linked to a confirmed case,2020-03-26
+220,Waikato,60s,F,Linked to a confirmed case,2020-03-26
+219,MidCentral,50s,M,"Los Angeles to Auckland, arrived on 18 March – flight NZ5, Auckland to Palmerston North – flight NZ5107, date to come",2020-03-26
+218,Southern,20s,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-26
+217,Southern,40s,M,"Nadi to Auckland – flight NZ53, dates to be confirmed",2020-03-26
+216,Bay of Plenty,20s,F,"Dubai to Auckland – flight EK0448, Auckland to Rotorua – flight NZ8155, dates to be confirmed",2020-03-26
+215,West Coast,60s,M,Linked to a confirmed case,2020-03-26
+214,West Coast,60s,M,Contact with a confirmed case. Wellington to Christchurch on 17 March – flight JQ287,2020-03-26
+213,Canterbury,40s,F,Linked to a confirmed case,2020-03-26
+212,Hutt Valley,40s,M,"Doha to Sydney on 12 March – flight QR906, Sydney to Wellington on 13 March – flight VA171",2020-03-26
+211,Canterbury,50s,M,Relative of a confirmed case,2020-03-26
+210,Canterbury,Unknown,F,"Dubai to Auckland on 19 March – flight EK448, Auckland to Christchurch arriving on 20 March – flight details to come",2020-03-26
+209,Southern,60s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+208,Southern,30s,F,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-26
+207,Canterbury,20s,F,"London to Dubai on 19 March – flight EK10, Dubai to Sydney to Christchurch arriving on 20 March – flight EK412",2020-03-26
+206,Canterbury,50s,M,"Manchester to Singapore on 18 March – flight SQ051, then Singapore to Christchurch on 20 March – flight SQ297",2020-03-26
+205,Southern,20s,M,"Frankfurt to Abu Dhabi on 19 March – flight EY008, Abu Dhabi to Melbourne on 20 March – flight EY462, Melbourne to Auckland on 21 March – flight EY6328, Auckland to Queenstown on 21 March – flight NZ625",2020-03-26
+204,Southern,60s,M,Linked to confirmed cases,2020-03-26
+203,Hawke’s Bay,50s,F,Cruise ship travel (Ruby Princess),2020-03-26
+202,Hawkes’s Bay,50s,F,Details to come,2020-03-26
+201,Hawke’s Bay,70s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+200,Southern,30s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+199,Southern,20s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+198,Southern,20s,M,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-26
+197,Southern,50s,F,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-26
+196,Southern,40s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+195,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
+194,Northland,50s,F,"UK to Dubai on 19 March – flight EK38, Dubai to Auckland, arriving 21 March – flight EK448",2020-03-26
+193,MidCentral,70s,M,"Barcelona to Dubai on 15 March – flight EK188, Dubai to Auckland on 16 March – flight EK448, Auckland to Palmerston North on 17 March – flight NZ5115",2020-03-26
+192,Waikato,50s,M,"Bangkok to Auckland, arriving 22 March, on Thai Airways",2020-03-26
+191,Capital & Coast,50s,M,"LA to Auckland on 17 March, then Auckland to Wellington – flight details to come",2020-03-26
+190,Hutt Valley,20s,F,Details to come,2020-03-26
+189,Auckland,30s,M,Details to come,2020-03-25
+188,Auckland,20s,F,Details to come,2020-03-25
+187,Waitemata,40s,F,Details to come,2020-03-25
+186,Auckland,20s,M,Details to come,2020-03-25
+185,Counties Manukau,20s,M,Details to come,2020-03-25
+184,Waitemata,60s,M,Details to come,2020-03-25
+183,Capital & Coast,30s,M,"South Africa to Dubai on 16 March – flight EK768, Dubai to Auckland on 17 March – flight EK448, Auckland to Wellington on 18 March – flight EK7547",2020-03-25
+182,Capital & Coast,30s,M,Details to come,2020-03-25
+181,Capital & Coast,60s,F,"USA to Auckland on 18 March – flight NZ0029, Auckland to Wellington on NZ0407, date to be confirmed",2020-03-25
+180,Capital & Coast,20s,M,"London to Dubai on 19 March – flight EK010, Dubai to Sydney on 20 March – flight EK0412, Sydney to Wellington on 21 March – flight QF161",2020-03-25
+179,Capital & Coast,60s,M,Details to come,2020-03-25
+178,Capital & Coast,60s,F,Details to come,2020-03-25
+177,Capital & Coast,40s,M,Linked to international travel,2020-03-25
+176,Capital & Coast,50s,F,Linked to international travel,2020-03-25
+175,Capital & Coast,50s,F,Linked to international travel,2020-03-25
+174,Nelson-Marlborough,80s,M,Details to come,2020-03-25
+173,Bay of Plenty,60s,F,"London to Abu Dhabi on 15 March – flight EY26, Abu Dhabi to Sydney on flight EY450, then Sydney to Auckland, arriving 17 March – flight NZ102",2020-03-25
+172,Waitemata,Teens,F,Details to come,2020-03-25
+171,Waitemata,30s,F,Details to come,2020-03-25
+170,Auckland,20s,F,Details to come,2020-03-25
+169,Auckland,30s,M,Details to come,2020-03-25
+168,Auckland,50s,M,Details to come,2020-03-25
+167,Auckland,30s,F,Details to come,2020-03-25
+166,Auckland,20s,M,Details to come,2020-03-25
+165,Auckland,20s,F,Details to come,2020-03-25
+164,Auckland,30s,M,Details to come,2020-03-25
+163,Waitemata,30s,F,Details to come,2020-03-25
+162,Waitemata,50s,F,Details to come,2020-03-25
+161,Waitemata,20s,F,Details to come,2020-03-25
+160,Waitemata,40s,M,Details to come,2020-03-25
+159,Waitemata,20s,M,Details to come,2020-03-25
+158,Southern,20s,F,"Geneva to Dubai on 21 March – flight EK090, Dubai to Auckland on 22 March – flight EK450, Auckland to Dunedin on 23 March – flight NZ671",2020-03-25
+157,Canterbury,50s,F,Details to come,2020-03-25
+156,Southern,20s,M,Details to come,2020-03-25
+155,Southern,30s,F,Details to come,2020-03-25
+154,Waitemata,60s,F,Details to come,2020-03-25
+153,Auckland,Teens,F,Details to come,2020-03-25
+152,Southern,20s,F,"London via Dubai to Auckland on 21 March – Flight EK448, Auckland to Dunedin on 23 March flight NZ677",2020-03-25
+151,Capital & Coast,50s,M,"Linked to a group trip to New York. Houston to Auckland on 20 March – Flight NZ0029, Auckland to Wellington on 20 March – Flight NZ0407",2020-03-25
+150,Waikato,30s,F,"Dubai to Auckland on 22 March – Flight EK448, Auckland to Rotorua on 23 March – Flight NZ8155",2020-03-25
+149,Waikato,40s,F,Under Investigation,2020-03-25
+148,Canterbury,50s,M,Sydney to Christchurch on 13 March – Flight EK412,2020-03-25
+147,Canterbury,50s,M,Linked to confirmed case,2020-03-25
+146,Canterbury,20s,F,"London via Dubai and Sydney, arrived Christchurch 13 March – flight EK006",2020-03-25
+145,Hutt Valley,40s,F,Linked to a confirmed case,2020-03-25
+144,Waikato,50s,F,Under investigation,2020-03-25
+143,Canterbury,20s,F,"San Francisco to Auckland, arrived 21 March – flight NZ7, Auckland to Christchurch on 21 March – NZ527",2020-03-25
 142,Waitemata,30s,F,LA to Auckland on 14 March – flight AA83,2020-03-24
 141,Taranaki,60s,F,Details to come,2020-03-24
 140,Wairarapa,20s,F,Details to come,2020-03-24
@@ -141,139 +141,139 @@ Case,DHB,Age,Gender,Details,Date
 123,Nelson-Marlborough,80s,F,Details to come,2020-03-24
 122,Auckland,20s,M,Details to come,2020-03-24
 121,Southern,30s,M,"Dubai to Auckland, arrived on 19 March – flight EK447, Auckland to Dunedin on 19 March – flight JQ285",2020-03-24
-120,Southern,60s,M,"London to LA on 14 March, then LA to Auckland - flight NZ5, Auckland to Dunedin on 16 March – flight NZ671",2020-03-25
-119,Waikato,50s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-25
-118,Auckland,Teen,F,Details to come,2020-03-25
-117,Auckland,30s,F,"Arrived in Auckland on 18 March, flight details to come",2020-03-25
-116,Auckland,20s,F,"Arrived in Auckland on 20 March, flight details to come",2020-03-25
-115,Counties Manukau,30s,F,Details to come,2020-03-25
-114,Auckland,Teens,F,Details to come,2020-03-25
-113,Auckland,40s,M,"Arrived in Auckland 18 March, flight details to come",2020-03-25
-112,Counties Manukau,30s,F,Details to come,2020-03-25
-111,Waikato,60s,F,Dubai to Auckland on 16 March – flight EK0448,2020-03-25
-110,Canterbury,60s,M,Linked to a confirmed case,2020-03-25
-109,Canterbury,60s,F,Linked to a confirmed case,2020-03-25
-108,Southern,Teens,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Queenstown on 19 March – flight EK7563",2020-03-25
-107,Southern,30s,F,No international travel history – exposed at World Herefords Conference in Queenstown,2020-03-25
-106,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-25
-105,Southern,20s,M,"Departed Switzerland 16 March, flew via Abu Dhabi to New Zealand – flight EY0052",2020-03-25
-104,Auckland,20s,M,Details to come,2020-03-25
-103,Counties Manukau,40s,M,"USA to Auckland, arrived 18 March, flight details to come",2020-03-25
-102,Auckland,50s,M,"USA to Auckland, arrived 8 March, flight details to come",2020-03-25
-101,Hutt Valley,50s,F,Linked to a confirmed case,2020-03-25
-100,Counties Manukau,Teen,F,Details to come,2020-03-25
-99,Nelson-Marlborough,50s,F,Linked to a confirmed case,2020-03-25
-98,Capital & Coast,60s,F,Linked to a confirmed case,2020-03-25
-97,Capital & Coast,20s,F,Linked to a confirmed case,2020-03-25
-96,Capital & Coast,40s,M,Details to come,2020-03-25
-95,Waitemata,40s,F,Exposed to two people in household with history of international travel and symptoms,2020-03-25
-94,Waitemata,20s,F,Dubai to Auckland on 19 March – flight EK448,2020-03-25
-93,Waitemata,40s,F,Details to come,2020-03-25
-92,Auckland,20s,M,Doha to Auckland on 22 March – flight QR920,2020-03-25
-91,Auckland,40s,F,LA to New Zealand on 15 March – flight NZ1,2020-03-25
-90,Auckland,50s,M,LA to New Zealand on 15 March – flight NZ1,2020-03-25
-89,Nelson-Marlborough,70s,M,Linked to a confirmed case,2020-03-25
-88,Nelson-Marlborough,70s,F,Details to come,2020-03-25
-87,Canterbury,20s,M,Details to come,2020-03-25
-86,Capital & Coast,60s,M,"London to Sydney on 13 March – flight QF2, Sydney to Wellington on 15 March – flight QF161",2020-03-25
-85,Auckland,Child,M,Linked to a confirmed case,2020-03-25
-84,Auckland,50s,M,Doha to Auckland on 18 March – flight QR920,2020-03-25
-83,Auckland,50s,F,Doha to Auckland on 18 March – flight QR920,2020-03-25
-82,Auckland,60s,F,Linked to two confirmed cases,2020-03-25
-81,Auckland,60s,M,Dubai to Auckland on 18 March – flight EK448,2020-03-25
-80,Nelson-Marlborough,50s,M,"Sydney to Auckland on 18 March – flight QF143, Auckland to Blenheim on 18 March – flight NZ8205",2020-03-25
-79,Nelson-Marlborough,20s,M,International travel – flight details to come,2020-03-25
-78,MidCentral,40s,F,Sydney to Wellington on 19 March – flight NZ842,2020-03-25
-77,Auckland,20s,F,Kuala Lumpur to Auckland on 19 March – flight MH0133,2020-03-25
-76,Auckland,60s,M,Hong Kong to Auckland on 13 March – flight CX2191,2020-03-25
-75,Waikato,70s,M,Linked to a confirmed case,2020-03-25
-74,Auckland,20s,M,"Sydney to Auckland, arriving 18 March – flight QF143",2020-03-25
-73,Auckland,Teen,M,Linked to a confirmed case,2020-03-26
-72,Canterbury,20s,F,Singapore to Christchurch on 18 March – flight SQ297,2020-03-26
-71,Auckland,30s,M,LA to Auckland on 18 March – flight NZ05,2020-03-26
-70,Auckland,50s,F,Community transmission,2020-03-26
-69,Auckland,40s,M,Dubai to Auckland on 15 March – flight EK448,2020-03-26
-68,Southern,20s,F,"San Francisco to Auckland on 17 March – flight NZ07, Auckland to Dunedin on 19 March – flight JQ285",2020-03-26
-67,Auckland,20s,F,Wellington to Auckland on 15 March – flight JQ256,2020-03-26
-66,Auckland,50s,F,Dubai to Auckland on 15 March – flight EK448,2020-03-26
-65,Northland,40s,F,Melbourne to Auckland on Sunday 15 March – flight JQ217,2020-03-26
+120,Southern,60s,M,"London to LA on 14 March, then LA to Auckland - flight NZ5, Auckland to Dunedin on 16 March – flight NZ671",2020-03-24
+119,Waikato,50s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-24
+118,Auckland,Teen,F,Details to come,2020-03-24
+117,Auckland,30s,F,"Arrived in Auckland on 18 March, flight details to come",2020-03-24
+116,Auckland,20s,F,"Arrived in Auckland on 20 March, flight details to come",2020-03-24
+115,Counties Manukau,30s,F,Details to come,2020-03-24
+114,Auckland,Teens,F,Details to come,2020-03-24
+113,Auckland,40s,M,"Arrived in Auckland 18 March, flight details to come",2020-03-24
+112,Counties Manukau,30s,F,Details to come,2020-03-24
+111,Waikato,60s,F,Dubai to Auckland on 16 March – flight EK0448,2020-03-24
+110,Canterbury,60s,M,Linked to a confirmed case,2020-03-24
+109,Canterbury,60s,F,Linked to a confirmed case,2020-03-24
+108,Southern,Teens,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Queenstown on 19 March – flight EK7563",2020-03-24
+107,Southern,30s,F,No international travel history – exposed at World Herefords Conference in Queenstown,2020-03-24
+106,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-24
+105,Southern,20s,M,"Departed Switzerland 16 March, flew via Abu Dhabi to New Zealand – flight EY0052",2020-03-24
+104,Auckland,20s,M,Details to come,2020-03-24
+103,Counties Manukau,40s,M,"USA to Auckland, arrived 18 March, flight details to come",2020-03-24
+102,Auckland,50s,M,"USA to Auckland, arrived 8 March, flight details to come",2020-03-23
+101,Hutt Valley,50s,F,Linked to a confirmed case,2020-03-23
+100,Counties Manukau,Teen,F,Details to come,2020-03-23
+99,Nelson-Marlborough,50s,F,Linked to a confirmed case,2020-03-23
+98,Capital & Coast,60s,F,Linked to a confirmed case,2020-03-23
+97,Capital & Coast,20s,F,Linked to a confirmed case,2020-03-23
+96,Capital & Coast,40s,M,Details to come,2020-03-23
+95,Waitemata,40s,F,Exposed to two people in household with history of international travel and symptoms,2020-03-23
+94,Waitemata,20s,F,Dubai to Auckland on 19 March – flight EK448,2020-03-23
+93,Waitemata,40s,F,Details to come,2020-03-23
+92,Auckland,20s,M,Doha to Auckland on 22 March – flight QR920,2020-03-23
+91,Auckland,40s,F,LA to New Zealand on 15 March – flight NZ1,2020-03-23
+90,Auckland,50s,M,LA to New Zealand on 15 March – flight NZ1,2020-03-23
+89,Nelson-Marlborough,70s,M,Linked to a confirmed case,2020-03-23
+88,Nelson-Marlborough,70s,F,Details to come,2020-03-23
+87,Canterbury,20s,M,Details to come,2020-03-23
+86,Capital & Coast,60s,M,"London to Sydney on 13 March – flight QF2, Sydney to Wellington on 15 March – flight QF161",2020-03-23
+85,Auckland,Child,M,Linked to a confirmed case,2020-03-23
+84,Auckland,50s,M,Doha to Auckland on 18 March – flight QR920,2020-03-23
+83,Auckland,50s,F,Doha to Auckland on 18 March – flight QR920,2020-03-23
+82,Auckland,60s,F,Linked to two confirmed cases,2020-03-23
+81,Auckland,60s,M,Dubai to Auckland on 18 March – flight EK448,2020-03-23
+80,Nelson-Marlborough,50s,M,"Sydney to Auckland on 18 March – flight QF143, Auckland to Blenheim on 18 March – flight NZ8205",2020-03-23
+79,Nelson-Marlborough,20s,M,International travel – flight details to come,2020-03-23
+78,MidCentral,40s,F,Sydney to Wellington on 19 March – flight NZ842,2020-03-23
+77,Auckland,20s,F,Kuala Lumpur to Auckland on 19 March – flight MH0133,2020-03-23
+76,Auckland,60s,M,Hong Kong to Auckland on 13 March – flight CX2191,2020-03-23
+75,Waikato,70s,M,Linked to a confirmed case,2020-03-23
+74,Auckland,20s,M,"Sydney to Auckland, arriving 18 March – flight QF143",2020-03-23
+73,Auckland,Teen,M,Linked to a confirmed case,2020-03-23
+72,Canterbury,20s,F,Singapore to Christchurch on 18 March – flight SQ297,2020-03-23
+71,Auckland,30s,M,LA to Auckland on 18 March – flight NZ05,2020-03-23
+70,Auckland,50s,F,Community transmission,2020-03-23
+69,Auckland,40s,M,Dubai to Auckland on 15 March – flight EK448,2020-03-23
+68,Southern,20s,F,"San Francisco to Auckland on 17 March – flight NZ07, Auckland to Dunedin on 19 March – flight JQ285",2020-03-23
+67,Auckland,20s,F,Wellington to Auckland on 15 March – flight JQ256,2020-03-23
+66,Auckland,50s,F,Dubai to Auckland on 15 March – flight EK448,2020-03-22
+65,Northland,40s,F,Melbourne to Auckland on Sunday 15 March – flight JQ217,2020-03-22
 64,Canterbury,50s,F,"San Francisco to Auckland on Monday 16 March – flight NZ7
-			Auckland to Christchurch on Tuesday 17 March – flight NZ523",2020-03-26
+			Auckland to Christchurch on Tuesday 17 March – flight NZ523",2020-03-22
 63,Taranaki,20s,M,"Dubai to Auckland on Tuesday 17 March – flight EK448
-			Auckland to New Plymouth on 18 March – flight NZ8041",2020-03-26
+			Auckland to New Plymouth on 18 March – flight NZ8041",2020-03-22
 62,Taranaki,50s,M,"Bangkok to Auckland on Sunday 15 March – flight TG0491
-			Auckland to New Plymouth on 16 March – flight NZ8041",2020-03-26
-61,Auckland,40s,F,"Africa via Dubai to Auckland, arrived on 10 March – flight details to come",2020-03-26
-60,Auckland,20s,M,Dubai to Auckland on Monday 16 March – flight EK448,2020-03-26
-59,Auckland,60s,F,No international travel history – exposed at World Hereford Conference in Queenstown.,2020-03-26
-58,Auckland,60s,M,No international travel history – exposed at World Herefords Conference in Queenstown Domestic travel history: Dunedin to Auckland on Sunday 15 March – flight NZ674,2020-03-26
-57,Waikato,60s,F,"Travel history to Ireland, Dubai and Australia – details to come",2020-03-26
-56,Bay of Plenty,30s,M,Los Angeles to Auckland on 17 March – flight NZ5,2020-03-26
-55,Waikato,60s,M,Honolulu to Auckland on 14 March – flight HA445 (arrived 15 March),2020-03-26
-54,Waikato,40s,F,Contact with a confirmed case,2020-03-26
+			Auckland to New Plymouth on 16 March – flight NZ8041",2020-03-22
+61,Auckland,40s,F,"Africa via Dubai to Auckland, arrived on 10 March – flight details to come",2020-03-22
+60,Auckland,20s,M,Dubai to Auckland on Monday 16 March – flight EK448,2020-03-22
+59,Auckland,60s,F,No international travel history – exposed at World Hereford Conference in Queenstown.,2020-03-22
+58,Auckland,60s,M,No international travel history – exposed at World Herefords Conference in Queenstown Domestic travel history: Dunedin to Auckland on Sunday 15 March – flight NZ674,2020-03-22
+57,Waikato,60s,F,"Travel history to Ireland, Dubai and Australia – details to come",2020-03-22
+56,Bay of Plenty,30s,M,Los Angeles to Auckland on 17 March – flight NZ5,2020-03-22
+55,Waikato,60s,M,Honolulu to Auckland on 14 March – flight HA445 (arrived 15 March),2020-03-22
+54,Waikato,40s,F,Contact with a confirmed case,2020-03-22
 53,Southern,40s,M,"LA to Auckland on 14 March – flight NZ1
-			Auckland to Queenstown on 14 March – flight NZ615",2020-03-26
-52,Auckland,50s,F,Contact with probable case,2020-03-26
+			Auckland to Queenstown on 14 March – flight NZ615",2020-03-22
+52,Auckland,50s,F,Contact with probable case,2020-03-21
 51,Nelson-Marlborough,20s,F,"Travel related, however international flights outside of infectious period. 
-			Domestic flights: Auckland to Nelson on 16 March – flight 5065",2020-03-26
-50,Nelson-Marlborough,60s,F,Contact with traveller. Further investigations continue.,2020-03-26
+			Domestic flights: Auckland to Nelson on 16 March – flight 5065",2020-03-21
+50,Nelson-Marlborough,60s,F,Contact with traveller. Further investigations continue.,2020-03-21
 49,MidCentral,20s,F,"Doha to Auckland on 14 March – flight QR0920
-			Auckland to Palmerston North on 16 March – flight NZ5107",2020-03-26
+			Auckland to Palmerston North on 16 March – flight NZ5107",2020-03-21
 48,MidCentral,40s,M,"No international travel history – exposed at World Herefords Conference in Queenstown. Queenstown to Christchurch on 13 March – flight NZ642
-			Christchurch to Palmerston North on 13 March – flight NZ5181",2020-03-26
-47,Bay of Plenty,50s,M,Dubai to Auckland on 10 March – flight EK0448,2020-03-26
-46,Auckland,70s,M,Under investigation. Took internal flight when symptomatic. Dunedin to Auckland on 16 March – flight NZ674,2020-03-26
+			Christchurch to Palmerston North on 13 March – flight NZ5181",2020-03-21
+47,Bay of Plenty,50s,M,Dubai to Auckland on 10 March – flight EK0448,2020-03-21
+46,Auckland,70s,M,Under investigation. Took internal flight when symptomatic. Dunedin to Auckland on 16 March – flight NZ674,2020-03-21
 45,Capital & Coast,30s,F,"Dubai to Auckland on 12 March – flight EK44
-			Auckland to Wellington on 12 March – flight NZ433",2020-03-26
+			Auckland to Wellington on 12 March – flight NZ433",2020-03-21
 44,Capital & Coast,50s,M,"Travel related, however international flights outside of infectious period. 
 			Domestic flights:
 			Auckland to Wellington on 8 March – flight NZ449
 			Wellington to Hamilton on 12 March – flight NZ5810
-			Hamilton to Wellington on 13 March – flight NZ5823",2020-03-26
-43,Capital & Coast,50s,M,Sydney to Wellington on 14 March – flight QF161,2020-03-26
-42,Waikato,60s,F,Singapore to Auckland on 13 March – flight SQ0285,2020-03-26
-41,Auckland,60s,M,Cruise ship travel. Domestic flights – Dunedin to Auckland on 15 March – flight NZ670,2020-03-26
-40,Hutt Valley,50s,M,Sydney to Wellington on 14 March – flight EK0412,2020-03-26
-39,Southern,20s,Male,"LA to Auckland on Wednesday 18 March – flight NZ5, Auckland to Queenstown on Wednesday 18 March – flight NZ615",2020-03-26
-38,Wairarapa,30s,Male,Community transmission,2020-03-26
-37,Waitemata,40s,Female,London to Doha to Auckland (on Sunday 15 March) - flight details to come.,2020-03-26
-36,Counties Manukau,40s,Male,Los Angeles to Auckland - flight details to come.,2020-03-26
-35,Counties Manukau,30s,Female,Los Angeles to Auckland - flight details to come.,2020-03-26
-34,Waikato,60s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-26
-33,Waikato,70s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-26
-32,Hawkes Bay,30s,Male,Doha to Auckland on 16 March – flight QR920 Auckland to Napier on 17 March – flight NZ5021,2020-03-26
-31,Capital & Coast,40s,Male,Melbourne to Wellington on 14 March – flight SQ247,2020-03-26
+			Hamilton to Wellington on 13 March – flight NZ5823",2020-03-21
+43,Capital & Coast,50s,M,Sydney to Wellington on 14 March – flight QF161,2020-03-21
+42,Waikato,60s,F,Singapore to Auckland on 13 March – flight SQ0285,2020-03-21
+41,Auckland,60s,M,Cruise ship travel. Domestic flights – Dunedin to Auckland on 15 March – flight NZ670,2020-03-21
+40,Hutt Valley,50s,M,Sydney to Wellington on 14 March – flight EK0412,2020-03-21
+39,Southern,20s,Male,"LA to Auckland on Wednesday 18 March – flight NZ5, Auckland to Queenstown on Wednesday 18 March – flight NZ615",2020-03-20
+38,Wairarapa,30s,Male,Community transmission,2020-03-20
+37,Waitemata,40s,Female,London to Doha to Auckland (on Sunday 15 March) - flight details to come.,2020-03-20
+36,Counties Manukau,40s,Male,Los Angeles to Auckland - flight details to come.,2020-03-20
+35,Counties Manukau,30s,Female,Los Angeles to Auckland - flight details to come.,2020-03-20
+34,Waikato,60s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-20
+33,Waikato,70s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-20
+32,Hawkes Bay,30s,Male,Doha to Auckland on 16 March – flight QR920 Auckland to Napier on 17 March – flight NZ5021,2020-03-20
+31,Capital & Coast,40s,Male,Melbourne to Wellington on 14 March – flight SQ247,2020-03-20
 30,Canterbury,50s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Christchurch on 15 March – flight NZ535",2020-03-26
-29,Auckland,40s,Male,Singapore to Auckland on 11 March,2020-03-26
-28,Southern DHB,60s,Male,Sydney to Christchurch on 13 March – flight EK402,2020-03-26
+			Auckland to Christchurch on 15 March – flight NZ535",2020-03-20
+29,Auckland,40s,Male,Singapore to Auckland on 11 March,2020-03-20
+28,Southern DHB,60s,Male,Sydney to Christchurch on 13 March – flight EK402,2020-03-19
 27,Southern DHB,30s,Female,"London to Auckland on 17 March – flight NZ1
-			Auckland to Christchurch on 17 March – flight NZ525 Christchurch to Dunedin on 17 March – flight NZ5749",2020-03-26
-26,Auckland,40s,Male,Melbourne to Auckland on 15 March – flight QF153,2020-03-26
-25,Auckland,60s,Male,Los Angeles to Auckland on 13 March – flight NZ05,2020-03-26
-24,Waikato,50s,Male,Singapore to Auckland on 13 March – flight SQ285,2020-03-26
-23,Northland,20s,Male,Sydney to Auckland on 16 March – flight VA0141,2020-03-26
-22,Taranaki,40s,Male,"Vancouver to Auckland, arrived on 15 March – flight NZ23, Auckland to New Plymouth on 15 March – flight NZ8035",2020-03-26
-21,Taranaki,40s,Female,"Dubai to Auckland, arrived on 9 March – flight EK448,  Auckland to New Plymouth on 9 March – flight NZ8041",2020-03-26
-20,Waikato,70s,Male,Singapore to Auckland on 15 March – flight SQ285,2020-03-26
-19,Waikato,20s,Female,"Sydney to Auckland, arrived on 8 March – flight NZ112",2020-03-26
-18,Canterbury,40s,Female,"Singapore to Christchurch, arrived on 16 March – flight SQ297",2020-03-26
-17,Southern,40s,Male,"Sydney to Auckland, arrived 10 March – flight NZ102",2020-03-26
-16,Waitemata,60s,Male,"Canada to New Zealand, arrived on 12 March – flight details to come",2020-03-26
-15,Auckland,60s,Male,"San Francisco to Auckland, arrived on 13 March – flight NZ7",2020-03-26
-14,Waitemata,40s,Female,"International travel – arrived 8 March, flight details to come",2020-03-26
-13,Auckland,50s,Male,"Dubai to Auckland, arrived on 14 March – flight EK448",2020-03-26
-12,Southern,Teens,Male,Related to case 11,2020-03-26
-11,Southern,40s,Male,"Singapore to Auckland on 7 March – flight NZ283, Auckland to Dunedin on 8 March – flight NZ675",2020-03-26
+			Auckland to Christchurch on 17 March – flight NZ525 Christchurch to Dunedin on 17 March – flight NZ5749",2020-03-19
+26,Auckland,40s,Male,Melbourne to Auckland on 15 March – flight QF153,2020-03-19
+25,Auckland,60s,Male,Los Angeles to Auckland on 13 March – flight NZ05,2020-03-19
+24,Waikato,50s,Male,Singapore to Auckland on 13 March – flight SQ285,2020-03-19
+23,Northland,20s,Male,Sydney to Auckland on 16 March – flight VA0141,2020-03-19
+22,Taranaki,40s,Male,"Vancouver to Auckland, arrived on 15 March – flight NZ23, Auckland to New Plymouth on 15 March – flight NZ8035",2020-03-19
+21,Taranaki,40s,Female,"Dubai to Auckland, arrived on 9 March – flight EK448,  Auckland to New Plymouth on 9 March – flight NZ8041",2020-03-19
+20,Waikato,70s,Male,Singapore to Auckland on 15 March – flight SQ285,2020-03-18
+19,Waikato,20s,Female,"Sydney to Auckland, arrived on 8 March – flight NZ112",2020-03-18
+18,Canterbury,40s,Female,"Singapore to Christchurch, arrived on 16 March – flight SQ297",2020-03-18
+17,Southern,40s,Male,"Sydney to Auckland, arrived 10 March – flight NZ102",2020-03-18
+16,Waitemata,60s,Male,"Canada to New Zealand, arrived on 12 March – flight details to come",2020-03-18
+15,Auckland,60s,Male,"San Francisco to Auckland, arrived on 13 March – flight NZ7",2020-03-18
+14,Waitemata,40s,Female,"International travel – arrived 8 March, flight details to come",2020-03-18
+13,Auckland,50s,Male,"Dubai to Auckland, arrived on 14 March – flight EK448",2020-03-18
+12,Southern,Teens,Male,Related to case 11,2020-03-17
+11,Southern,40s,Male,"Singapore to Auckland on 7 March – flight NZ283, Auckland to Dunedin on 8 March – flight NZ675",2020-03-17
 10,Capital & Coast,70s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Wellington on 14 March – flight NZ419",2020-03-26
+			Auckland to Wellington on 14 March – flight NZ419",2020-03-17
 9,Capital & Coast,30s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Wellington on 14 March – flight NZ419",2020-03-26
-8,Capital & Coast,60s,Male,"Brisbane to Wellington, arrived on 14 March – flight NZ828",2020-03-26
-7,Southern,30s,Female,"Doha to Auckland on 10 March – flight QR920, Auckland to Christchurch on 10 March – flight JQ225",2020-03-26
-6,Auckland,60s,Male,Houston to Auckland on 6 March – flight NZ029,2020-03-26
-5,Auckland,40s,Female,Doha to Auckland on 23 February – flight QR0920,2020-03-26
-4,Waitemata,40s,Male,Singapore to Auckland on 25 February – flight NZ283,2020-03-26
-3,Counties Manukau,40s,Male,"Doha to Auckland, arrived on 23 February – flight QR0920",2020-03-26
-2,Waitemata,30s,Female,Singapore to Auckland on 25 February – flight NZ283,2020-03-26
-1,Auckland,60s,Female,"Iran to Bali to Auckland, arrived on 26 February – flight EK450",2020-03-26
+			Auckland to Wellington on 14 March – flight NZ419",2020-03-17
+8,Capital & Coast,60s,Male,"Brisbane to Wellington, arrived on 14 March – flight NZ828",2020-03-15
+7,Southern,30s,Female,"Doha to Auckland on 10 March – flight QR920, Auckland to Christchurch on 10 March – flight JQ225",2020-03-15
+6,Auckland,60s,Male,Houston to Auckland on 6 March – flight NZ029,2020-03-14
+5,Auckland,40s,Female,Doha to Auckland on 23 February – flight QR0920,2020-03-07
+4,Waitemata,40s,Male,Singapore to Auckland on 25 February – flight NZ283,2020-03-06
+3,Counties Manukau,40s,Male,"Doha to Auckland, arrived on 23 February – flight QR0920",2020-03-05
+2,Waitemata,30s,Female,Singapore to Auckland on 25 February – flight NZ283,2020-03-04
+1,Auckland,60s,Female,"Iran to Bali to Auckland, arrived on 26 February – flight EK450",2020-02-28
