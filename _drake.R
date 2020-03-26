@@ -10,7 +10,8 @@ regionSummary <- function(x) {
 
 probableDates <- c(
   rep("2020-03-24", 13), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
-  rep("2020-03-25", 3) # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
+  rep("2020-03-25", 3), # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
+  rep("2020-03-26", 5), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
 ) %>% as.Date()
 
 confirmedDates <- c(
@@ -29,7 +30,8 @@ confirmedDates <- c(
   rep("2020-03-22", 14), # https://www.health.govt.nz/news-media/media-releases/covid-19-update-22-march-2020
   rep("2020-03-23", 36), # https://www.health.govt.nz/news-media/media-releases/36-new-cases-covid-19-new-zealand
   rep("2020-03-24", 40), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
-  rep("2020-03-25", 47) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-25-march
+  rep("2020-03-25", 47), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-25-march
+  rep("2020-03-26", 73) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
 ) %>% as.Date()
 
 
@@ -38,6 +40,7 @@ recoveredDates <- tribble(
   ~Date, ~Recovered,
   "2020-03-24", 12,
   "2020-03-25", 10
+  "2020-03-26", 5,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -46,13 +49,15 @@ hospitalisationDates <- tribble(
   ~Date, ~`In Hospital`, ~`In ICU`,
   "2020-03-24", 6, 0,
   "2020-03-25", 6, 0,
+  "2020-03-26", 7, 0,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
   ~Date, ~`Community Transmission`,
   "2020-03-23", 2,
   "2020-03-24", 2, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
-  "2020-03-25", 0
+  "2020-03-25", 0,
+  "2020-03-26", 0, # suspect to be more
   ) %>% mutate(Date=as.Date(Date))
 
 testDates <- tribble(
@@ -60,6 +65,7 @@ testDates <- tribble(
   "2020-03-23", NA, 9780-1421-900, "Estimate",
   "2020-03-24", 900, 9780-1421, "Estimate",
   "2020-03-25", 1421, 9780, "Accurate",
+  "2020-03-26", 2417, 12683, "Accurate",
   ) %>% mutate(Date=as.Date(Date))
 
 
