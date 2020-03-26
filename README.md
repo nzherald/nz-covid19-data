@@ -6,8 +6,8 @@ have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> o
 
 **Updated to 'As at 9.30 am, 26 March 2020'**
 
-- Daily totals from Feb 28 - NA where data wasn't reported [csv]() and [excel]()
-- DHB totals starting March 26 [csv]() [excel]()
+- Daily totals from Feb 28 - NA where data wasn't reported [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/days.xlsx)
+- DHB totals starting March 26 [csv](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.csv) and [excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/dhb-cases.xlsx)
 
 
 
@@ -19,6 +19,8 @@ based reporting.
 Since the data released previously was not reported by DHB there is no way to link the two.
 Therefore the final versions of the cases data are now in `data/archive` I have also copied the
 could used to produce those files to `data/archive/archive.R`
+
+Hopefully the Ministry continues to publish cases details and I will resurrect this code.
 
 ## A little detail
 
