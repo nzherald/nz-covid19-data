@@ -4,16 +4,25 @@ This data has been quickly pulled together by the _New Zealand Herald_ data jour
 have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> or via
 [Twitter](https://twitter.com/vizowl)
 
+**Updated to 'As at 9.30 am, 26 March 2020'**
+
+- Daily totals from Feb 28 - NA where data wasn't reported [csv]() and [excel]()
+- DHB totals starting March 26 [csv]() [excel]()
 
 
-If you are impatient - you probably want the cases
-[excel](https://github.com/nzherald/nz-covid19-data/raw/master/data/cases-regions.xlsx)
-and
-[csv](https://raw.githubusercontent.com/nzherald/nz-covid19-data/master/data/cases.csv)
 
+## March 26 update
+
+The Ministry appears to no longer be reporting indivdual cases and has switched to a cases by DHB
+based reporting.
+
+Since the data released previously was not reported by DHB there is no way to link the two.
+Therefore the final versions of the cases data are now in `data/archive` I have also copied the
+could used to produce those files to `data/archive/archive.R`
+
+## A little detail
 
 The data is from https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases
-and was pulled when the page said "Last updated 2:00 pm, 25 March 2020"
 
 The data is downloaded and cleaned up using R - all code is in `_drake.R`
 

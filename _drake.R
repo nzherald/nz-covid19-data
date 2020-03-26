@@ -11,7 +11,7 @@ regionSummary <- function(x) {
 probableDates <- c(
   rep("2020-03-24", 13), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
   rep("2020-03-25", 3), # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
-  rep("2020-03-26", 5), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
+  rep("2020-03-26", 5) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
 ) %>% as.Date()
 
 confirmedDates <- c(
@@ -39,17 +39,17 @@ confirmedDates <- c(
 recoveredDates <- tribble(
   ~Date, ~Recovered,
   "2020-03-24", 12,
-  "2020-03-25", 10
+  "2020-03-25", 10,
   "2020-03-26", 5,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
 # day - NOT the number admitted that day - making it a different kind of number to the rest
 hospitalisationDates <- tribble(
-  ~Date, ~`In Hospital`, ~`In ICU`,
-  "2020-03-24", 6, 0,
-  "2020-03-25", 6, 0,
-  "2020-03-26", 7, 0,
+  ~Date, ~`In Hospital`, ~`Total In Hospital`, ~`In ICU`,
+  "2020-03-24", NA, 6, 0,
+  "2020-03-25", NA, 6, 0,
+  "2020-03-26", 2, 7, 0,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -57,7 +57,7 @@ communityTransmissionDates <- tribble(
   "2020-03-23", 2,
   "2020-03-24", 2, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
   "2020-03-25", 0,
-  "2020-03-26", 0, # suspect to be more
+  "2020-03-26", 0, # More discussed by no numbers given
   ) %>% mutate(Date=as.Date(Date))
 
 testDates <- tribble(
@@ -71,47 +71,34 @@ testDates <- tribble(
 
 dateRange <- tibble(Date=seq(as.Date("2020-02-28"), Sys.Date(), "days"))
 
+todayCsv <- paste0("data/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
+todayXlsx <- paste0("data/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".xlsx")
 
 
 plan <- drake_plan(
     dataurl = file_in("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases"),
-    caseTables = (read_html(dataurl) %>%
+
+    dhbNumbersTable = (read_html(dataurl) %>%
       html_nodes("table") %>%
-      html_table())[1:2],
-    casesTable = bind_rows(
-      caseTables[[1]] %>%
-        arrange(Case) %>%
-        mutate(Classification="Confirmed", Date=confirmedDates),
-      caseTables[[2]] %>%
-        mutate(Classification="Probable", Date=probableDates)) %>%
-      mutate(Location=case_when(
-          Location=="Southern DHB" ~ "Queenstown",
-          Location == "Hawkes Bay" ~ "Hawke’s Bay",
-          TRUE ~ Location),
-        Region=case_when(
-          Location %in% c("Queenstown", "Dunedin", "Waitaki", "Wanaka") ~ "Otago",
-          Location %in% c("Christchurch") ~ "Canterbury",
-          Location %in% c("Hamilton", "Taupo") ~ "Waikato",
-          Location %in% c("Wairarapa", "Wellington Region", "Kapiti Coast", "Upper Hutt") ~ "Wellington",
-          Location %in% c("Invercargill") ~ "Southland",
-          Location %in% c("Rotorua") ~ "Bay of Plenty",
-          Location %in% c("New Plymouth") ~ "Taranaki",
-          Location %in% c("Manawatu") ~ "Manawatu-Whanganui",
-          Location %in% c("Waitemata") ~ "Auckland",
-          Location %in% c("Blenheim") ~ "Marlborough",
-          TRUE ~ Location
-          )),
-    write_cases_tidy_csv = casesTable %>%
-      write_csv(file_out(here("data/cases.csv"))),
-    write_cases_tidy_xlsx = casesTable %>%
-      writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
-    write_regions = casesTable %>%
-    regionSummary() %>%
-    writexl::write_xlsx(file_out(here("data/cases-regions.xlsx"))),
-    write_cases = casesTable %>%
-      group_nest(Region) %>%
-      as_d3_data() %>%
-      write_json(file_out(here("data/cases.json"))),
+      html_table())[[2]],
+
+    # Tomorrow is nothing changes I will work out how to start building a series from this
+    dhbNumbers = dhbNumbersTable %>%
+       pivot_longer(-DHB, names_to = 'Case Status', values_to = 'Count') %>%
+       mutate(Date=Sys.Date()),
+
+     writeDHBToday = dhbNumbers %>%
+       write_csv(file_out(here(todayCsv))),
+
+     writeDHBTodayXLSX = dhbNumbers %>%
+       writexl::write_xlsx(file_out(here(todayXlsx))),
+
+     writeDHB = dhbNumbers %>%
+       write_csv(file_out(here("data/dhb-cases.csv"))),
+
+     writeDHBXLSX = dhbNumbers %>%
+       writexl::write_xlsx(file_out(here("data/dhb-cases.xlsx"))),
+
     covidSeries = dateRange %>%
       left_join(tibble(Date=confirmedDates) %>%
         count(Date, name="Confirmed") %>%
@@ -127,10 +114,15 @@ plan <- drake_plan(
     left_join(communityTransmissionDates, by="Date") %>%
     mutate(`Total Community Transmission`=na_if(cumsum(coalesce(`Community Transmission`,0)),0)) %>%
     left_join(testDates, by="Date"),
+
   write_timeseries = covidSeries %>%
     write_csv(file_out(here("data/days.csv"))),
+
   write_timeseries_xlsx = covidSeries %>%
       writexl::write_xlsx(file_out(here("data/days.xlsx"))),
+
+
+
 )
 
 drake_config(plan)
