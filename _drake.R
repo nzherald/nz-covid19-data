@@ -5,7 +5,8 @@ source(here::here("packages.R"))
 probableDates <- c(
   rep("2020-03-24", 13), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
   rep("2020-03-25", 3), # https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-novel-coronavirus-news-and-media-updates
-  rep("2020-03-26", 5) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
+  rep("2020-03-26", 5), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
+  rep("2020-03-27", 9)
 ) %>% as.Date()
 
 confirmedDates <- c(
@@ -25,7 +26,8 @@ confirmedDates <- c(
   rep("2020-03-23", 36), # https://www.health.govt.nz/news-media/media-releases/36-new-cases-covid-19-new-zealand
   rep("2020-03-24", 40), # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
   rep("2020-03-25", 47), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-25-march
-  rep("2020-03-26", 73) # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
+  rep("2020-03-26", 73), # https://www.health.govt.nz/news-media/news-items/covid-19-media-update-26-march
+  rep("2020-03-27", 76)
 ) %>% as.Date()
 
 
@@ -35,15 +37,17 @@ recoveredDates <- tribble(
   "2020-03-24", 12,
   "2020-03-25", 10,
   "2020-03-26", 5,
+  "2020-03-27", 10
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
 # day - NOT the number admitted that day - making it a different kind of number to the rest
 hospitalisationDates <- tribble(
-  ~Date, ~`In Hospital`, ~`Total In Hospital`, ~`In ICU`,
-  "2020-03-24", NA, 6, 0,
-  "2020-03-25", NA, 6, 0,
-  "2020-03-26", 2, 7, 0,
+  ~Date, ~`In Hospital Now`, ~`Total Been In Hospital`, ~`In ICU`,
+  "2020-03-24", 6, NA, 0,
+  "2020-03-25", 6, NA, 0,
+  "2020-03-26", 7, NA, 0,
+  "2020-03-27", 8, 20, 1,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -65,8 +69,8 @@ testDates <- tribble(
 
 dateRange <- tibble(Date=seq(as.Date("2020-02-28"), Sys.Date(), "days"))
 
-todayCsv <- paste0("data/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
-todayXlsx <- paste0("data/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".xlsx")
+todayCsv <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
+todayXlsx <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".xlsx")
 
 
 plan <- drake_plan(
@@ -87,10 +91,15 @@ plan <- drake_plan(
      writeDHBTodayXLSX = dhbNumbers %>%
        writexl::write_xlsx(file_out(here(todayXlsx))),
 
-     writeDHB = dhbNumbers %>%
+     allFiles = fs::dir_ls(here("data/daily")),
+    csvFiles = allFiles[str_detect(allFiles, "csv")],
+
+    allDHBNumbers = csvFiles %>% map_df(read_csv),
+
+     writeDHB = allDHBNumbers %>%
        write_csv(file_out(here("data/dhb-cases.csv"))),
 
-     writeDHBXLSX = dhbNumbers %>%
+     writeDHBXLSX = allDHBNumbers %>%
        writexl::write_xlsx(file_out(here("data/dhb-cases.xlsx"))),
 
     covidSeries = dateRange %>%
@@ -104,10 +113,11 @@ plan <- drake_plan(
     mutate(`Total Probable`=na_if(cumsum(coalesce(Probable,0)),0)) %>%
     left_join(recoveredDates, by="Date") %>%
     mutate(`Total Recovered`=na_if(cumsum(coalesce(Recovered,0)),0)) %>%
-    left_join(hospitalisationDates, by="Date") %>%
-    left_join(communityTransmissionDates, by="Date") %>%
-    mutate(`Total Community Transmission`=na_if(cumsum(coalesce(`Community Transmission`,0)),0)) %>%
-    left_join(testDates, by="Date"),
+    left_join(hospitalisationDates, by="Date"),
+  # %>%
+  #   left_join(communityTransmissionDates, by="Date") %>%
+  #   mutate(`Total Community Transmission`=na_if(cumsum(coalesce(`Community Transmission`,0)),0)) %>%
+  #   left_join(testDates, by="Date"),
 
   write_timeseries = covidSeries %>%
     write_csv(file_out(here("data/days.csv"))),
@@ -120,7 +130,7 @@ plan <- drake_plan(
    casesTable = read_html(casedataurl) %>%
       html_node("table") %>%
       html_table() %>%
-      mutate(Date=rev(confirmedDates)),
+      mutate(Date=rev(confirmedDates[confirmedDates != "2020-03-27"])),  # waiting until cases are updated
 
     write_cases_tidy_csv = casesTable %>%
       write_csv(file_out(here("data/cases.csv"))),
