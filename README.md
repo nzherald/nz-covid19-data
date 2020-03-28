@@ -1,5 +1,9 @@
 # New Zealand Covid-19 Case Data
 
+_28 March_ - most of this has been made obsolete by the Ministry's release of spreahsheets - but
+I'll wait a few days before I clean this up as things are changing very rapidly.
+
+
 This data has been quickly pulled together by the _New Zealand Herald_ data journalism team - if you
 have any issues please contact Chris Knox by email <chris.knox@nzherald.co.nz> or via
 [Twitter](https://twitter.com/vizowl)
