@@ -69,6 +69,11 @@ hospitalisationDates <- tribble(
     "2020-03-30", 0, 1,
   ) %>% mutate(Date=as.Date(Date))
 
+transmissionDates <- tribble(
+  ~Date, ~Overseas, ~Contact, ~Overseas_And_Contact, ~Community,
+  "2020-03-30", round(0.57*455), round(0.26*455), round(0.15*455), round(0.02*455),
+  ) %>% mutate(Date=as.Date(Date))
+
 communityTransmissionDates <- tribble(
   ~Date, ~`Community Transmission`,
   "2020-03-23", 2,
@@ -141,6 +146,7 @@ plan <- drake_plan(
     mutate(`Total Recovered`=na_if(cumsum(coalesce(Recovered,0)),0)) %>%
     left_join(hospitalisationDates, by="Date") %>%
     left_join(deathsDates, by="Date") %>%
+    left_join(transmissionDates, by="Date") %>%
     rename_all(snakecase::to_lower_camel_case) %>%
     mutate(date=as.POSIXct(date)),
 
