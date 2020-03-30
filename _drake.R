@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-03-29"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-03-30"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -9,6 +9,7 @@ probableDates <- tribble(
   "2020-03-27", 9,
   "2020-03-28", 5,
   "2020-03-29", 3,
+  "2020-03-30", -1,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -33,6 +34,7 @@ confirmedDates <- tribble(
   "2020-03-27", 76,
   "2020-03-28", 78,
   "2020-03-29", 60,
+  "2020-03-30", 76,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -45,6 +47,7 @@ recoveredDates <- tribble(
   "2020-03-27", 10,
   "2020-03-28", 13,
   "2020-03-29", 6,
+  "2020-03-30", 7,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -57,11 +60,13 @@ hospitalisationDates <- tribble(
   "2020-03-27", 8, 20, 1,
   "2020-03-28", 12, 22, 2,
   "2020-03-29", 9, 28, 1,
+  "2020-03-30", 12, 28, 2,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
     ~Date, ~Deaths, ~`Total Deaths`,
     "2020-03-29", 1, 1,
+    "2020-03-30", 0, 1,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -102,16 +107,15 @@ list(
 
 plan <- drake_plan(
 
-    confirmedCases = readxl::read_excel(file_in(here("data/moh/covid-19-confirmed-probable-cases-29mar20.xlsx"))) %>%
-      rename(Overseas=`International travel`) %>%
+    confirmedCases = readxl::read_excel(file_in(here::here("data/moh/covid-cases-30_mar_2020.xlsx")), skip=3) %>%
       mutate(Overseas=Overseas=="Yes", Status="Confirmed"),
 
-    probableCases = readxl::read_excel(file_in(here("data/moh/covid-19-confirmed-probable-cases-29mar20.xlsx")), sheet=2) %>%
-      rename(Overseas=`International travel`) %>%
+    probableCases = readxl::read_excel(file_in(here::here("data/moh/covid-cases-30_mar_2020.xlsx")), skip=3, sheet=2) %>%
+      rename(`Report Date`=ReportDate) %>%
       mutate(Overseas=Overseas=="Yes", Status="Probable"),
 
     allCases = bind_rows(confirmedCases, probableCases) %>%
-      rename(Age=`Age group`, Reported=`Date of report`) %>%
+      rename(Age=`Age Group`, Reported=`Report Date`) %>%
       rename_all(str_to_lower) %>%
       mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland")),
 
@@ -125,18 +129,20 @@ plan <- drake_plan(
 
     manual = dateRange %>%
       left_join(confirmedDates %>% mutate(`Total Confirmed`=cumsum(Confirmed)), by="Date") %>%
-    fill(Confirmed, `Total Confirmed`) %>%
+    fill(`Total Confirmed`) %>%
+    mutate(Confirmed=coalesce(Confirmed, 0)) %>%
     left_join(probableDates, by="Date") %>%
     mutate(
       `Total Probable`=na_if(cumsum(coalesce(Probable,0)),0),
       Total=Confirmed+coalesce(Probable,0),
-      `Cumulative Total`=`Total Confirmed`+coalesce(`Total Probable`,0),
+      `Cumulative`=`Total Confirmed`+coalesce(`Total Probable`,0),
       ) %>%
     left_join(recoveredDates, by="Date") %>%
     mutate(`Total Recovered`=na_if(cumsum(coalesce(Recovered,0)),0)) %>%
     left_join(hospitalisationDates, by="Date") %>%
     left_join(deathsDates, by="Date") %>%
-    rename_all(function(s) { str_to_lower(s) %>% str_replace_all(' ', '_') }),
+    rename_all(snakecase::to_lower_camel_case) %>%
+    mutate(date=as.POSIXct(date)),
 
 
     write_everything = list(
