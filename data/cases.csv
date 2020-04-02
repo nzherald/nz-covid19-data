@@ -1,279 +1,798 @@
-Case,DHB,Age,Gender,Details,Date
-262,Waikato,40s,F,Details to come,2020-03-26
-261,Waikato,20s,M,Details to come,2020-03-26
-260,Waitemata,30s,M,Details to come,2020-03-26
-259,Waikato,20s,M,Details to come,2020-03-26
-258,Waitemata,Child,M,Details to come,2020-03-26
-257,Lakes,20s,F,Doha to Auckland on 25 March – flight QR920,2020-03-26
-256,Taranaki,20s,F,"Doha to Auckland on 18 March – flight QR920, Auckland to New Plymouth on 19 March – flight NZ5035",2020-03-26
-255,Waikato,30s,F,Details to come,2020-03-26
-254,Counties Manukau,Child,M,Details to come,2020-03-26
-253,Waitemata,50s,M,Details to come,2020-03-26
-252,Waitemata,70s,M,Details to come,2020-03-26
-251,Hutt Valley,40s,M,Linked to a confirmed case,2020-03-26
-250,Capital and Coast,50s,M,Linked to international travel,2020-03-26
-249,Capital and Coast,30s,M,"Dubai to Auckland on 20 March – flight EK448, Auckland to Wellington on 21 March – flight NZ433",2020-03-26
-248,Capital and Coast,20s,M,"International travel, flight details to come",2020-03-26
-247,Nelson Marlborough,30s,M,"US to New Zealand, arrived 18 March, flight details to come",2020-03-26
-246,Nelson Marlborough,60s,M,"Los Angeles to Auckland, arrived 16 March – flight NZ1, Auckland to Nelson on 16 March – flight NZ5065",2020-03-26
-245,Lakes,20s,F,Details to come,2020-03-26
-244,Bay of Plenty,70s,M,"San Francisco to Auckland on 20 March – flight NZ7, Auckland to Tauranga, details to come",2020-03-26
-243,Waikato,40s,M,"Dubai to Auckland, arrived on 19 March – flight EK450",2020-03-26
-242,Waikato,30s,M,"Doha to Auckland, arrived on 20 March – flight QR920",2020-03-26
-241,Waikato,60s,M,Details to come,2020-03-26
-240,Waikato,20s,F,Details to come,2020-03-26
-239,Auckland,50s,F,Details to come,2020-03-26
-238,Counties Manukau,60s,M,Details to come,2020-03-26
-237,Counties Manukau,20s,F,"Travel from Spain on 15 March, flight details to come",2020-03-26
-236,Counties Manukau,Teen,F,Details to come,2020-03-26
-235,Auckland,70s,M,Details to come,2020-03-26
-234,Auckland,20s,F,Details to come,2020-03-26
-233,Auckland,20s,F,Details to come,2020-03-26
-232,Auckland,60s,F,Details to come,2020-03-26
-231,Auckland,30s,M,Details to come,2020-03-26
-230,Auckland,20s,F,Details to come,2020-03-26
-229,Waitemata,30s,F,Details to come,2020-03-26
-228,Lakes,60s,M,Details to come,2020-03-26
-227,Waikato,60s,M,Linked to cruise ship travel (Ruby Princess),2020-03-26
-226,Waikato,60s,F,Cruise ship travel (Ruby Princess),2020-03-26
-225,Waikato,40s,F,Details to come,2020-03-26
-224,Waikato,30s,F,Linked to a confirmed case,2020-03-26
-223,Waikato,70s,F,Linked to a confirmed case,2020-03-26
-222,Waikato,50s,M,Linked to a confirmed case,2020-03-26
-221,Waikato,Teen,M,Linked to a confirmed case,2020-03-26
-220,Waikato,60s,F,Linked to a confirmed case,2020-03-26
-219,MidCentral,50s,M,"Los Angeles to Auckland, arrived on 18 March – flight NZ5, Auckland to Palmerston North – flight NZ5107, date to come",2020-03-26
-218,Southern,20s,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-26
-217,Southern,40s,M,"Nadi to Auckland – flight NZ53, dates to be confirmed",2020-03-26
-216,Bay of Plenty,20s,F,"Dubai to Auckland – flight EK0448, Auckland to Rotorua – flight NZ8155, dates to be confirmed",2020-03-26
-215,West Coast,60s,M,Linked to a confirmed case,2020-03-26
-214,West Coast,60s,M,Contact with a confirmed case. Wellington to Christchurch on 17 March – flight JQ287,2020-03-26
-213,Canterbury,40s,F,Linked to a confirmed case,2020-03-26
-212,Hutt Valley,40s,M,"Doha to Sydney on 12 March – flight QR906, Sydney to Wellington on 13 March – flight VA171",2020-03-26
-211,Canterbury,50s,M,Relative of a confirmed case,2020-03-26
-210,Canterbury,Unknown,F,"Dubai to Auckland on 19 March – flight EK448, Auckland to Christchurch arriving on 20 March – flight details to come",2020-03-26
-209,Southern,60s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-208,Southern,30s,F,"Dubai to Auckland on 18 March – flight EK448, Auckland to Dunedin on 19 March – flight NZ677",2020-03-26
-207,Canterbury,20s,F,"London to Dubai on 19 March – flight EK10, Dubai to Sydney to Christchurch arriving on 20 March – flight EK412",2020-03-26
-206,Canterbury,50s,M,"Manchester to Singapore on 18 March – flight SQ051, then Singapore to Christchurch on 20 March – flight SQ297",2020-03-26
-205,Southern,20s,M,"Frankfurt to Abu Dhabi on 19 March – flight EY008, Abu Dhabi to Melbourne on 20 March – flight EY462, Melbourne to Auckland on 21 March – flight EY6328, Auckland to Queenstown on 21 March – flight NZ625",2020-03-26
-204,Southern,60s,M,Linked to confirmed cases,2020-03-26
-203,Hawke’s Bay,50s,F,Cruise ship travel (Ruby Princess),2020-03-26
-202,Hawkes’s Bay,50s,F,Details to come,2020-03-26
-201,Hawke’s Bay,70s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-200,Southern,30s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-199,Southern,20s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-198,Southern,20s,M,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-26
-197,Southern,50s,F,Household exposure to confirmed case from World Hereford Conference in Queenstown,2020-03-26
-196,Southern,40s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-195,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-26
-194,Northland,50s,F,"UK to Dubai on 19 March – flight EK38, Dubai to Auckland, arriving 21 March – flight EK448",2020-03-26
-193,MidCentral,70s,M,"Barcelona to Dubai on 15 March – flight EK188, Dubai to Auckland on 16 March – flight EK448, Auckland to Palmerston North on 17 March – flight NZ5115",2020-03-26
-192,Waikato,50s,M,"Bangkok to Auckland, arriving 22 March, on Thai Airways",2020-03-26
-191,Capital & Coast,50s,M,"LA to Auckland on 17 March, then Auckland to Wellington – flight details to come",2020-03-26
-190,Hutt Valley,20s,F,Details to come,2020-03-26
-189,Auckland,30s,M,Details to come,2020-03-25
-188,Auckland,20s,F,Details to come,2020-03-25
-187,Waitemata,40s,F,Details to come,2020-03-25
-186,Auckland,20s,M,Details to come,2020-03-25
-185,Counties Manukau,20s,M,Details to come,2020-03-25
-184,Waitemata,60s,M,Details to come,2020-03-25
-183,Capital & Coast,30s,M,"South Africa to Dubai on 16 March – flight EK768, Dubai to Auckland on 17 March – flight EK448, Auckland to Wellington on 18 March – flight EK7547",2020-03-25
-182,Capital & Coast,30s,M,Details to come,2020-03-25
-181,Capital & Coast,60s,F,"USA to Auckland on 18 March – flight NZ0029, Auckland to Wellington on NZ0407, date to be confirmed",2020-03-25
-180,Capital & Coast,20s,M,"London to Dubai on 19 March – flight EK010, Dubai to Sydney on 20 March – flight EK0412, Sydney to Wellington on 21 March – flight QF161",2020-03-25
-179,Capital & Coast,60s,M,Details to come,2020-03-25
-178,Capital & Coast,60s,F,Details to come,2020-03-25
-177,Capital & Coast,40s,M,Linked to international travel,2020-03-25
-176,Capital & Coast,50s,F,Linked to international travel,2020-03-25
-175,Capital & Coast,50s,F,Linked to international travel,2020-03-25
-174,Nelson-Marlborough,80s,M,Details to come,2020-03-25
-173,Bay of Plenty,60s,F,"London to Abu Dhabi on 15 March – flight EY26, Abu Dhabi to Sydney on flight EY450, then Sydney to Auckland, arriving 17 March – flight NZ102",2020-03-25
-172,Waitemata,Teens,F,Details to come,2020-03-25
-171,Waitemata,30s,F,Details to come,2020-03-25
-170,Auckland,20s,F,Details to come,2020-03-25
-169,Auckland,30s,M,Details to come,2020-03-25
-168,Auckland,50s,M,Details to come,2020-03-25
-167,Auckland,30s,F,Details to come,2020-03-25
-166,Auckland,20s,M,Details to come,2020-03-25
-165,Auckland,20s,F,Details to come,2020-03-25
-164,Auckland,30s,M,Details to come,2020-03-25
-163,Waitemata,30s,F,Details to come,2020-03-25
-162,Waitemata,50s,F,Details to come,2020-03-25
-161,Waitemata,20s,F,Details to come,2020-03-25
-160,Waitemata,40s,M,Details to come,2020-03-25
-159,Waitemata,20s,M,Details to come,2020-03-25
-158,Southern,20s,F,"Geneva to Dubai on 21 March – flight EK090, Dubai to Auckland on 22 March – flight EK450, Auckland to Dunedin on 23 March – flight NZ671",2020-03-25
-157,Canterbury,50s,F,Details to come,2020-03-25
-156,Southern,20s,M,Details to come,2020-03-25
-155,Southern,30s,F,Details to come,2020-03-25
-154,Waitemata,60s,F,Details to come,2020-03-25
-153,Auckland,Teens,F,Details to come,2020-03-25
-152,Southern,20s,F,"London via Dubai to Auckland on 21 March – Flight EK448, Auckland to Dunedin on 23 March flight NZ677",2020-03-25
-151,Capital & Coast,50s,M,"Linked to a group trip to New York. Houston to Auckland on 20 March – Flight NZ0029, Auckland to Wellington on 20 March – Flight NZ0407",2020-03-25
-150,Waikato,30s,F,"Dubai to Auckland on 22 March – Flight EK448, Auckland to Rotorua on 23 March – Flight NZ8155",2020-03-25
-149,Waikato,40s,F,Under Investigation,2020-03-25
-148,Canterbury,50s,M,Sydney to Christchurch on 13 March – Flight EK412,2020-03-25
-147,Canterbury,50s,M,Linked to confirmed case,2020-03-25
-146,Canterbury,20s,F,"London via Dubai and Sydney, arrived Christchurch 13 March – flight EK006",2020-03-25
-145,Hutt Valley,40s,F,Linked to a confirmed case,2020-03-25
-144,Waikato,50s,F,Under investigation,2020-03-25
-143,Canterbury,20s,F,"San Francisco to Auckland, arrived 21 March – flight NZ7, Auckland to Christchurch on 21 March – NZ527",2020-03-25
-142,Waitemata,30s,F,LA to Auckland on 14 March – flight AA83,2020-03-24
-141,Taranaki,60s,F,Details to come,2020-03-24
-140,Wairarapa,20s,F,Details to come,2020-03-24
-139,Capital & Coast,64,M,Details to come,2020-03-24
-138,Nelson-Marlborough,60s,M,Linked to a confirmed case,2020-03-24
-137,Nelson-Marlborough,30s,M,Linked to a confirmed case,2020-03-24
-136,Waitemata,60s,F,Details to come,2020-03-24
-135,Capital & Coast,70s,F,"Cruise ship travel then flew Sydney to Wellington on 18 March, flight details to come",2020-03-24
-134,Capital & Coast,70s,M,"Cruise ship travel then flew Sydney to Wellington on 18 March, flight details to come",2020-03-24
-133,Capital & Coast,50s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-24
-132,Hawke’s Bay,70s,F,"Barcelona via Dubai to Auckland, arrived on 18 March, flight EK448, Auckland to Napier on 19 March – flight NZ5021",2020-03-24
-131,Hawke’s Bay,70s,M,"Barcelona via Dubai to Auckland, arrived on 18 March, flight EK448, Auckland to Napier on 19 March – flight NZ5021",2020-03-24
-130,Capital & Coast,50s,F,"Los Angeles to Auckland on 19 March – flight NZ409, details of domestic travel to come",2020-03-24
-129,Capital & Coast,30s,F,Sydney to Wellington on 20 March – flight QF161,2020-03-24
-128,Capital & Coast,30s,M,"London to Dubai on 17 March – flight EK0002, Dubai via Bali to Auckland on 18 March – flight EK450, Auckland to Wellington on 19 March – flight NZ409",2020-03-24
-127,Capital & Coast,50s,F,"Linked to a group trip to New York. LA to Auckland on 17 March – Flight NZ5, Auckland to Wellington on 19 March – Flight NZ409",2020-03-24
-126,Capital & Coast,60s,M,"Linked to a group trip to New York. LA to Auckland on 17 March – Flight NZ5, Auckland to Wellington on 19 March – Flight NZ409",2020-03-24
-125,Capital & Coast,60s,F,"Linked to a group trip to New York. Travelled from USA to New Zealand, arrived on 19 March, flight details to come",2020-03-24
-124,Capital & Coast,50s,M,"Linked to a group’s trip to New York. Travelled from USA to New Zealand, arrived on 19 March, flight details to come",2020-03-24
-123,Nelson-Marlborough,80s,F,Details to come,2020-03-24
-122,Auckland,20s,M,Details to come,2020-03-24
-121,Southern,30s,M,"Dubai to Auckland, arrived on 19 March – flight EK447, Auckland to Dunedin on 19 March – flight JQ285",2020-03-24
-120,Southern,60s,M,"London to LA on 14 March, then LA to Auckland - flight NZ5, Auckland to Dunedin on 16 March – flight NZ671",2020-03-24
-119,Waikato,50s,M,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-24
-118,Auckland,Teen,F,Details to come,2020-03-24
-117,Auckland,30s,F,"Arrived in Auckland on 18 March, flight details to come",2020-03-24
-116,Auckland,20s,F,"Arrived in Auckland on 20 March, flight details to come",2020-03-24
-115,Counties Manukau,30s,F,Details to come,2020-03-24
-114,Auckland,Teens,F,Details to come,2020-03-24
-113,Auckland,40s,M,"Arrived in Auckland 18 March, flight details to come",2020-03-24
-112,Counties Manukau,30s,F,Details to come,2020-03-24
-111,Waikato,60s,F,Dubai to Auckland on 16 March – flight EK0448,2020-03-24
-110,Canterbury,60s,M,Linked to a confirmed case,2020-03-24
-109,Canterbury,60s,F,Linked to a confirmed case,2020-03-24
-108,Southern,Teens,M,"Dubai to Auckland on 18 March – flight EK448, Auckland to Queenstown on 19 March – flight EK7563",2020-03-24
-107,Southern,30s,F,No international travel history – exposed at World Herefords Conference in Queenstown,2020-03-24
-106,Southern,50s,F,No international travel history – exposed at World Hereford Conference in Queenstown,2020-03-24
-105,Southern,20s,M,"Departed Switzerland 16 March, flew via Abu Dhabi to New Zealand – flight EY0052",2020-03-24
-104,Auckland,20s,M,Details to come,2020-03-24
-103,Counties Manukau,40s,M,"USA to Auckland, arrived 18 March, flight details to come",2020-03-24
-102,Auckland,50s,M,"USA to Auckland, arrived 8 March, flight details to come",2020-03-23
-101,Hutt Valley,50s,F,Linked to a confirmed case,2020-03-23
-100,Counties Manukau,Teen,F,Details to come,2020-03-23
-99,Nelson-Marlborough,50s,F,Linked to a confirmed case,2020-03-23
-98,Capital & Coast,60s,F,Linked to a confirmed case,2020-03-23
-97,Capital & Coast,20s,F,Linked to a confirmed case,2020-03-23
-96,Capital & Coast,40s,M,Details to come,2020-03-23
-95,Waitemata,40s,F,Exposed to two people in household with history of international travel and symptoms,2020-03-23
-94,Waitemata,20s,F,Dubai to Auckland on 19 March – flight EK448,2020-03-23
-93,Waitemata,40s,F,Details to come,2020-03-23
-92,Auckland,20s,M,Doha to Auckland on 22 March – flight QR920,2020-03-23
-91,Auckland,40s,F,LA to New Zealand on 15 March – flight NZ1,2020-03-23
-90,Auckland,50s,M,LA to New Zealand on 15 March – flight NZ1,2020-03-23
-89,Nelson-Marlborough,70s,M,Linked to a confirmed case,2020-03-23
-88,Nelson-Marlborough,70s,F,Details to come,2020-03-23
-87,Canterbury,20s,M,Details to come,2020-03-23
-86,Capital & Coast,60s,M,"London to Sydney on 13 March – flight QF2, Sydney to Wellington on 15 March – flight QF161",2020-03-23
-85,Auckland,Child,M,Linked to a confirmed case,2020-03-23
-84,Auckland,50s,M,Doha to Auckland on 18 March – flight QR920,2020-03-23
-83,Auckland,50s,F,Doha to Auckland on 18 March – flight QR920,2020-03-23
-82,Auckland,60s,F,Linked to two confirmed cases,2020-03-23
-81,Auckland,60s,M,Dubai to Auckland on 18 March – flight EK448,2020-03-23
-80,Nelson-Marlborough,50s,M,"Sydney to Auckland on 18 March – flight QF143, Auckland to Blenheim on 18 March – flight NZ8205",2020-03-23
-79,Nelson-Marlborough,20s,M,International travel – flight details to come,2020-03-23
-78,MidCentral,40s,F,Sydney to Wellington on 19 March – flight NZ842,2020-03-23
-77,Auckland,20s,F,Kuala Lumpur to Auckland on 19 March – flight MH0133,2020-03-23
-76,Auckland,60s,M,Hong Kong to Auckland on 13 March – flight CX2191,2020-03-23
-75,Waikato,70s,M,Linked to a confirmed case,2020-03-23
-74,Auckland,20s,M,"Sydney to Auckland, arriving 18 March – flight QF143",2020-03-23
-73,Auckland,Teen,M,Linked to a confirmed case,2020-03-23
-72,Canterbury,20s,F,Singapore to Christchurch on 18 March – flight SQ297,2020-03-23
-71,Auckland,30s,M,LA to Auckland on 18 March – flight NZ05,2020-03-23
-70,Auckland,50s,F,Community transmission,2020-03-23
-69,Auckland,40s,M,Dubai to Auckland on 15 March – flight EK448,2020-03-23
-68,Southern,20s,F,"San Francisco to Auckland on 17 March – flight NZ07, Auckland to Dunedin on 19 March – flight JQ285",2020-03-23
-67,Auckland,20s,F,Wellington to Auckland on 15 March – flight JQ256,2020-03-23
-66,Auckland,50s,F,Dubai to Auckland on 15 March – flight EK448,2020-03-22
-65,Northland,40s,F,Melbourne to Auckland on Sunday 15 March – flight JQ217,2020-03-22
-64,Canterbury,50s,F,"San Francisco to Auckland on Monday 16 March – flight NZ7
-			Auckland to Christchurch on Tuesday 17 March – flight NZ523",2020-03-22
-63,Taranaki,20s,M,"Dubai to Auckland on Tuesday 17 March – flight EK448
-			Auckland to New Plymouth on 18 March – flight NZ8041",2020-03-22
-62,Taranaki,50s,M,"Bangkok to Auckland on Sunday 15 March – flight TG0491
-			Auckland to New Plymouth on 16 March – flight NZ8041",2020-03-22
-61,Auckland,40s,F,"Africa via Dubai to Auckland, arrived on 10 March – flight details to come",2020-03-22
-60,Auckland,20s,M,Dubai to Auckland on Monday 16 March – flight EK448,2020-03-22
-59,Auckland,60s,F,No international travel history – exposed at World Hereford Conference in Queenstown.,2020-03-22
-58,Auckland,60s,M,No international travel history – exposed at World Herefords Conference in Queenstown Domestic travel history: Dunedin to Auckland on Sunday 15 March – flight NZ674,2020-03-22
-57,Waikato,60s,F,"Travel history to Ireland, Dubai and Australia – details to come",2020-03-22
-56,Bay of Plenty,30s,M,Los Angeles to Auckland on 17 March – flight NZ5,2020-03-22
-55,Waikato,60s,M,Honolulu to Auckland on 14 March – flight HA445 (arrived 15 March),2020-03-22
-54,Waikato,40s,F,Contact with a confirmed case,2020-03-22
-53,Southern,40s,M,"LA to Auckland on 14 March – flight NZ1
-			Auckland to Queenstown on 14 March – flight NZ615",2020-03-22
-52,Auckland,50s,F,Contact with probable case,2020-03-21
-51,Nelson-Marlborough,20s,F,"Travel related, however international flights outside of infectious period. 
-			Domestic flights: Auckland to Nelson on 16 March – flight 5065",2020-03-21
-50,Nelson-Marlborough,60s,F,Contact with traveller. Further investigations continue.,2020-03-21
-49,MidCentral,20s,F,"Doha to Auckland on 14 March – flight QR0920
-			Auckland to Palmerston North on 16 March – flight NZ5107",2020-03-21
-48,MidCentral,40s,M,"No international travel history – exposed at World Herefords Conference in Queenstown. Queenstown to Christchurch on 13 March – flight NZ642
-			Christchurch to Palmerston North on 13 March – flight NZ5181",2020-03-21
-47,Bay of Plenty,50s,M,Dubai to Auckland on 10 March – flight EK0448,2020-03-21
-46,Auckland,70s,M,Under investigation. Took internal flight when symptomatic. Dunedin to Auckland on 16 March – flight NZ674,2020-03-21
-45,Capital & Coast,30s,F,"Dubai to Auckland on 12 March – flight EK44
-			Auckland to Wellington on 12 March – flight NZ433",2020-03-21
-44,Capital & Coast,50s,M,"Travel related, however international flights outside of infectious period. 
-			Domestic flights:
-			Auckland to Wellington on 8 March – flight NZ449
-			Wellington to Hamilton on 12 March – flight NZ5810
-			Hamilton to Wellington on 13 March – flight NZ5823",2020-03-21
-43,Capital & Coast,50s,M,Sydney to Wellington on 14 March – flight QF161,2020-03-21
-42,Waikato,60s,F,Singapore to Auckland on 13 March – flight SQ0285,2020-03-21
-41,Auckland,60s,M,Cruise ship travel. Domestic flights – Dunedin to Auckland on 15 March – flight NZ670,2020-03-21
-40,Hutt Valley,50s,M,Sydney to Wellington on 14 March – flight EK0412,2020-03-21
-39,Southern,20s,Male,"LA to Auckland on Wednesday 18 March – flight NZ5, Auckland to Queenstown on Wednesday 18 March – flight NZ615",2020-03-20
-38,Wairarapa,30s,Male,Community transmission,2020-03-20
-37,Waitemata,40s,Female,London to Doha to Auckland (on Sunday 15 March) - flight details to come.,2020-03-20
-36,Counties Manukau,40s,Male,Los Angeles to Auckland - flight details to come.,2020-03-20
-35,Counties Manukau,30s,Female,Los Angeles to Auckland - flight details to come.,2020-03-20
-34,Waikato,60s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-20
-33,Waikato,70s,Female,Dubai to Auckland on 16 March – flight EK0450,2020-03-20
-32,Hawkes Bay,30s,Male,Doha to Auckland on 16 March – flight QR920 Auckland to Napier on 17 March – flight NZ5021,2020-03-20
-31,Capital & Coast,40s,Male,Melbourne to Wellington on 14 March – flight SQ247,2020-03-20
-30,Canterbury,50s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Christchurch on 15 March – flight NZ535",2020-03-20
-29,Auckland,40s,Male,Singapore to Auckland on 11 March,2020-03-20
-28,Southern DHB,60s,Male,Sydney to Christchurch on 13 March – flight EK402,2020-03-19
-27,Southern DHB,30s,Female,"London to Auckland on 17 March – flight NZ1
-			Auckland to Christchurch on 17 March – flight NZ525 Christchurch to Dunedin on 17 March – flight NZ5749",2020-03-19
-26,Auckland,40s,Male,Melbourne to Auckland on 15 March – flight QF153,2020-03-19
-25,Auckland,60s,Male,Los Angeles to Auckland on 13 March – flight NZ05,2020-03-19
-24,Waikato,50s,Male,Singapore to Auckland on 13 March – flight SQ285,2020-03-19
-23,Northland,20s,Male,Sydney to Auckland on 16 March – flight VA0141,2020-03-19
-22,Taranaki,40s,Male,"Vancouver to Auckland, arrived on 15 March – flight NZ23, Auckland to New Plymouth on 15 March – flight NZ8035",2020-03-19
-21,Taranaki,40s,Female,"Dubai to Auckland, arrived on 9 March – flight EK448,  Auckland to New Plymouth on 9 March – flight NZ8041",2020-03-19
-20,Waikato,70s,Male,Singapore to Auckland on 15 March – flight SQ285,2020-03-18
-19,Waikato,20s,Female,"Sydney to Auckland, arrived on 8 March – flight NZ112",2020-03-18
-18,Canterbury,40s,Female,"Singapore to Christchurch, arrived on 16 March – flight SQ297",2020-03-18
-17,Southern,40s,Male,"Sydney to Auckland, arrived 10 March – flight NZ102",2020-03-18
-16,Waitemata,60s,Male,"Canada to New Zealand, arrived on 12 March – flight details to come",2020-03-18
-15,Auckland,60s,Male,"San Francisco to Auckland, arrived on 13 March – flight NZ7",2020-03-18
-14,Waitemata,40s,Female,"International travel – arrived 8 March, flight details to come",2020-03-18
-13,Auckland,50s,Male,"Dubai to Auckland, arrived on 14 March – flight EK448",2020-03-18
-12,Southern,Teens,Male,Related to case 11,2020-03-17
-11,Southern,40s,Male,"Singapore to Auckland on 7 March – flight NZ283, Auckland to Dunedin on 8 March – flight NZ675",2020-03-17
-10,Capital & Coast,70s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Wellington on 14 March – flight NZ419",2020-03-17
-9,Capital & Coast,30s,Male,"Los Angeles to Auckland on 14 March – flight AA83
-			Auckland to Wellington on 14 March – flight NZ419",2020-03-17
-8,Capital & Coast,60s,Male,"Brisbane to Wellington, arrived on 14 March – flight NZ828",2020-03-15
-7,Southern,30s,Female,"Doha to Auckland on 10 March – flight QR920, Auckland to Christchurch on 10 March – flight JQ225",2020-03-15
-6,Auckland,60s,Male,Houston to Auckland on 6 March – flight NZ029,2020-03-14
-5,Auckland,40s,Female,Doha to Auckland on 23 February – flight QR0920,2020-03-07
-4,Waitemata,40s,Male,Singapore to Auckland on 25 February – flight NZ283,2020-03-06
-3,Counties Manukau,40s,Male,"Doha to Auckland, arrived on 23 February – flight QR0920",2020-03-05
-2,Waitemata,30s,Female,Singapore to Auckland on 25 February – flight NZ283,2020-03-04
-1,Auckland,60s,Female,"Iran to Bali to Auckland, arrived on 26 February – flight EK450",2020-02-28
+Reported,Sex,Age,DHB,International travel,Last country before return,Arrival date,Flight departure date,Flight number,Origin,Status
+2020-02-26T00:00:00Z,Female,60 to 69,Auckland,Yes,Indonesia,2020-02-26T00:00:00Z,2020-02-25T00:00:00Z,EK450,Overseas,Confirmed
+2020-02-28T00:00:00Z,Male,40 to 49,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-02-28T00:00:00Z,Female,40 to 49,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-02T00:00:00Z,Female,30 to 39,Waitemata,Yes,Italy,2020-02-26T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-04T00:00:00Z,Male,40 to 49,Waitemata,Yes,Singapore,2020-02-26T00:00:00Z,2020-02-25T00:00:00Z,NZ283,Overseas,Confirmed
+2020-03-04T00:00:00Z,Male,40 to 49,Counties Manukau,Yes,Iran,2020-02-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-05T00:00:00Z,Female,70+,Waitemata,Yes,United States of America,2020-02-25T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-05T00:00:00Z,Male,70+,Counties Manukau,Yes,Qatar,2020-02-23T00:00:00Z,2020-02-22T00:00:00Z,QR0920,Overseas,Probable
+2020-03-06T00:00:00Z,Female,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-12T00:00:00Z,Male,60 to 69,Counties Manukau,Yes,United States of America,2020-03-06T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-13T00:00:00Z,Female,30 to 39,Southern,Yes,New Zealand,2020-03-10T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-14T00:00:00Z,Male,60 to 69,Capital and Coast,Yes,Australia,2020-03-13T00:00:00Z,2020-03-13T00:00:00Z,NZ838,Overseas,Confirmed
+2020-03-15T00:00:00Z,Female,40 to 49,Waitemata,Yes,Portugal,2020-03-08T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-16T00:00:00Z,Male,60 to 69,Auckland,Yes,United States of America,2020-03-13T00:00:00Z,2020-03-10T00:00:00Z,NZ7,Overseas,Confirmed
+2020-03-16T00:00:00Z,Female,20 to 29,Waikato,Yes,Australia,2020-03-08T00:00:00Z,2020-03-08T00:00:00Z,NZ112,Overseas,Confirmed
+2020-03-16T00:00:00Z,Male,70+,Waikato,Yes,Singapore,NA,NA,NA,Overseas,Confirmed
+2020-03-16T00:00:00Z,Male,40 to 49,Taranaki,Yes,New Zealand,2020-03-15T00:00:00Z,2020-03-15T00:00:00Z,NZ8035,Overseas,Confirmed
+2020-03-16T00:00:00Z,Female,40 to 49,Taranaki,Yes,Egypt,2020-03-09T00:00:00Z,2020-03-09T00:00:00Z,NZ8041,Overseas,Confirmed
+2020-03-16T00:00:00Z,Male,30 to 39,Capital and Coast,Yes,United States of America,2020-03-14T00:00:00Z,2020-03-14T00:00:00Z,AA83,Overseas,Confirmed
+2020-03-16T00:00:00Z,Male,70+,Capital and Coast,Yes,United States of America,2020-03-14T00:00:00Z,2020-03-14T00:00:00Z,AA83,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,20 to 29,Northland,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,60 to 69,Waitemata,Yes,United States of America,2020-03-13T00:00:00Z,2020-03-11T00:00:00Z,UA559,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,60 to 69,Waitemata,Yes,Canada,2020-03-12T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,40 to 49,Auckland,Yes,Singapore,2020-03-15T00:00:00Z,2020-03-15T00:00:00Z,QF13,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,50 to 59,Auckland,Yes,United Kingdom,2020-03-15T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Female,30 to 39,Counties Manukau,Yes,United States of America,2020-03-13T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,50 to 59,Lakes,Yes,Singapore,2020-03-13T00:00:00Z,2020-03-13T00:00:00Z,SQ285,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,40 to 49,Capital and Coast,Yes,United Kingdom,2020-03-14T00:00:00Z,2020-03-13T00:00:00Z,SQ247,Overseas,Confirmed
+2020-03-17T00:00:00Z,Female,40 to 49,Canterbury,Yes,United Kingdom,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,40 to 49,Southern,Yes,Germany,2020-03-08T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-17T00:00:00Z,Male,15 to 19,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-17T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-18T00:00:00Z,Female,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-18T00:00:00Z,Male,70+,Taranaki,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-18T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United Arab Emirates,2020-03-14T00:00:00Z,2020-03-14T00:00:00Z,QF161,Overseas,Confirmed
+2020-03-18T00:00:00Z,Male,50 to 59,Canterbury,Yes,United States of America,2020-03-14T00:00:00Z,2020-03-15T00:00:00Z,Air NZ 535,Overseas,Confirmed
+2020-03-18T00:00:00Z,Male,60 to 69,Southern,Yes,Australia,2020-03-13T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-18T00:00:00Z,Male,40 to 49,Southern,Yes,Australia,2020-03-10T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,40 to 49,Waitemata,Yes,Qatar,2020-03-15T00:00:00Z,2020-03-14T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,40 to 49,Auckland,Yes,Singapore,NA,NA,NA,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-14T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-19T00:00:00Z,Female,70+,Waikato,Yes,France,2020-03-17T00:00:00Z,2020-03-16T00:00:00Z,EK0450,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,60 to 69,Waikato,Yes,France,2020-03-17T00:00:00Z,2020-03-16T00:00:00Z,EK0450,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,30 to 39,Hawke's Bay,Yes,Qatar,2020-03-17T00:00:00Z,2020-03-16T00:00:00Z,QR0920,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,20 to 29,MidCentral,Yes,Qatar,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ5107,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,30 to 39,MidCentral,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-19T00:00:00Z,Male,40 to 49,MidCentral,No,NA,NA,2020-03-13T00:00:00Z,NZ5180,In New Zealand,Confirmed
+2020-03-19T00:00:00Z,Male,30 to 39,Wairarapa,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-19T00:00:00Z,Female,30 to 39,Capital and Coast,Yes,United Kingdom,2020-03-13T00:00:00Z,NA,NZ443,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,60 to 69,Capital and Coast,Yes,United Kingdom,2020-03-15T00:00:00Z,2020-03-15T00:00:00Z,QF161,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,50 to 59,Hutt Valley,Yes,Australia,2020-03-14T00:00:00Z,2020-03-14T00:00:00Z,EK5047,Overseas,Confirmed
+2020-03-19T00:00:00Z,Male,50 to 59,Hutt Valley,Yes,United States of America,2020-03-05T00:00:00Z,2020-03-13T00:00:00Z,NZ5823,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,30 to 39,Southern,Yes,England,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-19T00:00:00Z,Female,50 to 59,Auckland,Yes,United Kingdom,2020-03-17T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-19T00:00:00Z,NA,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-19T00:00:00Z,Male,70+,Capital and Coast,Yes,Australia,NA,NA,NA,Overseas,Probable
+2020-03-20T00:00:00Z,Male,70+,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-20T00:00:00Z,Female,30 to 39,Waitemata,Yes,United States of America,2020-03-14T00:00:00Z,2020-03-13T00:00:00Z,AA83,Overseas,Confirmed
+2020-03-20T00:00:00Z,Male,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-20T00:00:00Z,Female,60 to 69,Waikato,Yes,Singapore,2020-03-15T00:00:00Z,2020-03-14T00:00:00Z,SQ285,Overseas,Confirmed
+2020-03-20T00:00:00Z,Male,50 to 59,Lakes,Yes,United Arab Emirates,2020-03-12T00:00:00Z,2020-03-10T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-20T00:00:00Z,Female,60 to 69,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-20T00:00:00Z,Female,20 to 29,Nelson Marlborough,Yes,United States of America,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ5065,Overseas,Confirmed
+2020-03-20T00:00:00Z,Female,50 to 59,Canterbury,Yes,United States of America,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ523,Overseas,Confirmed
+2020-03-20T00:00:00Z,Male,20 to 29,Canterbury,Yes,United Kingdom,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,SQ297,Overseas,Confirmed
+2020-03-20T00:00:00Z,Male,20 to 29,Southern,Yes,Switzerland,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-20T00:00:00Z,Male,40 to 49,Southern,Yes,United Kingdom,NA,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,60 to 69,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,50 to 59,Auckland,Yes,United Kingdom,2020-03-08T00:00:00Z,2020-03-06T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,20 to 29,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-21T00:00:00Z,Male,20 to 29,Auckland,Yes,Qatar,2020-03-17T00:00:00Z,2020-03-15T00:00:00Z,EK52,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,15 to 19,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-21T00:00:00Z,Female,40 to 49,Counties Manukau,Yes,Zimbabwe,2020-03-10T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Waikato,Yes,United States of America,2020-03-15T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Female,60 to 69,Waikato,Yes,Middle East,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,30 to 39,Bay of Plenty,Yes,United States of America,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,20 to 29,Taranaki,Yes,United Arab Emirates,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ 8041,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,50 to 59,Taranaki,Yes,Thailand,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ8041,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,40 to 49,MidCentral,Yes,Australia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ842,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,20 to 29,Wairarapa,Yes,France,2020-03-12T00:00:00Z,2020-03-12T00:00:00Z,NZ429,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,30 to 39,Wairarapa,Yes,United Kingdom,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ411,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Nelson Marlborough,Yes,Australia,2020-03-08T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-21T00:00:00Z,Male,30 to 39,Nelson Marlborough,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-21T00:00:00Z,Male,20 to 29,Canterbury,Yes,Switzerland,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,EY4689,Overseas,Confirmed
+2020-03-21T00:00:00Z,Female,60 to 69,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-21T00:00:00Z,Male,60 to 69,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,40 to 49,Northland,Yes,Australia,2020-03-15T00:00:00Z,2020-03-15T00:00:00Z,JQZ217,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,40 to 49,Waitemata,Yes,United States of America,2020-03-16T00:00:00Z,2020-03-14T00:00:00Z,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,20 to 29,Waitemata,Yes,United States of America,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,QF143,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,30 to 39,Waitemata,Yes,NA,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Waitemata,Yes,Qatar,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,40 to 49,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Male,60 to 69,Auckland,Yes,Qatar,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,30 to 39,Auckland,Yes,United Kingdom,NA,2020-03-19T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,20 to 29,Auckland,Yes,Qatar,2020-03-22T00:00:00Z,2020-03-21T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,50 to 59,Auckland,Yes,United States of America,2020-03-15T00:00:00Z,2020-03-13T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-22T00:00:00Z,NA,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,40 to 49,Auckland,Yes,United States of America,2020-03-15T00:00:00Z,2020-03-15T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,60 to 69,Auckland,Yes,India,2020-03-13T00:00:00Z,2020-03-13T00:00:00Z,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,40 to 49,Counties Manukau,Yes,Belgium,2020-03-16T00:00:00Z,2020-03-15T00:00:00Z,EK448 seat 51F,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,40 to 49,Counties Manukau,Yes,United States of America,2020-03-18T00:00:00Z,2020-03-16T00:00:00Z,AA3,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,15 to 19,Counties Manukau,Yes,United Arab Emirates,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Counties Manukau,Yes,Malaysia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,MH0133,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,50 to 59,Counties Manukau,Yes,Spain,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,50 to 59,Counties Manukau,Yes,Qatar,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,10 to 14,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,50 to 59,Waikato,Yes,United Arab Emirates,2020-03-16T00:00:00Z,2020-03-15T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,70+,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,JQ253,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,40 to 49,Capital and Coast,Yes,United States of America,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ 421,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,50 to 59,Hutt Valley,No,NA,NA,2020-03-08T00:00:00Z,NZ449,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Male,50 to 59,Nelson Marlborough,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ8205,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,50 to 59,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Male,70+,Nelson Marlborough,Yes,Australia,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,NZ5071 (Seat 9B),Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,70+,Nelson Marlborough,Yes,Australia,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,NZ5071 (seat 9A),Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,20 to 29,Nelson Marlborough,Yes,Switzerland,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ8321,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,60 to 69,Canterbury,Yes,Egypt,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Canterbury,Yes,United States of America,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,NZ527,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Canterbury,Yes,Singapore,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,SQ297,Overseas,Confirmed
+2020-03-22T00:00:00Z,Male,60 to 69,West Coast,No,NA,NA,2020-03-17T00:00:00Z,JQ27,In New Zealand,Confirmed
+2020-03-22T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-22T00:00:00Z,Female,20 to 29,Southern,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NA,Overseas,Confirmed
+2020-03-22T00:00:00Z,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-22T00:00:00Z,Male,50 to 59,Waikato,Yes,United Arab Emirates,2020-03-16T00:00:00Z,2020-03-15T00:00:00Z,BEKA76,Overseas,Probable
+2020-03-22T00:00:00Z,Male,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-22T00:00:00Z,Female,40 to 49,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-22T00:00:00Z,Female,15 to 19,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-23T00:00:00Z,Female,60 to 69,Waitemata,Yes,Australia,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,30 to 39,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-23T00:00:00Z,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Female,20 to 29,Auckland,Yes,Malaysia,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,20 to 29,Auckland,Yes,Singapore,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,15 to 19,Auckland,Yes,Australia,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,30 to 39,Auckland,Yes,United States of America,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,NZ05,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,20 to 29,Auckland,Yes,Canada,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,NZ23,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,30 to 39,Counties Manukau,Yes,Australia,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-23T00:00:00Z,Female,40 to 49,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-23T00:00:00Z,Female,60 to 69,Waikato,Yes,France,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Waikato,Yes,Thailand,2020-03-22T00:00:00Z,2020-03-21T00:00:00Z,Thai Bangkok-Akld,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,30 to 39,Lakes,Yes,United Arab Emirates,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,70+,MidCentral,Yes,United Arab Emirates,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ5115,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,70+,Capital and Coast,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,unknown,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,70+,Capital and Coast,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,unknown,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,60 to 69,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,50 to 59,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,60 to 69,Capital and Coast,Yes,New Zealand,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ 413,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ 413,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,30 to 39,Capital and Coast,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,40 to 49,Hutt Valley,Yes,Australia,2020-03-13T00:00:00Z,2020-03-13T00:00:00Z,VA171,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,70+,Nelson Marlborough,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-23T00:00:00Z,Male,30 to 39,Nelson Marlborough,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ8205 (s8C),Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Nelson Marlborough,Yes,Australia,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Canterbury,Yes,Singapore,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,SQ297,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,20 to 29,Canterbury,Yes,United Kingdom,NA,2020-03-11T00:00:00Z,Emirates-CHCH,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Male,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Male,20 to 29,South Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Male,60 to 69,South Canterbury,Yes,England,NA,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Female,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Male,15 to 19,Southern,Yes,England,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-23T00:00:00Z,Male,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-23T00:00:00Z,Female,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-23T00:00:00Z,Male,15 to 19,Hutt Valley,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-24T00:00:00Z,Female,50 to 59,Northland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-24T00:00:00Z,Male,60 to 69,Waitemata,Yes,Argentina,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,40 to 49,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-24T00:00:00Z,Female,15 to 19,Waitemata,Yes,United States of America,2020-03-18T00:00:00Z,NA,NZ29,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,40 to 49,Waitemata,Yes,United States of America,2020-03-21T00:00:00Z,2020-03-19T00:00:00Z,AA83,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,50 to 59,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Waitemata,Yes,New Zealand,2020-03-23T00:00:00Z,2020-03-21T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,20 to 29,Waitemata,Yes,Qatar,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-17T00:00:00Z,NZ8,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Auckland,Yes,United States of America,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Auckland,Yes,United Arab Emirates,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,50 to 59,Auckland,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,AA83,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Auckland,Yes,United States of America,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Auckland,Yes,Scotland,2020-03-22T00:00:00Z,2020-03-21T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,20 to 29,Counties Manukau,Yes,Canada,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Counties Manukau,Yes,United Arab Emirates,2020-03-17T00:00:00Z,2020-03-16T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Waikato,Yes,Indonesia,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,50 to 59,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-24T00:00:00Z,Male,20 to 29,Lakes,Yes,NA,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Bay of Plenty,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,70+,Hawke's Bay,Yes,Spain,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,70+,Hawke's Bay,Yes,Spain,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,MidCentral,Yes,Australia,2020-03-06T00:00:00Z,2020-03-14T00:00:00Z,JQ278,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,50 to 59,Wairarapa,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Wairarapa,Yes,Australia,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,QF161,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Capital and Coast,Yes,United Arab Emirates,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,50 to 59,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-17T00:00:00Z,NZ5,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,60 to 69,Capital and Coast,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ0407,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ0407,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Capital and Coast,Yes,Australia,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Male,20 to 29,Capital and Coast,Yes,Australia,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,QF161,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,50 to 59,Capital and Coast,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ0241,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,40 to 49,Capital and Coast,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,WL0241,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,70+,Nelson Marlborough,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-24T00:00:00Z,Male,60 to 69,Nelson Marlborough,Yes,United States of America,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ5065,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Canterbury,Yes,France,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,QF1033,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,50 to 59,Canterbury,Yes,Viet Nam,2020-03-13T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Canterbury,Yes,United Kingdom,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,EK0412,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,50 to 59,Canterbury,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ7,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Canterbury,Yes,Ireland,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,JQ233,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Canterbury,Yes,United Kingdom,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,EK412,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Male,60 to 69,Southern,Yes,United Kingdom,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,30 to 39,Southern,Yes,Austria,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,JQ285,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Southern,Yes,Switzerland,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,AKL-DND NZ671,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Southern,Yes,United Kingdom,2020-03-23T00:00:00Z,2020-03-21T00:00:00Z,EK006,Overseas,Confirmed
+2020-03-24T00:00:00Z,Male,20 to 29,Southern,Yes,Australia,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-24T00:00:00Z,Female,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-24T00:00:00Z,Female,20 to 29,Bay of Plenty,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-24T00:00:00Z,Female,50 to 59,Nelson Marlborough,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-25T00:00:00Z,Female,20 to 29,Northland,Yes,United Arab Emirates,NA,2020-03-19T00:00:00Z,EK488,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Northland,Yes,United States of America,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,NZ001,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,70+,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-17T00:00:00Z,NZ5,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,40 to 49,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Waitemata,Yes,Argentina,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Waitemata,Yes,Switzerland,2020-03-17T00:00:00Z,2020-03-16T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Waitemata,Yes,Indonesia,2020-03-15T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Waitemata,Yes,United States of America,2020-03-22T00:00:00Z,2020-03-20T00:00:00Z,AirNZ29,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,70+,Waitemata,Yes,Australia,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,70+,Auckland,Yes,Argentina,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,LA801,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Auckland,Yes,United Kingdom,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Auckland,Yes,Singapore,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,15 to 19,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Auckland,Yes,United Kingdom,2020-03-15T00:00:00Z,2020-03-13T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-15T00:00:00Z,2020-03-13T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Auckland,Yes,United States of America,2020-03-17T00:00:00Z,2020-03-15T00:00:00Z,NZ29,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Auckland,Yes,United Arab Emirates,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,50 to 59,Auckland,Yes,United Kingdom,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Counties Manukau,Yes,Qatar,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,10 to 14,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,10 to 14,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,15 to 19,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,15 to 19,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Waikato,Yes,United Arab Emirates,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Waikato,Yes,United Arab Emirates,2020-03-15T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,50 to 59,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Male,40 to 49,Waikato,Yes,United Arab Emirates,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,15 to 19,Waikato,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Waikato,Yes,Philippines,2020-03-07T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,70+,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Waikato,Yes,Qatar,2020-03-13T00:00:00Z,2020-03-11T00:00:00Z,EL342,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Waikato,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Waikato,Unknown,NA,NA,2020-03-20T00:00:00Z,EK448,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,40 to 49,Waikato,Yes,NA,NA,2020-03-17T00:00:00Z,NZ5,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,40 to 49,Waikato,Yes,Singapore,2020-03-16T00:00:00Z,2020-03-15T00:00:00Z,SQ281,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Lakes,Yes,United Arab Emirates,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ8155,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Lakes,Yes,Switzerland,2020-03-24T00:00:00Z,NA,QR920,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Lakes,Yes,Singapore,2020-03-14T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,70+,Bay of Plenty,Yes,United States of America,2020-03-23T00:00:00Z,2020-03-20T00:00:00Z,NZ7,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Bay of Plenty,Yes,Australia,2020-03-17T00:00:00Z,NA,NZ102,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,50 to 59,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,60 to 69,Hawke's Bay,Yes,Cambodia,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ5019 (09A),Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,70+,Hawke's Bay,Yes,Cambodia,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,NZ5019 (09B),Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Taranaki,Yes,United Arab Emirates,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,NA,50 to 59,MidCentral,Yes,NA,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ5107,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Capital and Coast,Yes,United Arab Emirates,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,NZ433 AKL-WLG,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,Australia,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,EK5047,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Capital and Coast,Yes,New Zealand,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,NZ411,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Capital and Coast,Yes,United States of America,NA,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,40 to 49,Hutt Valley,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,30 to 39,Nelson Marlborough,Yes,Australia,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Nelson Marlborough,Yes,Hong Kong (Special Administrative Region),2020-03-05T00:00:00Z,2020-03-05T00:00:00Z,Cathay Pacific,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,40 to 49,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Canterbury,Yes,Australia,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,EK412,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,15 to 19,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25T00:00:00Z,Female,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Southern,Yes,United Arab Emirates,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ677,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Southern,Yes,Germany,2020-03-19T00:00:00Z,2020-03-21T00:00:00Z,NZ625,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,20 to 29,Southern,Yes,Germany,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Female,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Male,50 to 59,Southern,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-25T00:00:00Z,Male,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-25T00:00:00Z,Female,20 to 29,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-25T00:00:00Z,Female,20 to 29,Waikato,Yes,Australia,2020-03-01T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-25T00:00:00Z,Male,20 to 29,MidCentral,No,NA,NA,2020-03-25T00:00:00Z,NZ526,In New Zealand,Probable
+2020-03-25T00:00:00Z,Female,40 to 49,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-26T00:00:00Z,Female,20 to 29,Northland,Yes,Saudi Arabia,2020-03-24T00:00:00Z,NA,EK0448,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,40 to 49,Waitemata,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,QF143,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Waitemata,Yes,NA,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,40 to 49,Waitemata,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,Ak - Invercargill,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Waitemata,Yes,United States of America,2020-03-24T00:00:00Z,2020-03-22T00:00:00Z,NZ5,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,40 to 49,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Auckland,Yes,NA,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Auckland,Yes,NA,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Auckland,Yes,Ireland,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,70+,Auckland,Yes,United States of America,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,50 to 59,Counties Manukau,Yes,United States of America,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,60 to 69,Counties Manukau,Yes,United Arab Emirates,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,15 to 19,Waikato,Yes,Canada,2020-03-22T00:00:00Z,2020-03-20T00:00:00Z,NZ23,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,70+,Waikato,Yes,Philippines,2020-03-06T00:00:00Z,NA,PR218,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,60 to 69,Waikato,Yes,Qatar,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,QR920 seat 16A,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,70+,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,60 to 69,Waikato,Yes,United Arab Emirates,2020-03-16T00:00:00Z,2020-03-15T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Waikato,Yes,United States of America,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,40 to 49,Waikato,Yes,Thailand,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,TG491,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Waikato,Yes,NA,2020-03-22T00:00:00Z,2020-03-20T00:00:00Z,NZ 7,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Waikato,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,VA 145,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,60 to 69,Lakes,Yes,England,2020-03-25T00:00:00Z,2020-03-23T00:00:00Z,cx2190,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Bay of Plenty,Yes,England,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,EKO068,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Bay of Plenty,Yes,Greece,2020-03-18T00:00:00Z,2020-03-17T00:00:00Z,qr920,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Tairawhiti,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-18T00:00:00Z,NZ8161 5C,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Hawke's Bay,Yes,United States of America,2020-03-25T00:00:00Z,2020-03-25T00:00:00Z,NZ8161 (4A),Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,60 to 69,Hawke's Bay,Yes,Australia,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ5027,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Hawke's Bay,Yes,Australia,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,NZ5027,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,70+,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Taranaki,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,70+,Taranaki,Yes,Singapore,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,SQ285,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,New Zealand,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,40 to 49,Capital and Coast,Yes,Australia,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,QF161,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Hutt Valley,Yes,United Arab Emirates,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,NZ457,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,40 to 49,Hutt Valley,Yes,United Arab Emirates,2020-03-21T00:00:00Z,2020-03-20T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,50 to 59,Hutt Valley,Yes,Indonesia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Hutt Valley,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Canterbury,Yes,Australia,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,EK412,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Canterbury,Yes,United States of America,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,UA0917,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Canterbury,Yes,Canada,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ541 (3f),Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Female,30 to 39,Canterbury,Yes,Australia,2020-03-15T00:00:00Z,2020-03-14T00:00:00Z,QF139,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,1 to 4,Canterbury,Yes,Australia,2020-03-15T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,30 to 39,Canterbury,Yes,Japan,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,West Coast,Yes,Australia,2020-03-12T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,70+,West Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,20 to 29,Southern,Yes,NA,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,70+,Southern,Yes,Switzerland,2020-03-16T00:00:00Z,2020-03-16T00:00:00Z,JQ295,Overseas,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-26T00:00:00Z,Male,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-26T00:00:00Z,Female,60 to 69,Southern,Yes,Argentina,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,40 to 49,Southern,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,70+,Southern,Yes,United States of America,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,NZ619 seat18A,Overseas,Confirmed
+2020-03-26T00:00:00Z,Female,60 to 69,Northland,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,LAX,Overseas,Probable
+2020-03-26T00:00:00Z,Female,60 to 69,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-26T00:00:00Z,Female,60 to 69,Waitemata,Yes,Indonesia,2020-03-15T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-26T00:00:00Z,Female,5 to 9,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-26T00:00:00Z,Female,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-26T00:00:00Z,Female,30 to 39,Bay of Plenty,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-26T00:00:00Z,Female,15 to 19,Taranaki,Yes,United Kingdom,2020-03-22T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-26T00:00:00Z,Female,50 to 59,Capital and Coast,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ409,Overseas,Probable
+2020-03-26T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-26T00:00:00Z,Female,40 to 49,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-27T00:00:00Z,Male,20 to 29,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Male,30 to 39,Waitemata,Yes,NA,2020-03-06T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,70+,Auckland,Yes,Chile,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,LA801,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Auckland,Yes,Netherlands,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,40 to 49,Counties Manukau,Yes,United States of America,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,30 to 39,Counties Manukau,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,15 to 19,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,15 to 19,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,40 to 49,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,40 to 49,Waikato,Yes,Ireland,2020-03-21T00:00:00Z,NA,EK448,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Waikato,Yes,United Kingdom,2020-03-24T00:00:00Z,NA,EK010,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,70+,Bay of Plenty,No,NA,NA,2020-03-17T00:00:00Z,NZ674,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Bay of Plenty,Yes,United Arab Emirates,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,NZ8141,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Hawke's Bay,Yes,England,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,NZ5005,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,15 to 19,Taranaki,Yes,United Arab Emirates,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,30 to 39,Taranaki,Yes,United Kingdom,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Taranaki,Yes,United Arab Emirates,2020-03-22T00:00:00Z,2020-03-21T00:00:00Z,EK450,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Taranaki,Yes,NA,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,MidCentral,Yes,United States of America,2020-03-12T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,60 to 69,MidCentral,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Whanganui,Yes,United States of America,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,NZ6067,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Whanganui,Yes,United States of America,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,NZ6707,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Whanganui,Yes,United States of America,2020-03-23T00:00:00Z,2020-03-22T00:00:00Z,NZ6067,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Capital and Coast,Yes,United Kingdom,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,NZ425,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Capital and Coast,No,NA,NA,2020-03-23T00:00:00Z,NZ8876,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Capital and Coast,No,NA,NA,2020-03-23T00:00:00Z,NZ8876,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,60 to 69,Hutt Valley,Yes,Singapore,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,NZ441,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,60 to 69,Hutt Valley,Yes,Singapore,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,NZ441,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,30 to 39,Hutt Valley,Yes,United Kingdom,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,JQ253,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,60 to 69,Canterbury,Yes,Australia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,VA0097,Overseas,Confirmed
+2020-03-27T00:00:00Z,NA,40 to 49,Canterbury,Yes,United Kingdom,2020-03-22T00:00:00Z,2020-03-20T00:00:00Z,TG917-seat numb 67K,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,60 to 69,South Canterbury,Yes,United States of America,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ675,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,South Canterbury,Yes,NA,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,OA4326,Overseas,Confirmed
+2020-03-27T00:00:00Z,Female,1 to 4,South Canterbury,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,40 to 49,South Canterbury,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,70+,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Female,20 to 29,Southern,Yes,United Kingdom,2020-03-21T00:00:00Z,2020-03-20T00:00:00Z,EK5121,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,30 to 39,Southern,Yes,United States of America,2020-03-22T00:00:00Z,2020-03-23T00:00:00Z,NZ639,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-27T00:00:00Z,Male,50 to 59,Southern,Yes,NA,NA,NA,NA,Overseas,Confirmed
+2020-03-27T00:00:00Z,Male,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-03-27T00:00:00Z,Female,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-27T00:00:00Z,Female,30 to 39,Canterbury,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK412,Overseas,Probable
+2020-03-27T00:00:00Z,Male,30 to 39,Canterbury,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-18T00:00:00Z,EK412,Overseas,Probable
+2020-03-27T00:00:00Z,Female,40 to 49,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-28T00:00:00Z,Female,40 to 49,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Male,40 to 49,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Waitemata,Yes,United Arab Emirates,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Waitemata,Yes,United Arab Emirates,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,15 to 19,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Male,70+,Waitemata,Yes,NA,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,40 to 49,Waitemata,Yes,United States of America,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,10 to 14,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,10 to 14,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,15 to 19,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Male,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Auckland,Yes,Indonesia,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,EK450,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Male,60 to 69,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Auckland,Yes,Qatar,2020-03-17T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Auckland,Yes,United Arab Emirates,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,10 to 14,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Male,60 to 69,Auckland,Yes,Qatar,2020-03-22T00:00:00Z,2020-03-21T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Auckland,Yes,Qatar,2020-03-21T00:00:00Z,2020-03-20T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Male,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,10 to 14,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,60 to 69,Auckland,Yes,United States of America,2020-03-27T00:00:00Z,2020-03-25T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Counties Manukau,Yes,United Kingdom,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,1 to 4,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,70+,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Lakes,Yes,England,2020-03-17T00:00:00Z,2020-03-18T00:00:00Z,NZ8149,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,70+,Bay of Plenty,Yes,Northern America,2020-03-18T00:00:00Z,2020-03-16T00:00:00Z,NZ29,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Bay of Plenty,Yes,Australia,2020-03-26T00:00:00Z,2020-03-23T00:00:00Z,EK002,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,70+,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,United Arab Emirates,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,NZ429,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,Australia,2020-03-25T00:00:00Z,2020-03-25T00:00:00Z,NZ443,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Capital and Coast,Yes,United Arab Emirates,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ433,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,15 to 19,Capital and Coast,Yes,United Kingdom,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,NZ5374,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,30 to 39,Nelson Marlborough,Yes,United Arab Emirates,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,40 to 49,Canterbury,Yes,Australia,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,QF133,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Canterbury,Yes,Australia,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,QF133,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,30 to 39,Canterbury,Yes,France,2020-03-16T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Canterbury,Yes,United Kingdom,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,EK412 from Sydney,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,60 to 69,South Canterbury,Yes,United States of America,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,NZ675 seat 24 A & B,Overseas,Confirmed
+2020-03-28T00:00:00Z,Male,20 to 29,Southern,Yes,United Kingdom,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,EK412,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,30 to 39,Southern,Yes,United Kingdom,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ671,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-28T00:00:00Z,Male,40 to 49,Southern,Yes,France,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,NZ615,Overseas,Confirmed
+2020-03-28T00:00:00Z,Female,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-28T00:00:00Z,Male,20 to 29,Southern,NA,NA,NA,2020-03-16T00:00:00Z,NZ623,Unknown,Confirmed
+2020-03-28T00:00:00Z,Female,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-28T00:00:00Z,Female,<1,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-28T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-28T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-29T00:00:00Z,Female,20 to 29,Northland,Yes,Canada,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,GB615,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Northland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Waitemata,Yes,Chile,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,LA801,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,50 to 59,Waitemata,Yes,United States of America,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Waitemata,Yes,Qatar,2020-03-22T00:00:00Z,2020-03-20T00:00:00Z,QR920,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Waitemata,Yes,United States of America,NA,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,60 to 69,Waitemata,Yes,Qatar,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,50 to 59,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,15 to 19,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Waitemata,Yes,NA,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,15 to 19,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,50 to 59,Waitemata,Yes,United States of America,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,15 to 19,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,60 to 69,Auckland,Yes,Malaysia,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Auckland,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,QF141,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,10 to 14,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-25T00:00:00Z,2020-03-23T00:00:00Z,NZ29,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,50 to 59,Auckland,Yes,NA,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,50 to 59,Auckland,Yes,Canada,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Counties Manukau,Yes,Canada,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Counties Manukau,Yes,United Arab Emirates,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,30 to 39,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Waikato,Yes,Indonesia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,EK0450 - 28A,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,50 to 59,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,50 to 59,Waikato,Yes,Australia,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,Sydney to Auckland,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,60 to 69,Waikato,No,NA,NA,2020-03-23T00:00:00Z,NZ8872,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Female,30 to 39,MidCentral,Yes,NA,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,NZ5107,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,MidCentral,Yes,Australia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ842,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Capital and Coast,Yes,United Arab Emirates,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,NZ429,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,United Kingdom,2020-03-21T00:00:00Z,2020-03-20T00:00:00Z,NZ433,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,30 to 39,Capital and Coast,No,NA,NA,2020-03-23T00:00:00Z,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,70+,Capital and Coast,No,NA,NA,2020-03-25T00:00:00Z,NZ8872,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Capital and Coast,Yes,New Zealand,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,QF0171,Overseas,Confirmed
+2020-03-29T00:00:00Z,Male,30 to 39,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Nelson Marlborough,Yes,New Zealand,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,NZ5069,Overseas,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,70+,South Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Male,40 to 49,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-29T00:00:00Z,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,15 to 19,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-29T00:00:00Z,Female,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-03-29T00:00:00Z,Female,70+,Waitemata,Yes,Australia,2020-03-19T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-29T00:00:00Z,Male,15 to 19,Waitemata,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-29T00:00:00Z,Male,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-29T00:00:00Z,Male,30 to 39,MidCentral,Yes,Australia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ824,Overseas,Probable
+2020-03-29T00:00:00Z,Female,70+,South Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-30T00:00:00Z,Male,50 to 59,Northland,Yes,United States of America,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Female,40 to 49,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Female,70+,Waitemata,Yes,England,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Waitemata,Yes,NA,2020-03-20T00:00:00Z,NA,LA801,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Auckland,Yes,United States of America,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,15 to 19,Auckland,Yes,United Kingdom,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,40 to 49,Auckland,Yes,United States of America,2020-03-25T00:00:00Z,2020-03-23T00:00:00Z,NZ1,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Counties Manukau,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,NA,20 to 29,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,40 to 49,Counties Manukau,Yes,United States of America,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Female,15 to 19,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,70+,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,30 to 39,Lakes,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,30 to 39,Lakes,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,40 to 49,Bay of Plenty,No,NA,NA,2020-03-20T00:00:00Z,NZ627,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,40 to 49,Bay of Plenty,Yes,United Kingdom,2020-03-25T00:00:00Z,2020-03-23T00:00:00Z,QS151,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Bay of Plenty,Yes,Indonesia,2020-03-26T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,40 to 49,Bay of Plenty,Yes,United States of America,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,70+,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,70+,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,30 to 39,Hawke's Bay,No,NA,NA,2020-03-15T00:00:00Z,NZ5011,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Taranaki,Yes,United Kingdom,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Nelson Marlborough,Yes,Australia,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,NZ8857,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,30 to 39,Canterbury,Yes,United States of America,2020-03-21T00:00:00Z,2020-04-21T00:00:00Z,NZ527,Overseas,Confirmed
+2020-03-30T00:00:00Z,Male,30 to 39,South Canterbury,Yes,England,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,15 to 19,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Southern,Yes,United Arab Emirates,2020-03-21T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-30T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,60 to 69,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-30T00:00:00Z,Male,10 to 14,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,15 to 19,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-30T00:00:00Z,Male,20 to 29,Waitemata,Yes,NA,2020-03-20T00:00:00Z,NA,NA,Overseas,Probable
+2020-03-30T00:00:00Z,Male,20 to 29,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-03-30T00:00:00Z,Male,50 to 59,Counties Manukau,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-03-30T00:00:00Z,Male,1 to 4,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-30T00:00:00Z,Male,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-30T00:00:00Z,NA,10 to 14,Capital and Coast,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-30T00:00:00Z,Female,20 to 29,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Female,30 to 39,Northland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Waitemata,Yes,United Kingdom,2020-03-21T00:00:00Z,2020-03-20T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,70+,Waitemata,Yes,England,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,50 to 59,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,60 to 69,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,10 to 14,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Waitemata,Yes,Indonesia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,EK450,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,10 to 14,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Waitemata,Yes,United Arab Emirates,2020-03-22T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Auckland,Yes,United Arab Emirates,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Auckland,Yes,Australia,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,20 to 29,Counties Manukau,Yes,Canada,2020-03-26T00:00:00Z,2020-03-25T00:00:00Z,nz23,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Counties Manukau,Yes,Singapore,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,30 to 39,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Female,15 to 19,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,60 to 69,Waikato,Yes,United Kingdom,2020-03-20T00:00:00Z,2020-03-19T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Waikato,Yes,England,2020-03-23T00:00:00Z,2020-04-22T00:00:00Z,EK448,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,20 to 29,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,70+,Bay of Plenty,Yes,United States of America,2020-03-24T00:00:00Z,NA,Unknown,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,50 to 59,Bay of Plenty,Yes,United Kingdom,2020-03-24T00:00:00Z,2020-03-22T00:00:00Z,EK0448,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,70+,MidCentral,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,MidCentral,Yes,Qatar,2020-03-24T00:00:00Z,2020-04-24T00:00:00Z,NZ5119,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,60 to 69,MidCentral,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,50 to 59,MidCentral,Yes,Qatar,2020-03-24T00:00:00Z,2020-04-24T00:00:00Z,NZ5119,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Wairarapa,Yes,United Kingdom,2020-03-27T00:00:00Z,2020-03-25T00:00:00Z,QR008,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,10 to 14,Capital and Coast,No,NA,NA,2020-03-23T00:00:00Z,JS278,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,60 to 69,Capital and Coast,Yes,United States of America,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,NZ409,Overseas,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Hutt Valley,No,NA,NA,2020-03-25T00:00:00Z,NZ5386,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,20 to 29,Nelson Marlborough,Yes,Australia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,EK0412,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Nelson Marlborough,Yes,Australia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,EK0412,Overseas,Confirmed
+2020-03-31T00:00:00Z,Female,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Female,60 to 69,Southern,NA,NA,NA,2020-03-22T00:00:00Z,JQ293,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,70+,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-03-31T00:00:00Z,Male,50 to 59,Southern,NA,NA,NA,2020-03-20T00:00:00Z,NZ5717,Unknown,Confirmed
+2020-03-31T00:00:00Z,Female,20 to 29,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-31T00:00:00Z,Male,40 to 49,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-31T00:00:00Z,Female,10 to 14,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-31T00:00:00Z,Male,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Male,20 to 29,Auckland,NA,NA,NA,NA,NA,Unknown,Probable
+2020-03-31T00:00:00Z,Male,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Male,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Female,10 to 14,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-03-31T00:00:00Z,Female,1 to 4,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-04-01T00:00:00Z,Female,20 to 29,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,15 to 19,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,30 to 39,Waitemata,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Waitemata,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,30 to 39,Waitemata,Yes,United States of America,2020-03-19T00:00:00Z,2020-03-17T00:00:00Z,NZ5,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,40 to 49,Auckland,Yes,Canada,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,20 to 29,Auckland,Yes,NA,2020-03-25T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,Auckland,Yes,NA,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,70+,Auckland,Yes,NA,2020-03-24T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Auckland,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Auckland,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Counties Manukau,Yes,NA,2020-03-07T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,50 to 59,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Waikato,Yes,NA,2020-03-20T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,50 to 59,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Waikato,Unknown,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Male,70+,Bay of Plenty,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Bay of Plenty,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Bay of Plenty,Yes,United Kingdom,2020-03-27T00:00:00Z,2020-03-27T00:00:00Z,QR0920,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,Hawke's Bay,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Hawke's Bay,Yes,Canada,2020-03-25T00:00:00Z,2020-03-25T00:00:00Z,NZ5011,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,60 to 69,Hawke's Bay,Yes,Australia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,NZ104 (40 A&B),Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Hawke's Bay,Yes,Australia,2020-03-23T00:00:00Z,2020-03-23T00:00:00Z,NZ104 (40 A&B),Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,Taranaki,Yes,Singapore,2020-03-24T00:00:00Z,2020-03-23T00:00:00Z,SQ285,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,MidCentral,Yes,Indonesia,2020-03-19T00:00:00Z,2020-04-19T00:00:00Z,NZ8113,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,MidCentral,Yes,Fiji,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,20 to 29,Whanganui,Yes,Philippines,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,40 to 49,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Nelson Marlborough,Yes,Singapore,2020-03-18T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,NA,20 to 29,Nelson Marlborough,Yes,New Zealand,2020-03-19T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Female,10 to 14,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,20 to 29,Southern,Yes,Australia,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,30 to 39,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Southern,Yes,NA,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,50 to 59,Southern,Yes,Australia,2020-03-23T00:00:00Z,NA,NA,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,40 to 49,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,60 to 69,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Male,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Male,30 to 39,Southern,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-01T00:00:00Z,Female,20 to 29,Waitemata,Yes,NA,2020-03-21T00:00:00Z,NA,NA,Overseas,Probable
+2020-04-01T00:00:00Z,Male,60 to 69,Waitemata,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,70+,Auckland,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,10 to 14,Auckland,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,20 to 29,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,20 to 29,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,1 to 4,Waikato,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Male,20 to 29,Whanganui,Yes,Philippines,2020-03-19T00:00:00Z,NA,NA,Overseas,Probable
+2020-04-01T00:00:00Z,Male,30 to 39,Capital and Coast,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Female,30 to 39,Capital and Coast,NA,NA,NA,NA,NA,Unknown,Probable
+2020-04-01T00:00:00Z,Male,50 to 59,Nelson Marlborough,Yes,Singapore,2020-03-18T00:00:00Z,NA,NA,Overseas,Probable
+2020-04-01T00:00:00Z,Male,20 to 29,Southern,Yes,Australia,NA,NA,NA,Overseas,Probable
+2020-04-02T00:00:00Z,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-02T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-02T00:00:00Z,Female,20 to 29,Hutt Valley,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-02T00:00:00Z,Male,15 to 19,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-02T00:00:00Z,Female,50 to 59,Southern,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-02T00:00:00Z,Male,30 to 39,Waitemata,Unknown,NA,NA,NA,NA,Unknown,Probable
+2020-04-02T00:00:00Z,Male,20 to 29,Auckland,Yes,NA,2020-03-19T00:00:00Z,NA,NA,Overseas,Probable

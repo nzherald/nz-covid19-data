@@ -153,6 +153,15 @@ plan <- drake_plan(
       rename_all(str_to_lower) %>%
       mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland")),
 
+
+    write_cases_tidy_csv = bind_rows(confirmedCases, probableCases) %>%
+      arrange(Reported) %>%
+      write_csv(file_out(here("data/cases.csv"))),
+    write_cases_tidy_xlsx = bind_rows(confirmedCases, probableCases) %>%
+      arrange(Reported) %>%
+      writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
+
+
     nzTotals = allCases %>% views,
     ageTotals = allCases %>% split(.$age) %>% map(views) %>% unname(),
     sexTotals = allCases %>% split(.$sex) %>% map(views) %>% unname(),
@@ -243,10 +252,6 @@ plan <- drake_plan(
 #       html_table() %>%
 #       mutate(Date=rev(confirmedDates[confirmedDates < "2020-03-27"])),  # waiting until cases are updated
 
-#     write_cases_tidy_csv = casesTable %>%
-#       write_csv(file_out(here("data/cases.csv"))),
-#     write_cases_tidy_xlsx = casesTable %>%
-#       writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
 
 
 )
