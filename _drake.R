@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-01"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-02"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -11,7 +11,8 @@ probableDates <- tribble(
   "2020-03-29", 3,
   "2020-03-30", -1,
   "2020-03-31", 10,
-  "2020-04-01", 14
+  "2020-04-01", 14,
+  "2020-04-02", 13
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -38,7 +39,8 @@ confirmedDates <- tribble(
   "2020-03-29", 60,
   "2020-03-30", 76,
   "2020-03-31", 48,
-  "2020-04-01", 47
+  "2020-04-01", 47,
+  "2020-04-02", 76
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -53,7 +55,8 @@ recoveredDates <- tribble(
   "2020-03-29", 6,
   "2020-03-30", 7,
   "2020-03-31", 11,
-  "2020-04-01", 8
+  "2020-04-01", 8,
+  "2020-04-02", 10
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -68,7 +71,8 @@ hospitalisationDates <- tribble(
   "2020-03-29", 9, 28, 1,
   "2020-03-30", 12, 28, 2,
   "2020-03-31", 14, 30, 2,
-  "2020-04-01", 16, 32, 2
+  "2020-04-01", 16, 32, 2,
+  "2020-04-02", 13, 32, 2
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -76,13 +80,16 @@ hospitalisationDates <- tribble(
     "2020-03-29", 1, 1,
     "2020-03-30", 0, 1,
     "2020-03-31", 0, 1,
-    "2020-04-01", 0, 1
+    "2020-04-01", 0, 1,
+    "2020-04-02", 0, 1
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
   ~Date, ~Overseas, ~Contact, ~Overseas_And_Contact, ~Community,
   "2020-03-30", round(0.57*455), round(0.26*455), round(0.15*455), round(0.02*455),
-  "2020-03-31", round(0.53*648), round(0.29*648), round(0.17*648), round(0.01*648)
+  "2020-03-31", round(0.53*648), round(0.29*648), round(0.17*648), round(0.01*648),
+  "2020-04-01", round(0.51*708), round(0.3*708), round(0.18 * 708), round(0.01*708),
+  "2020-04-02", round(0.51*797), round(0.31*797), round(0.17*797), round(0.01*797)
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -123,10 +130,10 @@ list(
 
 plan <- drake_plan(
 
-    confirmedCases = readxl::read_excel(file_in(here::here("data/moh/covidcase_list_31_mar_2020_for_web_-_updated.xlsx")), skip=3) %>%
+    confirmedCases = readxl::read_excel(file_in(here::here("data/moh/covid-19_case_list_2_april_2020.xlsx")), skip=3) %>%
       mutate(Overseas=`International travel`=="Yes", Status="Confirmed"),
 
-    probableCases = readxl::read_excel(file_in(here::here("data/moh/covidcase_list_31_mar_2020_for_web_-_updated.xlsx")), skip=3, sheet=2) %>%
+    probableCases = readxl::read_excel(file_in(here::here("data/moh/covid-19_case_list_2_april_2020.xlsx")), skip=3, sheet=2) %>%
       mutate(Overseas=`International travel`=="Yes", Status="Probable"),
 
     allCases = bind_rows(confirmedCases, probableCases) %>%
