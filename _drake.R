@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-03-30"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-02"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -10,6 +10,9 @@ probableDates <- tribble(
   "2020-03-28", 5,
   "2020-03-29", 3,
   "2020-03-30", -1,
+  "2020-03-31", 10,
+  "2020-04-01", 14,
+  "2020-04-02", 13,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -35,6 +38,9 @@ confirmedDates <- tribble(
   "2020-03-28", 78,
   "2020-03-29", 60,
   "2020-03-30", 76,
+  "2020-03-31", 48,
+  "2020-04-01", 47,
+  "2020-04-02", 76,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -48,6 +54,9 @@ recoveredDates <- tribble(
   "2020-03-28", 13,
   "2020-03-29", 6,
   "2020-03-30", 7,
+  "2020-03-31", 11,
+  "2020-04-01", 9,
+  "2020-04-02", 9,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -61,17 +70,26 @@ hospitalisationDates <- tribble(
   "2020-03-28", 12, 22, 2,
   "2020-03-29", 9, 28, 1,
   "2020-03-30", 12, 28, 2,
+  "2020-03-31", 14, NA, 2,
+  "2020-04-01", 14, NA, 2,
+  "2020-04-02", 13, NA, 2,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
     ~Date, ~Deaths, ~`Total Deaths`,
     "2020-03-29", 1, 1,
     "2020-03-30", 0, 1,
+    "2020-03-31", 0, 1,
+    "2020-04-01", 0, 1,
+    "2020-04-02", 0, 1,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
-  ~Date, ~Overseas, ~Contact, ~Overseas_And_Contact, ~Community,
-  "2020-03-30", round(0.57*455), round(0.26*455), round(0.15*455), round(0.02*455),
+  ~Date, ~Overseas, ~Contact, ~Investigating, ~Community, ~Established,
+  # "2020-03-30", round(0.57*455), round(0.26*455), round(0.15*455), round(0.02*455), 455,
+  "2020-03-31", round(0.53*647), round(0.29*647), round(0.17*647), round(0.01*647), 647,
+  "2020-04-01", round(0.51*708), round(0.30*708), round(0.18*708), round(0.01*708), 708,
+  "2020-04-02", round(0.51*797), round(0.31*797), round(0.17*797), round(0.01*797), 797,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -100,7 +118,7 @@ views <- function(d) {
 list(
       age=d %>% group_by(age) %>% summarise(total=n(), confirmed=length(age[status=="Confirmed"]), probable=length(age[status=="Probable"])) %>% ungroup() %>% rename(variable=age),
       sex=d %>% group_by(sex) %>% summarise(total=n(), confirmed=length(sex[status=="Confirmed"]), probable=length(sex[status=="Probable"])) %>% ungroup() %>% rename(variable=sex),
-      overseas=d %>% group_by(overseas) %>% summarise(total=n(), confirmed=length(overseas[status=="Confirmed"]), probable=length(overseas[status=="Probable"])) %>% ungroup() %>% rename(variable=overseas),
+      origin=d %>% group_by(origin) %>% summarise(total=n(), confirmed=length(origin[status=="Confirmed"]), probable=length(origin[status=="Probable"])) %>% ungroup() %>% rename(variable=origin),
       dhb=d %>% group_by(dhb) %>% arrange(dhb) %>% summarise(total=n(), confirmed=length(dhb[status=="Confirmed"]), probable=length(dhb[status=="Probable"])) %>% ungroup() %>% rename(variable=dhb),
       reported=d %>% group_by(reported) %>% arrange(reported) %>% summarise(total=n(), confirmed=length(reported[status=="Confirmed"]), probable=length(reported[status=="Probable"])) %>% ungroup() %>% rename(variable=reported),
       total=d %>% nrow(),
@@ -110,24 +128,35 @@ list(
 }
 
 
+tidyCases <- function(df, status) {
+  df %>% mutate(
+    Origin=case_when(
+      `International travel`=="Yes" ~ 'Overseas',
+      `International travel`=="No" ~ 'In New Zealand',
+      TRUE ~ 'Unknown'
+      ),
+    Status=status) %>%
+  rename(Reported=`Date of report`,
+      Age = `Age group`)
+}
+
 plan <- drake_plan(
 
-    confirmedCases = readxl::read_excel(file_in(here::here("data/moh/covid-cases-30_mar_2020.xlsx")), skip=3) %>%
-      mutate(Overseas=Overseas=="Yes", Status="Confirmed"),
 
-    probableCases = readxl::read_excel(file_in(here::here("data/moh/covid-cases-30_mar_2020.xlsx")), skip=3, sheet=2) %>%
-      rename(`Report Date`=ReportDate) %>%
-      mutate(Overseas=Overseas=="Yes", Status="Probable"),
+    casefile = file_in(here::here("data/moh/covid-19_case_list_2_april_2020.xlsx")),
+    confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
+
+
+    probableCases = readxl::read_excel(casefile, skip=3, sheet=2) %>% tidyCases("Probable"),
 
     allCases = bind_rows(confirmedCases, probableCases) %>%
-      rename(Age=`Age Group`, Reported=`Report Date`) %>%
       rename_all(str_to_lower) %>%
       mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland")),
 
     nzTotals = allCases %>% views,
     ageTotals = allCases %>% split(.$age) %>% map(views) %>% unname(),
     sexTotals = allCases %>% split(.$sex) %>% map(views) %>% unname(),
-    overseasTotals = allCases %>% split(.$overseas) %>% map(views) %>% unname(),
+    originTotals = allCases %>% split(.$origin) %>% map(views) %>% unname(),
     dhbTotals = allCases %>% split(.$dhb) %>% map(views) %>% unname(),
     reportedTotals = allCases %>% split(.$reported) %>% map(views) %>% unname(),
 
@@ -156,7 +185,7 @@ plan <- drake_plan(
       nz=nzTotals,
       age=ageTotals,
       sex=sexTotals,
-      overseas=overseasTotals,
+      origin=originTotals,
       dhb=dhbTotals,
       reported=reportedTotals,
       manual=manual
