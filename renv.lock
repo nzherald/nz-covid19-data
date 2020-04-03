@@ -247,6 +247,13 @@
       "Repository": "CRAN",
       "Hash": "911561e07da928345f1ae2d69f97f3ea"
     },
+    "ggthemes": {
+      "Package": "ggthemes",
+      "Version": "4.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "dfa67ccc3fb199f102a34d557ec1ff45"
+    },
     "glue": {
       "Package": "glue",
       "Version": "1.3.2",
@@ -603,6 +610,18 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "3838071b66e0c566d55cc26bd6e27bf4"
+    },
+    "snakecase": {
+      "Package": "snakecase",
+      "Version": "0.11.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "Tazinho",
+      "RemoteRepo": "snakecase",
+      "RemoteRef": "master",
+      "RemoteSha": "64e1726b7717047a8363a3c38c79cca187512dde",
+      "Hash": "08d3446b4854d01c923a733d9c9f12aa"
     },
     "storr": {
       "Package": "storr",

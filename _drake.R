@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-02"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-03"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -13,6 +13,7 @@ probableDates <- tribble(
   "2020-03-31", 10,
   "2020-04-01", 14,
   "2020-04-02", 13,
+  "2020-04-03", 22,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -41,6 +42,7 @@ confirmedDates <- tribble(
   "2020-03-31", 48,
   "2020-04-01", 47,
   "2020-04-02", 76,
+  "2020-04-03", 49,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -57,6 +59,7 @@ recoveredDates <- tribble(
   "2020-03-31", 11,
   "2020-04-01", 9,
   "2020-04-02", 9,
+  "2020-04-03", 11,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -73,6 +76,7 @@ hospitalisationDates <- tribble(
   "2020-03-31", 14, NA, 2,
   "2020-04-01", 14, NA, 2,
   "2020-04-02", 13, NA, 2,
+  "2020-04-03", 13, NA, 1,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -82,6 +86,7 @@ hospitalisationDates <- tribble(
     "2020-03-31", 0, 1,
     "2020-04-01", 0, 1,
     "2020-04-02", 0, 1,
+    "2020-04-03", 0, 1,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -90,6 +95,7 @@ transmissionDates <- tribble(
   "2020-03-31", round(0.53*647), round(0.29*647), round(0.17*647), round(0.01*647), 647,
   "2020-04-01", round(0.51*708), round(0.30*708), round(0.18*708), round(0.01*708), 708,
   "2020-04-02", round(0.51*797), round(0.31*797), round(0.17*797), round(0.01*797), 797,
+  "2020-04-03", round(0.49*868), round(0.33*868), round(0.17*868), round(0.01*868), 868,  # awating MoH
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -140,18 +146,20 @@ tidyCases <- function(df, status) {
       Age = `Age group`)
 }
 
+
 plan <- drake_plan(
+    # https://services2.arcgis.com/9V7Qc4NIcvZBm0io/ArcGIS/rest/services
+    esrRaw = read_json("https://services2.arcgis.com/9V7Qc4NIcvZBm0io/ArcGIS/rest/services/Daily_ESR_Update_Cases/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=FID%20ASC&resultOffset=0&resultRecordCount=5000&cacheHint=true"),
+    esrData = esrRaw$features %>% map_dfr(~(first(.) %>% as_tibble())) %>%
+      mutate(ReportDate=as.POSIXct(ReportDate/1000, origin = "1970-01-01", tz="UTC") %>%
+        lubridate::force_tz("Pacific/Auckland"),
+      Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-
-    casefile = file_in(here::here("data/moh/covid-19_case_list_2_april_2020.xlsx")),
+    casefile = file_in(here::here("data/moh/covid-19-case-details-update-3-april-2020.xlsx")),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
     probableCases = readxl::read_excel(casefile, skip=3, sheet=2) %>% tidyCases("Probable"),
-
-    allCases = bind_rows(confirmedCases, probableCases) %>%
-      rename_all(str_to_lower) %>%
-      mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland")),
 
 
     write_cases_tidy_csv = bind_rows(confirmedCases, probableCases) %>%
@@ -161,6 +169,22 @@ plan <- drake_plan(
       arrange(Reported) %>%
       writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
 
+
+    allCasesMoH = bind_rows(confirmedCases, probableCases) %>%
+      rename_all(str_to_lower) %>%
+      mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland"),
+        age=case_when(
+          age %in% c("<1","1 to 4","5 to 9") ~ "0 to 9",
+          age %in% c("10 to 14", "15 to 19") ~ "10 to 19",
+          TRUE ~ age)),
+
+    esrMohDiff = allCasesMoH %>%
+          count(status, reported, sex, age, dhb) %>%
+        full_join(esrData %>%
+        count(Status, ReportDate, Sex, AgeGrp1, DHB), by=c("status"="Status","reported"="ReportDate","sex"="Sex","age"="AgeGrp1","dhb"="DHB")) %>%
+        filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
+
+    allCases = allCasesMoH %>% bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")),
 
     nzTotals = allCases %>% views,
     ageTotals = allCases %>% split(.$age) %>% map(views) %>% unname(),
