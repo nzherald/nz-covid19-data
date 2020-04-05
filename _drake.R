@@ -213,8 +213,8 @@ plan <- drake_plan(
     left_join(probableDates, by="Date") %>%
     mutate(
       `Total Probable`=na_if(cumsum(coalesce(Probable,0)),0),
-      Total=Confirmed+coalesce(Probable,0),
-      `Cumulative`=`Total Confirmed`+coalesce(`Total Probable`,0),
+      Cases=Confirmed+coalesce(Probable,0),
+      `Total Cases`=`Total Confirmed`+coalesce(`Total Probable`,0),
       ) %>%
     left_join(recoveredDates, by="Date") %>%
     mutate(`Total Recovered`=na_if(cumsum(coalesce(Recovered,0)),0)) %>%
@@ -222,7 +222,7 @@ plan <- drake_plan(
     left_join(deathsDates, by="Date") %>%
     left_join(transmissionDates, by="Date") %>%
     rename_all(snakecase::to_lower_camel_case) %>%
-    mutate(date=as.POSIXct(date)),
+    mutate(date=as.POSIXct(date),tag="Manual"),
 
 
     write_everything = list(
