@@ -173,7 +173,7 @@ plan <- drake_plan(
         lubridate::force_tz("Pacific/Auckland"),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in(here::here("data/moh/covid-casedetialsupdate-5april.xlsx")),
+    casefile = file_in(here::here("data/moh/covid-casedetails-update-6april.xlsx")),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
