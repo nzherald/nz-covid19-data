@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-05"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-06"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -16,6 +16,7 @@ probableDates <- tribble(
   "2020-04-03", 22,
   "2020-04-04", 30,
   "2020-04-05", 41,
+  "2020-04-06", 28,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -47,6 +48,7 @@ confirmedDates <- tribble(
   "2020-04-03", 49,
   "2020-04-04", 52,
   "2020-04-05", 48,
+  "2020-04-06", 39,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -65,7 +67,8 @@ recoveredDates <- tribble(
   "2020-04-02", 9,
   "2020-04-03", 11,
   "2020-04-04", 24,
-  "2020-04-05", 53,
+  "2020-04-05", 29,
+  "2020-04-06", 20,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -85,6 +88,7 @@ hospitalisationDates <- tribble(
   "2020-04-03", 13, NA, 1,
   "2020-04-04", 10, NA, 1,
   "2020-04-05", 15, NA, 3,
+  "2020-04-06", 13, NA, 3,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -95,8 +99,9 @@ hospitalisationDates <- tribble(
     "2020-04-01", 0, 1,
     "2020-04-02", 0, 1,
     "2020-04-03", 0, 1,
-  "2020-04-04", 0 ,1,
-  "2020-04-05", 0 ,1,
+    "2020-04-04", 0 ,1,
+    "2020-04-05", 0 ,1,
+    "2020-04-06", 0 ,1,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -108,6 +113,7 @@ transmissionDates <- tribble(
   "2020-04-03", round(0.49*868), round(0.33*868), round(0.17*868), round(0.01*868), 868,
   "2020-04-04", round(0.47*950), round(0.34*950), round(0.17*950), round(0.01*950), 950,
   "2020-04-05", round(0.45*1039), round(0.36*1039), round(0.18*1039), round(0.01*1039), 1039,
+  "2020-04-06", round(0.43*1106), round(0.38*1106), round(0.17*1106), round(0.02*1106), 1106,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
