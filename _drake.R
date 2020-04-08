@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-07"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-08"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -18,6 +18,7 @@ probableDates <- tribble(
   "2020-04-05", 41,
   "2020-04-06", 28,
   "2020-04-07", 22,
+  "2020-04-08", 26,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -51,6 +52,7 @@ confirmedDates <- tribble(
   "2020-04-05", 48,
   "2020-04-06", 39,
   "2020-04-07", 32,
+  "2020-04-08", 26,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -72,6 +74,7 @@ recoveredDates <- tribble(
   "2020-04-05", 29,
   "2020-04-06", 20,
   "2020-04-07", 65,
+  "2020-04-08", 41
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -93,6 +96,7 @@ hospitalisationDates <- tribble(
   "2020-04-05", 15, NA, 3,
   "2020-04-06", 13, NA, 3,
   "2020-04-07", 12, NA, 4,
+  "2020-04-08", 12, NA, 4
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -107,6 +111,7 @@ hospitalisationDates <- tribble(
     "2020-04-05", 0 ,1,
     "2020-04-06", 0 ,1,
     "2020-04-07", 0 ,1,
+    "2020-04-08", 0, 1,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -120,6 +125,7 @@ transmissionDates <- tribble(
   "2020-04-05", round(0.45*1039), round(0.36*1039), round(0.18*1039), round(0.01*1039), 1039,
   "2020-04-06", round(0.43*1106), round(0.38*1106), round(0.17*1106), round(0.02*1106), 1106,
   "2020-04-07", round(0.42*1160), round(0.41*1160), round(0.15*1160), round(0.02*1160), 1160,
+  "2020-04-08", round(0.41*1210), round(0.43*1210), round(0.14*1210), round(0.02*1210), 1210,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -205,7 +211,7 @@ plan <- drake_plan(
         lubridate::force_tz("Pacific/Auckland"),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in(here::here("data/moh/covid-casedeatails-7april2020.xlsx")),
+    casefile = file_in(here::here("data/moh/covid-casedetails-8april2020.xlsx")),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
