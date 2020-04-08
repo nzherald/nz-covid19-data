@@ -18,7 +18,7 @@ probableDates <- tribble(
   "2020-04-05", 41,
   "2020-04-06", 28,
   "2020-04-07", 22,
-  "2020-04-08", 26,
+  "2020-04-08", 24,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
