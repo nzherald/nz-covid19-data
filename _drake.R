@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-09"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-14"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -20,6 +20,11 @@ probableDates <- tribble(
   "2020-04-07", 22,
   "2020-04-08", 24,
   "2020-04-09", 6,
+  "2020-04-10", 21,
+  "2020-04-11", 9,
+  "2020-04-12", 4,
+  "2020-04-13", 4,
+  "2020-04-14", 9,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -55,6 +60,11 @@ confirmedDates <- tribble(
   "2020-04-07", 32,
   "2020-04-08", 26,
   "2020-04-09", 23,
+  "2020-04-10", 23,
+  "2020-04-11", 20,
+  "2020-04-12", 14,
+  "2020-04-13", 15,
+  "2020-04-14", 8,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -78,6 +88,11 @@ recoveredDates <- tribble(
   "2020-04-07", 65,
   "2020-04-08", 41,
   "2020-04-09", 35,
+  "2020-04-10", 56,
+  "2020-04-11", 49,
+  "2020-04-12", 49,
+  "2020-04-13", 75,
+  "2020-04-14", 82,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -101,6 +116,11 @@ hospitalisationDates <- tribble(
   "2020-04-07", 12, NA, 4,
   "2020-04-08", 12, NA, 4,
   "2020-04-09", 14, NA, 4,
+  "2020-04-10", 16, NA, 4,
+  "2020-04-11", 15, NA, 5,
+  "2020-04-12", 14, NA, 5,
+  "2020-04-13", 15, NA, 4,
+  "2020-04-14", 15, NA, 3,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -117,6 +137,11 @@ hospitalisationDates <- tribble(
     "2020-04-07", 0 ,1,
     "2020-04-08", 0 ,1,
     "2020-04-09", 0 ,1,
+    "2020-04-10", 1 ,2,
+    "2020-04-11", 2 ,4,
+    "2020-04-12", 0 ,4,
+    "2020-04-13", 1 ,5,
+    "2020-04-14", 4 ,9,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -132,6 +157,11 @@ transmissionDates <- tribble(
   "2020-04-07", round(0.42*1160), round(0.41*1160), round(0.15*1160), round(0.02*1160), 1160,
   "2020-04-08", round(0.41*1210), round(0.43*1210), round(0.14*1210), round(0.02*1210), 1210,
   "2020-04-09", round(0.41*1239), round(0.44*1239), round(0.13*1239), round(0.02*1239), 1239,
+  "2020-04-10", round(0.40*1283), round(0.44*1283), round(0.14*1283), round(0.02*1283), 1283,
+  "2020-04-11", round(0.40*1312), round(0.46*1312), round(0.11*1312), round(0.02*1312), 1312,
+  "2020-04-12", round(0.40*1330), round(0.47*1330), round(0.11*1330), round(0.02*1330), 1330,
+  "2020-04-13", round(0.40*1349), round(0.47*1349), round(0.11*1349), round(0.02*1349), 1349,
+  "2020-04-14", round(0.39*1366), round(0.48*1366), round(0.11*1366), round(0.02*1366), 1366,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -150,36 +180,9 @@ testDates <- tribble(
   "2020-03-26", 2417, 12683, "Accurate",
   ) %>% mutate(Date=as.Date(Date))
 
-# Tests completed, 7 day running average,
-# 15 March, 142, 61, NA,
-# 16 March, 325, 106, NA,
-# 17 March, 659, 187, NA,
-# 18 March, 1209, 348, NA,
-# 19 March, 1291, 528, NA,
-# 20 March, 1554, 745, NA,
-# 21 March, 1776, 908, NA,
-# 22 March, 1256, 1067, NA,
-# 23 March, 1050, 1171, NA,
-# 24 March, 1544, 1297, NA,
-# 25 March, 2592, 1495, NA,
-# 26 March, 2117, 1613, NA,
-# 27 March, 2067, 1686, NA,
-# 28 March, 1809, 1776, NA,
-# 29 March, 918, 1728, NA,
-# 30 March, 1391, 1777, 21384,
-# 31 March, 2093, 1855, 23481,
-# 1 April, 2563, 1835, 26015
-# 2 April, 29485-26015, 2041, 29485,
-# 3 April, 3631, 2264, 33116,
-# 4 April, 3903, 2448, 36209,
-# 5 April, 3709, 2846, 39918,
-# 6 April
-
-
 
 todayCsv <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
 todayXlsx <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".xlsx")
-
 
 
 views <- function(d) {
@@ -189,6 +192,7 @@ list(
       origin=d %>% group_by(origin) %>% summarise(total=n(), confirmed=length(origin[status=="Confirmed"]), probable=length(origin[status=="Probable"])) %>% ungroup() %>% rename(variable=origin),
       dhb=d %>% group_by(dhb) %>% arrange(dhb) %>% summarise(total=n(), confirmed=length(dhb[status=="Confirmed"]), probable=length(dhb[status=="Probable"])) %>% ungroup() %>% rename(variable=dhb),
       reported=d %>% group_by(reported) %>% arrange(reported) %>% summarise(total=n(), confirmed=length(reported[status=="Confirmed"]), probable=length(reported[status=="Probable"])) %>% ungroup() %>% rename(variable=reported),
+      announced=d %>% group_by(announced) %>% arrange(announced) %>% summarise(total=n(), confirmed=length(announced[status=="Confirmed"]), probable=length(announced[status=="Probable"])) %>% ungroup() %>% rename(variable=announced),
       total=d %>% nrow(),
       confirmed=d %>% filter(status=="Confirmed") %>% nrow(),
       probable=d %>% filter(status=="Probable") %>% nrow()
@@ -221,7 +225,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in(here::here("data/moh/covid-casedetails-9april2020.xlsx")),
+    casefile = file_in("data/moh/covid-caselist-14april.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -230,10 +234,10 @@ plan <- drake_plan(
 
     write_cases_tidy_csv = bind_rows(confirmedCases, probableCases) %>%
       arrange(Reported) %>%
-      write_csv(file_out(here("data/cases.csv"))),
+      write_csv(file_out("data/cases.csv")),
     write_cases_tidy_xlsx = bind_rows(confirmedCases, probableCases) %>%
       arrange(Reported) %>%
-      writexl::write_xlsx(file_out(here("data/cases.xlsx"))),
+      writexl::write_xlsx(file_out("data/cases.xlsx")),
 
 
     allCasesMoH = bind_rows(confirmedCases, probableCases) %>%
@@ -250,14 +254,6 @@ plan <- drake_plan(
         count(Status, ReportDate, Sex, AgeGrp1, DHB), by=c("status"="Status","reported"="ReportDate","sex"="Sex","age"="AgeGrp1","dhb"="DHB")) %>%
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
-    allCases = allCasesMoH %>% bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")),
-
-    nzTotals = allCases %>% views,
-    ageTotals = allCases %>% split(.$age) %>% map(views) %>% unname(),
-    sexTotals = allCases %>% split(.$sex) %>% map(views) %>% unname(),
-    originTotals = allCases %>% split(.$origin) %>% map(views) %>% unname(),
-    dhbTotals = allCases %>% split(.$dhb) %>% map(views) %>% unname(),
-    reportedTotals = allCases %>% split(.$reported) %>% map(views) %>% unname(),
 
 
     manual = dateRange %>%
@@ -279,6 +275,23 @@ plan <- drake_plan(
     mutate(date=as.POSIXct(date),tag="Manual"),
 
 
+    allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
+      arrange(reported) %>%
+      mutate(announced = manual %>% # filter(totalCases!=1366) %>%
+        arrange(date) %>% select(date, cases) %>% pmap_df(function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
+        ),
+
+
+    nzTotals = allCases %>% views,
+    ageTotals = allCases %>% split(.$age) %>% map(views) %>% unname(),
+    sexTotals = allCases %>% split(.$sex) %>% map(views) %>% unname(),
+    originTotals = allCases %>% split(.$origin) %>% map(views) %>% unname(),
+    dhbTotals = allCases %>% split(.$dhb) %>% map(views) %>% unname(),
+    reportedTotals = allCases %>% split(.$reported) %>% map(views) %>% unname(),
+    announcedTotals = allCases %>% split(.$announced) %>% map(views) %>% unname(),
+
+
+
     write_everything = list(
       cases=allCases,
       nz=nzTotals,
@@ -287,18 +300,19 @@ plan <- drake_plan(
       origin=originTotals,
       dhb=dhbTotals,
       reported=reportedTotals,
+      announced=announcedTotals,
       manual=manual
       ) %>%
       as_d3_data() %>%
-      write_json(file_out(here("data/cases.json")), auto_unbox=T, POSIXt="ISO8601", Date="ISO8601", UTC=T),
+      write_json(file_out("data/cases.json"), auto_unbox=T, POSIXt="ISO8601", Date="ISO8601", UTC=T),
 
 
 
   write_timeseries = manual %>%
-    write_csv(file_out(here("data/days.csv"))),
+    write_csv(file_out("data/days.csv")),
 
   write_timeseries_xlsx = manual %>%
-      writexl::write_xlsx(file_out(here("data/days.xlsx")))
+      writexl::write_xlsx(file_out("data/days.xlsx"))
 
 
 #     dataurl = file_in("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases"),
