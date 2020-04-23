@@ -81,7 +81,7 @@ confirmedDates <- tribble(
   "2020-04-19", 4,
   "2020-04-20", 7,
   "2020-04-21", 2,
-  "2020-04-22", 6,
+  "2020-04-22", 3,
   "2020-04-23", 1,
   ) %>% mutate(Date=as.Date(Date))
 
@@ -215,7 +215,7 @@ transmissionDates <- tribble(
   "2020-04-20", round(0.39*1440), round(0.54*1440), round(0.02*1440), round(0.04*1440), 1440,
   "2020-04-21", round(0.39*1445), round(0.55*1445), round(0.02*1445), round(0.04*1445), 1445,
   "2020-04-22", round(0.39*1451), round(0.55*1451), round(0.02*1451), round(0.04*1451), 1451,
-  "2020-04-23", round(0.39*1454), round(0.55*1454), round(0.02*1454), round(0.04*1454), 1454,
+  "2020-04-23", round(0.39*1451), round(0.56*1451), round(0.02*1451), round(0.04*1451), 1451,
   ) %>% mutate(Date=as.Date(Date))
 
 communityTransmissionDates <- tribble(
@@ -290,7 +290,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-caselist-22april.xlsx"),
+    casefile = file_in("data/moh/covid-caselist-23april.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -321,7 +321,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-22") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-23") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -346,7 +346,7 @@ plan <- drake_plan(
 
     allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
       arrange(reported) %>%
-      mutate(announced = manual %>% filter(totalCases!=1454) %>%
+      mutate(announced = manual %>% # filter(totalCases!=1454) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
         ),
 
