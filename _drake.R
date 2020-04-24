@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-23"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-24"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -34,6 +34,7 @@ probableDates <- tribble(
   "2020-04-21", 3,
   "2020-04-22", 0,
   "2020-04-23", 2,
+  "2020-04-24", 3,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -83,6 +84,7 @@ confirmedDates <- tribble(
   "2020-04-21", 2,
   "2020-04-22", 3,
   "2020-04-23", 1,
+  "2020-04-24", 2,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -120,6 +122,7 @@ recoveredDates <- tribble(
   "2020-04-21", 32,
   "2020-04-22", 30,
   "2020-04-23", 29,
+  "2020-04-24", 30,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -157,6 +160,7 @@ hospitalisationDates <- tribble(
   "2020-04-21", 12, NA, 3,
   "2020-04-22", 11, NA, 2,
   "2020-04-23", 8, NA, 1,
+  "2020-04-24", 8, NA, 1,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -187,36 +191,40 @@ hospitalisationDates <- tribble(
     "2020-04-21", 1 ,13,
     "2020-04-22", 1 ,14,
     "2020-04-23", 2 ,16,
+    "2020-04-24", 1 ,17,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
   ~Date, ~Overseas, ~Contact, ~Investigating, ~Community, ~Established,
   # "2020-03-30", round(0.57*455), round(0.26*455), round(0.15*455), round(0.02*455), 455,
-  "2020-03-31", round(0.53*647), round(0.29*647), round(0.17*647), round(0.01*647), 647,
-  "2020-04-01", round(0.51*708), round(0.30*708), round(0.18*708), round(0.01*708), 708,
-  "2020-04-02", round(0.51*797), round(0.31*797), round(0.17*797), round(0.01*797), 797,
-  "2020-04-03", round(0.49*868), round(0.33*868), round(0.17*868), round(0.01*868), 868,
-  "2020-04-04", round(0.47*950), round(0.34*950), round(0.17*950), round(0.01*950), 950,
-  "2020-04-05", round(0.45*1039), round(0.36*1039), round(0.18*1039), round(0.01*1039), 1039,
-  "2020-04-06", round(0.43*1106), round(0.38*1106), round(0.17*1106), round(0.02*1106), 1106,
-  "2020-04-07", round(0.42*1160), round(0.41*1160), round(0.15*1160), round(0.02*1160), 1160,
-  "2020-04-08", round(0.41*1210), round(0.43*1210), round(0.14*1210), round(0.02*1210), 1210,
-  "2020-04-09", round(0.41*1239), round(0.44*1239), round(0.13*1239), round(0.02*1239), 1239,
-  "2020-04-10", round(0.40*1283), round(0.44*1283), round(0.14*1283), round(0.02*1283), 1283,
-  "2020-04-11", round(0.40*1312), round(0.46*1312), round(0.11*1312), round(0.02*1312), 1312,
-  "2020-04-12", round(0.40*1330), round(0.47*1330), round(0.11*1330), round(0.02*1330), 1330,
-  "2020-04-13", round(0.40*1349), round(0.47*1349), round(0.11*1349), round(0.02*1349), 1349,
-  "2020-04-14", round(0.39*1366), round(0.48*1366), round(0.11*1366), round(0.02*1366), 1366,
-  "2020-04-15", round(0.39*1386), round(0.48*1386), round(0.10*1386), round(0.02*1386), 1386,
-  "2020-04-16", round(0.39*1401), round(0.55*1401), round(0.04*1401), round(0.02*1401), 1401,
-  "2020-04-17", round(0.39*1409), round(0.54*1409), round(0.03*1409), round(0.03*1409), 1409,
-  "2020-04-18", round(0.39*1422), round(0.54*1422), round(0.03*1422), round(0.03*1422), 1422,
-  "2020-04-19", round(0.39*1431), round(0.54*1431), round(0.03*1431), round(0.03*1431), 1431,
-  "2020-04-20", round(0.39*1440), round(0.54*1440), round(0.02*1440), round(0.04*1440), 1440,
-  "2020-04-21", round(0.39*1445), round(0.55*1445), round(0.02*1445), round(0.04*1445), 1445,
-  "2020-04-22", round(0.39*1451), round(0.55*1451), round(0.02*1451), round(0.04*1451), 1451,
-  "2020-04-23", round(0.39*1451), round(0.56*1451), round(0.02*1451), round(0.04*1451), 1451,
+  "2020-03-31", round(0.53*647), round(0.29*647), round(0.17*647), round(0.01*647), NA,
+  "2020-04-01", round(0.51*708), round(0.30*708), round(0.18*708), round(0.01*708), NA,
+  "2020-04-02", round(0.51*797), round(0.31*797), round(0.17*797), round(0.01*797), NA,
+  "2020-04-03", round(0.49*868), round(0.33*868), round(0.17*868), round(0.01*868), NA,
+  "2020-04-04", round(0.47*950), round(0.34*950), round(0.17*950), round(0.01*950), NA,
+  "2020-04-05", round(0.45*1039), round(0.36*1039), round(0.18*1039), round(0.01*1039), NA,
+  "2020-04-06", round(0.43*1106), round(0.38*1106), round(0.17*1106), round(0.02*1106), NA,
+  "2020-04-07", round(0.42*1160), round(0.41*1160), round(0.15*1160), round(0.02*1160), NA,
+  "2020-04-08", round(0.41*1210), round(0.43*1210), round(0.14*1210), round(0.02*1210), NA,
+  "2020-04-09", round(0.41*1239), round(0.44*1239), round(0.13*1239), round(0.02*1239), NA,
+  "2020-04-10", round(0.40*1283), round(0.44*1283), round(0.14*1283), round(0.02*1283), NA,
+  "2020-04-11", round(0.40*1312), round(0.46*1312), round(0.11*1312), round(0.02*1312), NA,
+  "2020-04-12", round(0.40*1330), round(0.47*1330), round(0.11*1330), round(0.02*1330), NA,
+  "2020-04-13", round(0.40*1349), round(0.47*1349), round(0.11*1349), round(0.02*1349), NA,
+  "2020-04-14", round(0.39*1366), round(0.48*1366), round(0.11*1366), round(0.02*1366), NA,
+  "2020-04-15", round(0.39*1386), round(0.48*1386), round(0.10*1386), round(0.02*1386), NA,
+  "2020-04-16", round(0.39*1401), round(0.55*1401), round(0.04*1401), round(0.02*1401), NA,
+  "2020-04-17", round(0.39*1409), round(0.54*1409), round(0.03*1409), round(0.03*1409), NA,
+  "2020-04-18", round(0.39*1422), round(0.54*1422), round(0.03*1422), round(0.03*1422), NA,
+  "2020-04-19", round(0.39*1431), round(0.54*1431), round(0.03*1431), round(0.03*1431), NA,
+  "2020-04-20", round(0.39*1440), round(0.54*1440), round(0.02*1440), round(0.04*1440), NA,
+  "2020-04-21", round(0.39*1445), round(0.55*1445), round(0.02*1445), round(0.04*1445), NA,
+  "2020-04-22", round(0.39*1451), round(0.55*1451), round(0.02*1451), round(0.04*1451), NA,
+  "2020-04-23", round(0.39*1451), round(0.56*1451), round(0.02*1451), round(0.04*1451), NA,
+  "2020-04-24", round(0.39*1456), round(0.41*1456), round(0.02*1456), round(0.04*1456), round(0.14*1456),
   ) %>% mutate(Date=as.Date(Date))
+
+
 
 communityTransmissionDates <- tribble(
   ~Date, ~`Community Transmission`,
@@ -290,7 +298,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-caselist-23april.xlsx"),
+    casefile = file_in("data/moh/covid-caselist-24april.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -321,7 +329,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-23") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-24") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -346,7 +354,7 @@ plan <- drake_plan(
 
     allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
       arrange(reported) %>%
-      mutate(announced = manual %>% # filter(totalCases!=1454) %>%
+      mutate(announced = manual %>% # filter(totalCases!=1456) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
         ),
 
