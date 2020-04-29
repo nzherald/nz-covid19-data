@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-25"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-29"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -36,6 +36,10 @@ probableDates <- tribble(
   "2020-04-23", 2,
   "2020-04-24", 3,
   "2020-04-25", 2,
+  "2020-04-26", 5,
+  "2020-04-27", -2,
+  "2020-04-28", 1,
+  "2020-04-29", 0,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -87,6 +91,10 @@ confirmedDates <- tribble(
   "2020-04-23", 1,
   "2020-04-24", 2,
   "2020-04-25", 3,
+  "2020-04-26", 4,
+  "2020-04-27", 1,
+  "2020-04-28", 2,
+  "2020-04-29", 2,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -126,6 +134,10 @@ recoveredDates <- tribble(
   "2020-04-23", 29,
   "2020-04-24", 30,
   "2020-04-25", 23,
+  "2020-04-26", 24,
+  "2020-04-27", 38,
+  "2020-04-28", 34,
+  "2020-04-29", 15,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -165,6 +177,10 @@ hospitalisationDates <- tribble(
   "2020-04-23", 8, NA, 1,
   "2020-04-24", 8, NA, 1,
   "2020-04-25", 7, NA, 1,
+  "2020-04-26", 7, NA, 1,
+  "2020-04-27", 7, NA, 1,
+  "2020-04-28", 9, NA, 1,
+  "2020-04-29", 6, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -197,6 +213,10 @@ hospitalisationDates <- tribble(
     "2020-04-23", 2 ,16,
     "2020-04-24", 1 ,17,
     "2020-04-25", 1 ,18,
+    "2020-04-26", 0 ,18,
+    "2020-04-27", 1 ,19,
+    "2020-04-28", 0 ,19,
+    "2020-04-29", 0 ,19,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -228,6 +248,10 @@ transmissionDates <- tribble(
   "2020-04-23", round(0.39*1451), round(0.56*1451), round(0.02*1451), round(0.04*1451), NA,
   "2020-04-24", round(0.39*1456), round(0.41*1456), round(0.02*1456), round(0.04*1456), round(0.14*1456),
   "2020-04-25", round(0.39*1461), round(0.41*1461), round(0.02*1461), round(0.03*1461), round(0.15*1461),
+  "2020-04-26", round(0.39*1470), round(0.41*1470), round(0.02*1470), round(0.03*1470), round(0.15*1470),
+  "2020-04-27", round(0.39*1469), round(0.33*1469), round(0.02*1469), round(0.03*1469), round(0.23*1469),
+  "2020-04-28", round(0.39*1472), round(0.33*1472), round(0.02*1472), round(0.03*1472), round(0.23*1472),
+  "2020-04-29", round(0.39*1474), round(0.33*1474), round(0.02*1474), round(0.03*1474), round(0.23*1474),
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -284,10 +308,9 @@ tidyCases <- function(df, status) {
 }
 
 manualDHBactive <- function(nz, dhbScrape) {
-  dhbScrape <- dhbScrape %>% mutate(Active=case_when(DHB=="Tairāwhiti" ~ 3L, TRUE ~ Active))
   nz$dhb <- nz$dhb %>% mutate(
-    active=dhbScrape %>% pull(Active),
-    recovered=dhbScrape %>% pull(Recovered))
+    active=dhbScrape %>% pull(Active) %>% as.numeric(),
+    recovered=dhbScrape %>% pull(Recovered) %>% as.numeric())
   return(nz)
 }
 
@@ -304,7 +327,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-19-case-list-25-april-2020.xlsx"),
+    casefile = file_in("data/moh/covid-cases-29april2020.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -335,7 +358,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-25") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-29") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -360,7 +383,8 @@ plan <- drake_plan(
 
     allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
       arrange(reported) %>%
-      mutate(announced = manual %>% # filter(totalCases!=1461) %>%
+      mutate(announced = manual %>% filter(totalConfirmed != 1121) %>%
+        mutate(cases=ifelse(totalConfirmed == 1120, 8, cases)) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
         ),
 
