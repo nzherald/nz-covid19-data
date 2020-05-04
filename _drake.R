@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-04-30"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-05-04"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -41,6 +41,10 @@ probableDates <- tribble(
   "2020-04-28", 1,
   "2020-04-29", 0,
   "2020-04-30", -1,
+  "2020-05-01", 0,
+  "2020-05-02", 4,
+  "2020-05-03", 0,
+  "2020-05-04", -1,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -97,6 +101,10 @@ confirmedDates <- tribble(
   "2020-04-28", 2,
   "2020-04-29", 2,
   "2020-04-30", 3,
+  "2020-05-01", 3,
+  "2020-05-02", 2,
+  "2020-05-03", 2,
+  "2020-05-04", 1,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -141,6 +149,10 @@ recoveredDates <- tribble(
   "2020-04-28", 34,
   "2020-04-29", 15,
   "2020-04-30", 12,
+  "2020-05-01", 11,
+  "2020-05-02", 11,
+  "2020-05-03", 3,
+  "2020-05-04", 10,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -185,6 +197,10 @@ hospitalisationDates <- tribble(
   "2020-04-28", 9, NA, 1,
   "2020-04-29", 6, NA, 0,
   "2020-04-30", 7, NA, 0,
+  "2020-05-01", 6, NA, 0,
+  "2020-05-02", 5, NA, 0,
+  "2020-05-03", 8, NA, 0,
+  "2020-05-04", 7, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -222,6 +238,10 @@ hospitalisationDates <- tribble(
     "2020-04-28", 0 ,19,
     "2020-04-29", 0 ,19,
     "2020-04-30", 0 ,19,
+    "2020-05-01", 0 ,19,
+    "2020-05-02", 1 ,20,
+    "2020-05-03", 0 ,20,
+    "2020-05-04", 0 ,20,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -258,6 +278,10 @@ transmissionDates <- tribble(
   "2020-04-28", round(0.39*1472), round(0.33*1472), round(0.02*1472), round(0.03*1472), round(0.23*1472),
   "2020-04-29", round(0.39*1474), round(0.33*1474), round(0.02*1474), round(0.03*1474), round(0.23*1474),
   "2020-04-30", round(0.39*1476), round(0.32*1476), round(0.01*1476), round(0.04*1476), round(0.24*1476),
+  "2020-05-01", round(0.39*1479), round(0.32*1479), round(0.01*1479), round(0.04*1479), round(0.24*1479),
+  "2020-05-02", round(0.38*1485), round(0.32*1485), round(0.01*1485), round(0.04*1485), round(0.24*1485),
+  "2020-05-03", round(0.38*1487), round(0.32*1487), round(0.01*1487), round(0.04*1487), round(0.24*1487),
+  "2020-05-04", round(0.38*1487), round(0.32*1487), round(0.01*1487), round(0.04*1487), round(0.24*1487),
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -333,7 +357,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-cases-30april2020.xlsx"),
+    casefile = file_in("data/moh/covid-casedeatils-4april2020.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -364,7 +388,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-04-30") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-05-04") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -389,7 +413,9 @@ plan <- drake_plan(
 
     allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
       arrange(reported) %>%
-      mutate(announced = manual %>% filter(!(totalConfirmed == 1121)) %>%
+      mutate(announced = manual %>% filter(!(totalConfirmed == 1121
+           # | totalCases == 1485
+            )) %>%
         mutate(cases=ifelse(totalConfirmed == 1120, 8, cases)) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(
           function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
