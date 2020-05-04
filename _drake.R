@@ -200,7 +200,7 @@ hospitalisationDates <- tribble(
   "2020-05-01", 6, NA, 0,
   "2020-05-02", 5, NA, 0,
   "2020-05-03", 8, NA, 0,
-  "2020-05-04", 7, NA, 0,
+  "2020-05-04", 4, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
