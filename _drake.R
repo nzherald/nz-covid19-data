@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-05-04"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-05-08"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -45,6 +45,10 @@ probableDates <- tribble(
   "2020-05-02", 4,
   "2020-05-03", 0,
   "2020-05-04", -1,
+  "2020-05-05", -1,
+  "2020-05-06", 1,
+  "2020-05-07", 0,
+  "2020-05-08", -1,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -105,6 +109,10 @@ confirmedDates <- tribble(
   "2020-05-02", 2,
   "2020-05-03", 2,
   "2020-05-04", 1,
+  "2020-05-05", 0,
+  "2020-05-06", 1,
+  "2020-05-07", 1,
+  "2020-05-08", 2,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -153,6 +161,10 @@ recoveredDates <- tribble(
   "2020-05-02", 11,
   "2020-05-03", 3,
   "2020-05-04", 10,
+  "2020-05-05", 26,
+  "2020-05-06", 14,
+  "2020-05-07", 16,
+  "2020-05-08", 15,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -201,6 +213,10 @@ hospitalisationDates <- tribble(
   "2020-05-02", 5, NA, 0,
   "2020-05-03", 8, NA, 0,
   "2020-05-04", 4, NA, 0,
+  "2020-05-05", 4, NA, 0,
+  "2020-05-06", 2, NA, 0,
+  "2020-05-07", 2, NA, 0,
+  "2020-05-08", 3, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -242,6 +258,10 @@ hospitalisationDates <- tribble(
     "2020-05-02", 1 ,20,
     "2020-05-03", 0 ,20,
     "2020-05-04", 0 ,20,
+    "2020-05-05", 0 ,20,
+    "2020-05-06", 1 ,21,
+    "2020-05-07", 0 ,21,
+    "2020-05-08", 0 ,21,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -282,25 +302,12 @@ transmissionDates <- tribble(
   "2020-05-02", round(0.38*1485), round(0.32*1485), round(0.01*1485), round(0.04*1485), round(0.24*1485),
   "2020-05-03", round(0.38*1487), round(0.32*1487), round(0.01*1487), round(0.04*1487), round(0.24*1487),
   "2020-05-04", round(0.38*1487), round(0.32*1487), round(0.01*1487), round(0.04*1487), round(0.24*1487),
+  "2020-05-05", round(0.38*1486), round(0.32*1486), round(0.01*1486), round(0.04*1486), round(0.24*1486),
+  "2020-05-06", round(0.38*1488), round(0.32*1488), round(0.01*1488), round(0.04*1488), round(0.24*1488),
+  "2020-05-07", round(0.38*1488), round(0.32*1488), round(0.01*1488), round(0.04*1488), round(0.24*1488),
+  "2020-05-08", round(0.38*1490), round(0.32*1490), round(0.01*1490), round(0.04*1490), round(0.24*1490),
   ) %>% mutate(Date=as.Date(Date))
 
-
-
-communityTransmissionDates <- tribble(
-  ~Date, ~`Community Transmission`,
-  "2020-03-23", 2,
-  "2020-03-24", 2, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
-  "2020-03-25", 0,
-  "2020-03-26", 0, # More discussed by no numbers given
-  ) %>% mutate(Date=as.Date(Date))
-
-testDates <- tribble(
-  ~Date, ~Tests, ~`Total Tests`, ~`Test Count`,
-  "2020-03-23", NA, 9780-1421-900, "Estimate",
-  "2020-03-24", 900, 9780-1421, "Estimate",
-  "2020-03-25", 1421, 9780, "Accurate",
-  "2020-03-26", 2417, 12683, "Accurate",
-  ) %>% mutate(Date=as.Date(Date))
 
 
 todayCsv <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
@@ -323,7 +330,9 @@ list(
 
 
 tidyCases <- function(df, status) {
-  df %>% mutate(
+  df %>%
+    rename(`Date of report`=`Date notified of potential case`) %>%
+    mutate(
     Origin=case_when(
       `Overseas travel`=="Yes" ~ 'Overseas',
       `Overseas travel`=="No" ~ 'In New Zealand',
@@ -357,7 +366,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-casedeatils-4april2020.xlsx"),
+    casefile = file_in("data/moh/covid-cases-8may20.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -388,7 +397,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-05-04") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-05-08") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -413,12 +422,12 @@ plan <- drake_plan(
 
     allCases = allCasesMoH %>%  # bind_rows(esrMohDiff %>% select(-n.x,-n.y) %>% mutate(origin="Unknown")) %>%
       arrange(reported) %>%
-      mutate(announced = manual %>% filter(!(totalConfirmed == 1121
-           # | totalCases == 1485
+      mutate(announced = (manual %>% filter(!(totalConfirmed == 1121
+           | totalConfirmed == 1136
             )) %>%
         mutate(cases=ifelse(totalConfirmed == 1120, 8, cases)) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(
-          function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported),
+          function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported))[1:1490],
         ),
 
 

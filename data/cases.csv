@@ -151,7 +151,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-23,Male,50 to 59,Capital and Coast,Yes,United States of America,NZ409,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,Overseas,Confirmed
 2020-03-23,Male,60 to 69,Capital and Coast,Yes,United States of America,NZ409,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,Overseas,Confirmed
 2020-03-23,Male,70+,Capital and Coast,Yes,Australia,NA,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,Overseas,Confirmed
-2020-03-23,Female,30 to 39,Counties Manukau,Yes,Australia,NA,NA,2020-03-17T00:00:00Z,Overseas,Confirmed
+2020-03-23,Female,30 to 39,Counties Manukau,Yes,Australia,JQ201,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,Overseas,Confirmed
 2020-03-23,Male,40 to 49,Hutt Valley,Yes,Australia,VA171,2020-03-13T00:00:00Z,2020-03-13T00:00:00Z,Overseas,Confirmed
 2020-03-23,Female,30 to 39,Lakes,Yes,United Arab Emirates,EK448,2020-03-22T00:00:00Z,2020-03-23T00:00:00Z,Overseas,Confirmed
 2020-03-23,Male,70+,MidCentral,Yes,United Arab Emirates,NZ5115,2020-03-17T00:00:00Z,2020-03-17T00:00:00Z,Overseas,Confirmed
@@ -232,7 +232,6 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-24,Female,20 to 29,Bay of Plenty,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-03-24,Male,40 to 49,Bay of Plenty,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-03-24,Female,60 to 69,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Probable
-2020-03-24,Female,15 to 19,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-03-25,Female,15 to 19,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,20 to 29,Auckland,Yes,Singapore,NZ3285,2020-03-17T00:00:00Z,2020-03-18T00:00:00Z,Overseas,Confirmed
@@ -266,7 +265,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-25,Male,40 to 49,Hutt Valley,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,20 to 29,Lakes,Yes,Switzerland,QR920,NA,2020-03-24T00:00:00Z,Overseas,Confirmed
 2020-03-25,Female,20 to 29,Lakes,Yes,United Arab Emirates,NZ8155,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,Overseas,Confirmed
-2020-03-25,Male,50 to 59,Lakes,Yes,Singapore,NA,NA,2020-03-14T00:00:00Z,Overseas,Confirmed
+2020-03-25,Male,50 to 59,Lakes,Yes,Singapore,NA,NA,2020-03-15T00:00:00Z,Overseas,Confirmed
 2020-03-25,Male,50 to 59,MidCentral,Yes,NA,NZ5107,2020-03-18T00:00:00Z,2020-03-18T00:00:00Z,Overseas,Confirmed
 2020-03-25,Male,30 to 39,Nelson Marlborough,Yes,Australia,NA,NA,2020-03-18T00:00:00Z,Overseas,Confirmed
 2020-03-25,Male,50 to 59,Nelson Marlborough,No,NA,NA,NA,NA,In New Zealand,Confirmed
@@ -285,7 +284,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-25,Female,20 to 29,Taranaki,Yes,United Arab Emirates,NA,NA,2020-03-19T00:00:00Z,Overseas,Confirmed
 2020-03-25,Female,20 to 29,Waikato,Yes,United Arab Emirates,NA,NA,2020-03-15T00:00:00Z,Overseas,Confirmed
 2020-03-25,Female,20 to 29,Waikato,Yes,United Arab Emirates,EK448,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
-2020-03-25,Female,30 to 39,Waikato,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-03-25,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-25,Female,40 to 49,Waikato,Yes,Singapore,SQ281,2020-03-15T00:00:00Z,2020-03-16T00:00:00Z,Overseas,Confirmed
@@ -410,14 +409,14 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-27,Male,50 to 59,Capital and Coast,No,NA,NZ8876,2020-03-23T00:00:00Z,NA,In New Zealand,Confirmed
 2020-03-27,Female,20 to 29,Counties Manukau,Yes,Qatar,QR920,2020-03-25T00:00:00Z,2020-03-26T00:00:00Z,Overseas,Confirmed
 2020-03-27,Female,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-03-27,Female,40 to 49,Counties Manukau,Yes,United States of America,NA,NA,2020-03-19T00:00:00Z,Overseas,Confirmed
+2020-03-27,Female,40 to 49,Counties Manukau,Yes,United States of America,NZ01,2020-03-22T00:00:00Z,2020-03-24T00:00:00Z,Overseas,Confirmed
 2020-03-27,Female,50 to 59,Counties Manukau,No,NA,NZ432,2020-03-20T00:00:00Z,NA,In New Zealand,Confirmed
 2020-03-27,Male,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-27,Female,20 to 29,Hawke's Bay,Yes,England,NZ5005,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,Overseas,Confirmed
 2020-03-27,Female,30 to 39,Hutt Valley,Yes,Indonesia,JQ253,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,Overseas,Confirmed
 2020-03-27,Female,60 to 69,Hutt Valley,Yes,Singapore,NZ441,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
 2020-03-27,Male,60 to 69,Hutt Valley,Yes,Singapore,NZ441,2020-03-20T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
-2020-03-27,Female,50 to 59,MidCentral,Yes,United States of America,NZ1,2020-03-10T00:00:00Z,2020-03-12T00:00:00Z,Overseas,Confirmed
+2020-03-27,Female,50 to 59,MidCentral,Yes,United States of America,NZ5107,2020-03-12T00:00:00Z,2020-03-12T00:00:00Z,Overseas,Confirmed
 2020-03-27,Female,60 to 69,MidCentral,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-27,Female,1 to 4,South Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-27,Female,20 to 29,South Canterbury,Yes,NA,OA4326,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
@@ -607,7 +606,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-03-29,Male,20 to 29,Waitematā,Yes,United Arab Emirates,EK448,2020-03-20T00:00:00Z,2020-03-21T00:00:00Z,Overseas,Confirmed
 2020-03-29,Male,40 to 49,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-03-29,Male,50 to 59,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-03-29,Male,50 to 59,Waitematā,Yes,United States of America,NA,NA,2020-03-20T00:00:00Z,Overseas,Confirmed
+2020-03-29,Male,50 to 59,Waitematā,Yes,United States of America,NZ29,2020-03-18T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
 2020-03-29,Male,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-03-29,Female,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-03-29,Female,30 to 39,Capital and Coast,Yes,United Arab Emirates,EK448,2020-03-17T00:00:00Z,2020-03-18T00:00:00Z,Overseas,Probable
@@ -989,6 +988,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-04,Female,30 to 39,Capital and Coast,Yes,New Zealand,NZ433,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,Overseas,Confirmed
 2020-04-04,Female,50 to 59,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-04,Male,20 to 29,Capital and Coast,Yes,United States of America,NA,NA,2020-03-19T00:00:00Z,Overseas,Confirmed
@@ -1029,7 +1029,6 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-04,Female,50 to 59,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Female,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
-2020-04-04,Male,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Female,1 to 4,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Female,50 to 59,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Male,60 to 69,Capital and Coast,No,NA,NA,NA,NA,In New Zealand,Probable
@@ -1051,7 +1050,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-04,Male,50 to 59,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-04,Male,50 to 59,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-05,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-04-05,Female,20 to 29,Auckland,Yes,NA,NA,NA,2020-03-22T00:00:00Z,Overseas,Confirmed
+2020-04-05,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-05,Female,60 to 69,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-05,Female,60 to 69,Auckland,Yes,Singapore,SQ281,2020-03-19T00:00:00Z,2020-03-19T00:00:00Z,Overseas,Confirmed
 2020-04-05,Male,20 to 29,Auckland,Yes,Qatar,QR920,2020-04-02T00:00:00Z,2020-04-03T00:00:00Z,Overseas,Confirmed
@@ -1171,6 +1170,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-06,Female,30 to 39,Waikato,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-06,Female,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-06,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-04-06,Female,15 to 19,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-06,Female,30 to 39,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-07,Male,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-07,Male,50 to 59,Bay of Plenty,Yes,Canada,NZ23,2020-03-23T00:00:00Z,2020-03-25T00:00:00Z,Overseas,Confirmed
@@ -1348,7 +1348,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-12,Female,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-12,Male,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-12,Male,10 to 14,Canterbury,No,NA,NA,NA,NA,In New Zealand,Probable
-2020-04-12,Male,15 to 19,Capital and Coast,Yes,Australia,EK10,NA,2020-03-21T00:00:00Z,Overseas,Probable
+2020-04-12,Male,15 to 19,Capital and Coast,Yes,Australia,EK10,2020-03-21T00:00:00Z,2020-03-21T00:00:00Z,Overseas,Probable
 2020-04-12,Male,20 to 29,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-12,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-12,Male,50 to 59,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
@@ -1418,7 +1418,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-17,Male,<1,Southern,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-17,Female,50 to 59,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-18,Female,70+,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-04-18,Male,60 to 69,Canterbury,NA,NA,NA,NA,NA,Unknown,Confirmed
+2020-04-18,Male,60 to 69,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-18,Female,70+,Counties Manukau,Yes,Australia,NA,2020-04-13T00:00:00Z,2020-04-13T00:00:00Z,Overseas,Confirmed
 2020-04-18,Male,70+,Counties Manukau,Yes,Australia,NA,NA,2020-04-13T00:00:00Z,Overseas,Confirmed
 2020-04-18,Female,30 to 39,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
@@ -1453,7 +1453,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-22,Female,50 to 59,Waikato,Yes,Australia,NZ722,NA,2020-03-14T00:00:00Z,Overseas,Probable
 2020-04-23,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-23,Female,40 to 49,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-04-23,Male,20 to 29,Waitematā,Yes,Qatar,QR920,2020-03-31T00:00:00Z,2020-03-31T00:00:00Z,Overseas,Confirmed
+2020-04-23,Male,20 to 29,Waitematā,Yes,Qatar,QR920,2020-03-30T00:00:00Z,2020-03-31T00:00:00Z,Overseas,Confirmed
 2020-04-23,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-23,Male,20 to 29,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-04-24,Male,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
@@ -1475,7 +1475,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-04-27,Female,20 to 29,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-28,Male,40 to 49,Counties Manukau,Yes,Australia,NZ104,2020-04-25T00:00:00Z,2020-04-25T00:00:00Z,Overseas,Confirmed
 2020-04-29,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-04-29,Female,30 to 39,Nelson Marlborough,Yes,Cook Islands,NZ5957,NA,2020-03-26T00:00:00Z,Overseas,Confirmed
+2020-04-29,Female,30 to 39,Nelson Marlborough,Yes,Cook Islands,NZ45,NA,2020-03-26T00:00:00Z,Overseas,Confirmed
 2020-04-30,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-30,Female,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-30,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
@@ -1484,5 +1484,8 @@ Reported,Sex,Age,DHB,Overseas travel,Last country before return,Flight number,Fl
 2020-05-01,Female,20 to 29,Canterbury,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-05-01,Female,70+,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-05-01,Female,20 to 29,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
-2020-05-01,Female,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-05-01,Male,30 to 39,Waitematā,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-05-05,Female,10 to 14,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-05-05,Male,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Probable
+2020-05-06,Male,5 to 9,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-05-07,Female,20 to 29,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
