@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-05-28"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-05-29"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -69,6 +69,7 @@ probableDates <- tribble(
   "2020-05-26", 0,
   "2020-05-27", 0,
   "2020-05-28", 0,
+  "2020-05-29", 0,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -153,6 +154,7 @@ confirmedDates <- tribble(
   "2020-05-26", 0,
   "2020-05-27", 0,
   "2020-05-28", 0,
+  "2020-05-29", 0,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -225,6 +227,7 @@ recoveredDates <- tribble(
   "2020-05-26", 5,
   "2020-05-27", 1,
   "2020-05-28", 12,
+  "2020-05-29", 7,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -297,6 +300,7 @@ hospitalisationDates <- tribble(
   "2020-05-26", 1, NA, 0,
   "2020-05-27", 0, NA, 0,
   "2020-05-28", 0, NA, 0,
+  "2020-05-29", 0, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -362,6 +366,7 @@ hospitalisationDates <- tribble(
     "2020-05-26", 0 ,21,
     "2020-05-27", 0 ,21,
     "2020-05-28", 0 ,22,
+    "2020-05-29", 0 ,22,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -426,6 +431,7 @@ transmissionDates <- tribble(
   "2020-05-26", 575, 463, 1504-575-463-380-85, 85, 380,
   "2020-05-27", 575, 463, 1504-575-463-380-85, 85, 380,
   "2020-05-28", 575, 463, 1504-575-463-380-85, 85, 380,
+  "2020-05-29", 575, 463, 1504-575-463-380-85, 85, 380,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -486,7 +492,7 @@ plan <- drake_plan(
         TRUE ~ DHB),
       Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-cases-28may20.xlsx"),
+    casefile = file_in("data/moh/covid-cases-29may20.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
 
 
@@ -517,7 +523,7 @@ plan <- drake_plan(
         filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-05-28") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-05-29") %>%
       html_table() %>% nth(2) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
