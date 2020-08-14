@@ -995,15 +995,15 @@ manualDHBactive <- function(nz, dhbScrape) {
 
 plan <- drake_plan(
     # https://services2.arcgis.com/9V7Qc4NIcvZBm0io/ArcGIS/rest/services
-    esrRaw = read_json("https://services2.arcgis.com/9V7Qc4NIcvZBm0io/ArcGIS/rest/services/Daily_ESR_Update_Cases/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=FID%20ASC&resultOffset=0&resultRecordCount=5000&cacheHint=true"),
-    esrData = esrRaw$features %>% map_dfr(~(first(.) %>% as_tibble())) %>%
-      mutate(ReportDate=as.POSIXct(ReportDate/1000, origin = "1970-01-01", tz="UTC") %>%
-        lubridate::force_tz("Pacific/Auckland"),
-      DHB=case_when(
-        DHB=="Waitematā" ~ "Waitemata",
-        DHB=="Tairāwhiti" ~ "Tairawhiti",
-        TRUE ~ DHB),
-      Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
+    # esrRaw = read_json("https://services2.arcgis.com/9V7Qc4NIcvZBm0io/ArcGIS/rest/services/Daily_ESR_Update_Cases/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=FID%20ASC&resultOffset=0&resultRecordCount=5000&cacheHint=true"),
+    # esrData = esrRaw$features %>% map_dfr(~(first(.) %>% as_tibble())) %>%
+    #   mutate(ReportDate=as.POSIXct(ReportDate/1000, origin = "1970-01-01", tz="UTC") %>%
+    #     lubridate::force_tz("Pacific/Auckland"),
+    #   DHB=case_when(
+    #     DHB=="Waitematā" ~ "Waitemata",
+    #     DHB=="Tairāwhiti" ~ "Tairawhiti",
+    #     TRUE ~ DHB),
+    #   Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
     casefile = file_in("data/moh/covid-cases-13aug20.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=3) %>% tidyCases("Confirmed"),
@@ -1029,11 +1029,11 @@ plan <- drake_plan(
           age %in% c("10 to 14", "15 to 19") ~ "10 to 19",
           TRUE ~ age)),
 
-    esrMohDiff = allCasesMoH %>%
-          count(status, reported, sex, age, dhb) %>%
-        full_join(esrData %>%
-        count(Status, ReportDate, Sex, AgeGrp1, DHB), by=c("status"="Status","reported"="ReportDate","sex"="Sex","age"="AgeGrp1","dhb"="DHB")) %>%
-        filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
+    # esrMohDiff = allCasesMoH %>%
+    #       count(status, reported, sex, age, dhb) %>%
+    #     full_join(esrData %>%
+    #     count(Status, ReportDate, Sex, AgeGrp1, DHB), by=c("status"="Status","reported"="ReportDate","sex"="Sex","age"="AgeGrp1","dhb"="DHB")) %>%
+    #     filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
     dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-08-13") %>%
