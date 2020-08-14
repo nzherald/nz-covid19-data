@@ -747,6 +747,7 @@ Reported,Sex,Age,DHB,Overseas travel,Last location before return,Flight number,F
 2020-04-01T00:00:00Z,Female,40 to 49,Auckland,Yes,Canada,AC51,2020-03-23T00:00:00Z,2020-03-25T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,70+,Auckland,Yes,Qatar,QR920,2020-03-19T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Female,20 to 29,Bay of Plenty,Yes,Qatar,QR920,2020-03-27T00:00:00Z,2020-03-27T00:00:00Z,Overseas,Confirmed
+2020-04-01T00:00:00Z,Male,20 to 29,Bay of Plenty,Yes,United Arab Emirates,EK488,2020-03-23T00:00:00Z,2020-03-24T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,20 to 29,Bay of Plenty,Yes,United Kingdom,QR920,2020-03-27T00:00:00Z,2020-03-27T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,60 to 69,Bay of Plenty,No,NA,NZ5145,2020-03-24T00:00:00Z,NA,In New Zealand,Confirmed
 2020-04-01T00:00:00Z,Male,60 to 69,Bay of Plenty,Yes,England,EK448,2020-03-22T00:00:00Z,2020-03-22T00:00:00Z,Overseas,Confirmed
@@ -787,7 +788,6 @@ Reported,Sex,Age,DHB,Overseas travel,Last location before return,Flight number,F
 2020-04-01T00:00:00Z,Female,60 to 69,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-01T00:00:00Z,Female,60 to 69,Waikato,Yes,NA,QR146,2020-03-18T00:00:00Z,2020-03-20T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,20 to 29,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-04-01T00:00:00Z,Male,20 to 29,Waikato,Yes,United Arab Emirates,EK488,2020-03-23T00:00:00Z,2020-03-24T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,20 to 29,Waikato,Yes,United Arab Emirates,EK448,2020-03-24T00:00:00Z,2020-03-24T00:00:00Z,Overseas,Confirmed
 2020-04-01T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-04-01T00:00:00Z,Male,50 to 59,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
@@ -1573,18 +1573,31 @@ Reported,Sex,Age,DHB,Overseas travel,Last location before return,Flight number,F
 2020-08-11T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-11T00:00:00Z,Male,<1,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-11T00:00:00Z,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-08-11T00:00:00Z,Male,50 to 59,Counties Manukau,NA,NA,NA,NA,NA,Unknown,Probable
+2020-08-11T00:00:00Z,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Probable
 2020-08-12T00:00:00Z,Female,50 to 59,Managed isolation & quarantine,Yes,United Arab Emirates,EK448,2020-08-07T00:00:00Z,2020-08-07T00:00:00Z,Overseas,Confirmed
 2020-08-12T00:00:00Z,Female,1 to 4,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-12T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Hong Kong,NZ80,2020-08-08T00:00:00Z,2020-08-08T00:00:00Z,Overseas,Confirmed
 2020-08-12T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Female,60 to 69,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,5 to 9,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-12T00:00:00Z,Male,20 to 29,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,40 to 49,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
-2020-08-12T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Hong Kong,NZ80,2020-08-08T00:00:00Z,2020-08-08T00:00:00Z,Overseas,Confirmed
 2020-08-12T00:00:00Z,Female,10 to 14,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,15 to 19,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-12T00:00:00Z,Male,40 to 49,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
 2020-08-13T00:00:00Z,Male,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,50 to 59,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,70+,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Female,20 to 29,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Female,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,30 to 39,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,50 to 59,Counties Manukau,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Female,15 to 19,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Female,40 to 49,Waikato,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,20 to 29,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-13T00:00:00Z,Male,40 to 49,Waitematā,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-14T00:00:00Z,Female,30 to 39,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
+2020-08-14T00:00:00Z,Male,40 to 49,Auckland,No,NA,NA,NA,NA,In New Zealand,Confirmed
