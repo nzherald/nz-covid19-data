@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-08-24"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-09-10"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -157,6 +157,23 @@ probableDates <- tribble(
   "2020-08-22", 0,
   "2020-08-23", 0,
   "2020-08-24", 1,
+  "2020-08-25", 0,
+  "2020-08-26", 0,
+  "2020-08-27", 0,
+  "2020-08-28", 0,
+  "2020-08-29", 0,
+  "2020-08-30", 0,
+  "2020-08-31", 0,
+  "2020-09-01", 0,
+  "2020-09-02", 0,
+  "2020-09-03", 0,
+  "2020-09-04", 0,
+  "2020-09-05", 0,
+  "2020-09-06", 0,
+  "2020-09-07", 0,
+  "2020-09-08", 0,
+  "2020-09-09", 0,
+  "2020-09-10", 0,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -330,6 +347,23 @@ confirmedDates <- tribble(
   "2020-08-22", 6,
   "2020-08-23", 3,
   "2020-08-24", 8,
+  "2020-08-25", 7,
+  "2020-08-26", 5,
+  "2020-08-27", 7,
+  "2020-08-28", 12,
+  "2020-08-29", 13,
+  "2020-08-30", 2,
+  "2020-08-31", 9,
+  "2020-09-01", 14,
+  "2020-09-02", 5,
+  "2020-09-03", 2,
+  "2020-09-04", 5,
+  "2020-09-05", 3,
+  "2020-09-06", 5,
+  "2020-09-07", 4,
+  "2020-09-08", 6,
+  "2020-09-09", 6,
+  "2020-09-10", 4,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -490,6 +524,23 @@ recoveredDates <- tribble(
   "2020-08-22", 0,
   "2020-08-23", 0,
   "2020-08-24", 0,
+  "2020-08-25", 1,
+  "2020-08-26", 0,
+  "2020-08-27", 15,
+  "2020-08-28", 7,
+  "2020-08-29", 7,
+  "2020-08-30", 2,
+  "2020-08-31", 15,
+  "2020-09-01", 13,
+  "2020-09-02", 8,
+  "2020-09-03", 16,
+  "2020-09-04", 8,
+  "2020-09-05", 1,
+  "2020-09-06", 1,
+  "2020-09-07", 2,
+  "2020-09-08", 1,
+  "2020-09-09", 4,
+  "2020-09-10", 9,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -650,6 +701,23 @@ hospitalisationDates <- tribble(
   "2020-08-22", 9, NA, 3,
   "2020-08-23", 9, NA, 3,
   "2020-08-24", 10, NA, 2,
+  "2020-08-25", 9, NA, 3,
+  "2020-08-26", 10, NA, 3,
+  "2020-08-27", 10, NA, 2,
+  "2020-08-28", 11, NA, 3,
+  "2020-08-29", 11, NA, 3,
+  "2020-08-30", 10, NA, 2,
+  "2020-08-31", 11, NA, 2,
+  "2020-09-01", 10, NA, 2,
+  "2020-09-02", 7, NA, 2,
+  "2020-09-03", 7, NA, 2,
+  "2020-09-04", 6, NA, 2,
+  "2020-09-05", 2, NA, 1,
+  "2020-09-06", 4, NA, 1,
+  "2020-09-07", 4, NA, 1,
+  "2020-09-08", 4, NA, 2,
+  "2020-09-09", 4, NA, 2,
+  "2020-09-10", 3, NA, 2,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -803,6 +871,23 @@ hospitalisationDates <- tribble(
     "2020-08-22", 0 ,22,
     "2020-08-23", 0 ,22,
     "2020-08-24", 0 ,22,
+    "2020-08-25", 0 ,22,
+    "2020-08-26", 0 ,22,
+    "2020-08-27", 0 ,22,
+    "2020-08-28", 0 ,22,
+    "2020-08-29", 0 ,22,
+    "2020-08-30", 0 ,22,
+    "2020-08-31", 0 ,22,
+    "2020-09-01", 0 ,22,
+    "2020-09-02", 0 ,22,
+    "2020-09-03", 0 ,22,
+    "2020-09-04", 0 ,22,
+    "2020-09-05", 2 ,24,
+    "2020-09-06", 0 ,24,
+    "2020-09-07", 0 ,24,
+    "2020-09-08", 0 ,24,
+    "2020-09-09", 0 ,24,
+    "2020-09-10", 0 ,24,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -955,6 +1040,23 @@ transmissionDates <- tribble(
   "2020-08-22", 645, 454, 1, 90, 481,
   "2020-08-23", 647, 454, 1, 90, 482,
   "2020-08-24", 648, 454, 1, 90, 491,
+  "2020-08-25", 648, 454, 1, 90, 491,
+  "2020-08-26", 650, 454, 1, 90, 494,
+  "2020-08-27", 650, 454, 1, 90, 500,
+  "2020-08-28", 657, 454, 1, 90, 505,
+  "2020-08-29", 659, 454, 1, 90, 516,
+  "2020-08-30", 659, 454, 1, 90, 518,
+  "2020-08-31", 663, 454, 1, 90, 523,
+  "2020-09-01", 672, 454, 1, 90, 528,
+  "2020-09-02", 674, 454, 1, 90, 531,
+  "2020-09-03", 675, 454, 1, 90, 532,
+  "2020-09-04", 677, 454, 1, 90, 535,
+  "2020-09-05", 678, 454, 1, 90, 537,
+  "2020-09-06", 679, 454, 1, 90, 541,
+  "2020-09-07", 681, 454, 1, 90, 543,
+  "2020-09-08", 683, 454, 1, 90, 547,
+  "2020-09-09", 683, 454, 1, 90, 553,
+  "2020-09-10", 685, 454, 1, 90, 555,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -1023,7 +1125,37 @@ quarantinedCases <- tribble(
   "2020-08-22", 16,
   "2020-08-23", 18,
   "2020-08-24", 19,
+  "2020-08-25", 19,
+  "2020-08-26", 21,
+  "2020-08-27", 22,
+  "2020-08-28", 18,
+  "2020-08-29", 20,
+  "2020-08-30", 20,
+  "2020-08-31", 24,
+  "2020-09-01", 33,
+  "2020-09-02", 35,
+  "2020-09-03", 36,
+  "2020-09-04", 35,
+  "2020-09-05", 38,
+  "2020-09-06", 39,
+  "2020-09-07", 41,
+  "2020-09-08", 43,
+  "2020-09-09", 43,
+  "2020-09-10", 39,
   ) %>% mutate(Date=as.Date(Date))
+
+borderCases <- tribble(
+  ~Date, ~TotalBorderCases, ~BorderCases,
+  "2020-09-04", 135, 2,
+  "2020-09-05", 136, 1,
+  "2020-09-06", 137, 1,
+  "2020-09-07", 139, 2,
+  "2020-09-08", 141, 2,
+  "2020-09-09", 141, 0,
+  "2020-09-10", 143, 2,
+  ) %>% mutate(Date=as.Date(Date))
+
+
 
 
 todayCsv <- paste0("data/daily/dhb-cases-", format(Sys.Date(), "%Y-%m-%d"), ".csv")
@@ -1084,7 +1216,7 @@ plan <- drake_plan(
     #     TRUE ~ DHB),
     #   Sex=case_when(Sex=="NA"~NA_character_, TRUE~Sex)),
 
-    casefile = file_in("data/moh/covid-cases-24august_0.xlsx"),
+    casefile = file_in("data/moh/covid-cases-10sept20.xlsx"),
     confirmedCases = readxl::read_excel(casefile, skip=2) %>% tidyCases("Confirmed"),
 
 
@@ -1102,7 +1234,6 @@ plan <- drake_plan(
     allCasesMoH = bind_rows(confirmedCases, probableCases) %>%
       rename_all(str_to_lower) %>%
       mutate(reported=lubridate::force_tz(reported, "Pacific/Auckland"),
-        `arrival date`=lubridate::force_tz(`arrival date`, "Pacific/Auckland"),
         age=case_when(
           age %in% c("<1","1 to 4","5 to 9") ~ "0 to 9",
           age %in% c("10 to 14", "15 to 19") ~ "10 to 19",
@@ -1115,7 +1246,7 @@ plan <- drake_plan(
     #     filter(n.x != n.y | is.na(n.y) | is.na(n.x)),
 
 
-    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-08-24") %>%
+    dhbScrape = read_html("https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases#2020-09-10") %>%
       html_table() %>% nth(3) %>% filter(DHB != "Total") %>% arrange(DHB),
 
 
@@ -1135,6 +1266,7 @@ plan <- drake_plan(
     left_join(deathsDates, by="Date") %>%
     left_join(transmissionDates, by="Date") %>%
     left_join(quarantinedCases, by="Date") %>%
+    left_join(borderCases, by="Date") %>%
     rename_all(snakecase::to_lower_camel_case) %>%
     mutate(date=as.POSIXct(date),tag="Manual"),
 
@@ -1146,7 +1278,7 @@ plan <- drake_plan(
             )) %>%
         mutate(cases=ifelse(totalConfirmed == 1120, 8, cases)) %>%
         arrange(date) %>% select(date, cases) %>% pmap_df(
-          function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported))[1:1683],
+          function(date,cases) {tibble(reported=rep(date,cases))}) %>% pull(reported))[1:1792],
         ),
 
 
