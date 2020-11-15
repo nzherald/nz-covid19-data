@@ -1658,7 +1658,7 @@ Reported,Sex,Age,DHB,Overseas travel,Origin,Status
 2020-08-19T00:00:00Z,Male,15 to 19,Waitematā,No,In New Zealand,Confirmed
 2020-08-20T00:00:00Z,Female,70+,Auckland,No,In New Zealand,Confirmed
 2020-08-20T00:00:00Z,Female,15 to 19,Counties Manukau,No,In New Zealand,Confirmed
-2020-08-20T00:00:00Z,Female,30 to 39,Counties Manukau,Yes,Overseas,Confirmed
+2020-08-20T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-08-20T00:00:00Z,Female,40 to 49,Counties Manukau,No,In New Zealand,Confirmed
 2020-08-20T00:00:00Z,Male,50 to 59,Counties Manukau,No,In New Zealand,Confirmed
 2020-08-20T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
@@ -1828,7 +1828,7 @@ Reported,Sex,Age,DHB,Overseas travel,Origin,Status
 2020-09-23T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-09-23T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-09-24T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
-2020-09-24T00:00:00Z,Female,15 to 19,Waitematā,No,In New Zealand,Confirmed
+2020-09-24T00:00:00Z,Female,15 to 19,Managed isolation & quarantine,No,In New Zealand,Confirmed
 2020-09-25T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-09-26T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-09-26T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
@@ -1879,6 +1879,94 @@ Reported,Sex,Age,DHB,Overseas travel,Origin,Status
 2020-10-15T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-10-15T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-10-15T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-15T00:00:00Z,Male,40 to 49,Capital and Coast,No,In New Zealand,Confirmed
 2020-10-16T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
-2020-10-17T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
 2020-10-17T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-17T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-17T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-17T00:00:00Z,Male,20 to 29,Waitematā,No,In New Zealand,Confirmed
+2020-10-18T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-19T00:00:00Z,Female,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Female,15 to 19,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,5 to 9,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-20T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-21T00:00:00Z,Female,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-21T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,No,In New Zealand,Confirmed
+2020-10-21T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-21T00:00:00Z,Male,60 to 69,Waitematā,No,In New Zealand,Confirmed
+2020-10-22T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-22T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-22T00:00:00Z,Female,50 to 59,Waitematā,No,In New Zealand,Confirmed
+2020-10-23T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,1 to 4,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Female,10 to 14,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Female,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,15 to 19,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-23T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-25T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-25T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-25T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-25T00:00:00Z,Male,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-26T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-27T00:00:00Z,Female,15 to 19,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-27T00:00:00Z,Male,50 to 59,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-27T00:00:00Z,Male,1 to 4,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Female,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Female,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Female,60 to 69,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-28T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-29T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Male,15 to 19,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-30T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-31T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-31T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-31T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-31T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-10-31T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-01T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-01T00:00:00Z,Male,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-01T00:00:00Z,Male,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-02T00:00:00Z,Female,50 to 59,Canterbury,No,In New Zealand,Confirmed
+2020-11-02T00:00:00Z,Female,20 to 29,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-02T00:00:00Z,Female,30 to 39,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-02T00:00:00Z,Male,<1,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-02T00:00:00Z,Male,40 to 49,Managed isolation & quarantine,Yes,Overseas,Confirmed
+2020-11-03T00:00:00Z,Female,20 to 29,Canterbury,No,In New Zealand,Confirmed
+2020-11-04T00:00:00Z,Male,70+,Managed isolation & quarantine,Yes,Overseas,Confirmed
