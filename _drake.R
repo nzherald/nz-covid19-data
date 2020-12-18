@@ -1,6 +1,6 @@
 source(here::here("packages.R"))
 
-dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-12-16"), "days"))
+dateRange <- tibble(Date=seq(as.Date("2020-02-28"), as.Date("2020-12-18"), "days"))
 probableDates <- tribble(
   ~Date, ~Probable,
   "2020-03-24", 13.0, # https://www.health.govt.nz/news-media/media-releases/40-new-confirmed-cases-covid-19-new-zealand
@@ -270,6 +270,8 @@ probableDates <- tribble(
   "2020-12-14", 0,
   "2020-12-15", 0,
   "2020-12-16", 0,
+  "2020-12-17", 0,
+  "2020-12-18", 0,
   ) %>% mutate(Date=as.Date(Date))
 
 confirmedDates <- tribble(
@@ -557,6 +559,8 @@ confirmedDates <- tribble(
   "2020-12-14", 0,
   "2020-12-15", 0,
   "2020-12-16", 4,
+  "2020-12-17", 0,
+  "2020-12-18", 10,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -831,6 +835,8 @@ recoveredDates <- tribble(
   "2020-12-14", 0,
   "2020-12-15", 0,
   "2020-12-16", 17,
+  "2020-12-17", 0,
+  "2020-12-18", 2,
   ) %>% mutate(Date=as.Date(Date))
 
 # hospitalisations data are the total number of people in hospital on a given
@@ -1105,6 +1111,8 @@ hospitalisationDates <- tribble(
   "2020-12-14", 0, NA, 0,
   "2020-12-15", 0, NA, 0,
   "2020-12-16", 0, NA, 0,
+  "2020-12-17", 0, NA, 0,
+  "2020-12-18", 0, NA, 0,
   ) %>% mutate(Date=as.Date(Date))
 
   deathsDates <- tribble(
@@ -1372,6 +1380,8 @@ hospitalisationDates <- tribble(
     "2020-12-14", 0 ,25,
     "2020-12-15", 0 ,25,
     "2020-12-16", 0 ,25,
+    "2020-12-17", 0 ,25,
+    "2020-12-18", 0 ,25,
   ) %>% mutate(Date=as.Date(Date))
 
 transmissionDates <- tribble(
@@ -1638,6 +1648,8 @@ transmissionDates <- tribble(
   "2020-12-14", 950, 478, 0, 89, 571,
   "2020-12-15", 950, 478, 0, 89, 571,
   "2020-12-16", 954, 478, 0, 89, 571,
+  "2020-12-17", 954, 478, 0, 89, 571,
+  "2020-12-18", 964, 478, 0, 89, 571,
   ) %>% mutate(Date=as.Date(Date))
 
 
@@ -1820,6 +1832,8 @@ quarantinedCases <- tribble(
   "2020-12-14", 56,
   "2020-12-15", 56,
   "2020-12-16", 43,
+  "2020-12-17", 43,
+  "2020-12-18", 51,
   ) %>% mutate(Date=as.Date(Date))
 
 borderCases <- tribble(
@@ -1928,6 +1942,8 @@ borderCases <- tribble(
   "2020-12-14", 413, 0,
   "2020-12-15", 413, 0,
   "2020-12-16", 417, 4,
+  "2020-12-17", 417, 0,
+  "2020-12-18", 427, 10,
   ) %>% mutate(Date=as.Date(Date))
 
 
